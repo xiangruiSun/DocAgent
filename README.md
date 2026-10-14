@@ -1,10 +1,10 @@
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-# DocCanon
+# DocAgent
 
 ### Stop making every coding agent rediscover your codebase.
 
-**DocCanon is a verified context layer for coding agents.**
+**DocAgent is a verified context layer for coding agents.**
 
 It keeps a compact, trustworthy understanding of your project beside the code, so coding agents can reuse the same context instead of repeatedly scanning and re-interpreting the repository from scratch.
 
@@ -14,25 +14,25 @@ It keeps a compact, trustworthy understanding of your project beside the code, s
 
 ## Quick Start
 
-Install DocCanon into your current project:
+Install DocAgent into your current project:
 
 ```bash
-gh skill install Heluhan/Doccanon doccanon --agent universal
+gh skill install xiangruiSun/Doccanon_Agent docagent --agent universal
 ```
 
 Then tell your coding agent:
 
-> **Set up DocCanon for this project.**
+> **Set up DocAgent for this project.**
 
 That's it.
 
-Once configured, use your coding agent normally. DocCanon handles context routing, verification, and documentation synchronization as part of the workflow.
+Once configured, use your coding agent normally. DocAgent handles context routing, verification, and documentation synchronization as part of the workflow.
 
 > `gh skill` is currently a GitHub CLI preview feature. For host-specific or manual installation, see [Installation](#installation).
 
 ---
 
-## Why DocCanon?
+## Why DocAgent?
 
 ### 1. Stop rediscovering the same codebase
 
@@ -56,7 +56,7 @@ Start working
 
 Much of that understanding is durable. It should not have to be rebuilt for every task or every new agent session.
 
-DocCanon gives the agent a compact project map first:
+DocAgent gives the agent a compact project map first:
 
 ```text
 Task
@@ -74,7 +74,7 @@ It just does not have to treat the entire repository as unknown territory every 
 
 This is designed to reduce repeated repository exploration — and therefore the context, tool calls, and time spent getting oriented.
 
-Actual token savings depend on the repository, task, model, and agent, so DocCanon does not claim a universal percentage.
+Actual token savings depend on the repository, task, model, and agent, so DocAgent does not claim a universal percentage.
 
 ---
 
@@ -82,7 +82,7 @@ Actual token savings depend on the repository, task, model, and agent, so DocCan
 
 Your project's understanding should belong to the **project**, not to one model, IDE, or session.
 
-DocCanon keeps canonical knowledge in plain Markdown beside the code:
+DocAgent keeps canonical knowledge in plain Markdown beside the code:
 
 ```text
 CONTEXT.md
@@ -114,7 +114,7 @@ Persistent context creates a new problem:
 
 A stale project map can be worse than no map at all.
 
-DocCanon treats freshness as part of the system.
+DocAgent treats freshness as part of the system.
 
 It checks whether canonical project knowledge is valid for the current branch, tracks which current-state owners are affected by implementation changes, and refuses to treat the project as synchronized while relevant changes remain unaccounted for.
 
@@ -130,7 +130,7 @@ Update + verify
 Synchronized
 ```
 
-So DocCanon is not just persistent context.
+So DocAgent is not just persistent context.
 
 It is **governed, verifiable context**.
 
@@ -168,7 +168,7 @@ Verification
 
 ## Why not just use `AGENTS.md`, `CLAUDE.md`, or normal docs?
 
-Those files are useful. DocCanon solves a different problem.
+Those files are useful. DocAgent solves a different problem.
 
 A normal project document can persist knowledge, but it can also silently become stale.
 
@@ -176,13 +176,13 @@ A tool-specific memory file can help one agent, but the knowledge may not travel
 
 And asking every agent to reconstruct the project directly from source works — but repeats the same exploration again and again.
 
-DocCanon adds three things:
+DocAgent adds three things:
 
 * **Portable context** — project knowledge lives with the repository.
 * **Task routing** — agents load the smallest relevant context before inspecting code.
 * **Verification** — reusable context is checked against the implementation instead of being trusted blindly.
 
-DocCanon does **not** replace source-code inspection.
+DocAgent does **not** replace source-code inspection.
 
 It changes where the agent starts.
 
@@ -192,7 +192,7 @@ It changes where the agent starts.
 
 Codex, Cursor, GitHub Copilot, and OpenCode read `AGENTS.md` at session start; Claude Code reads it directly or through a thin `CLAUDE.md` import. That file is the first thing every agent sees, so one stale or retired paragraph there can poison every session.
 
-DocCanon treats the agent entry as a **generated projection** instead:
+DocAgent treats the agent entry as a **generated projection** instead:
 
 * `AGENTS.md` is rendered from verified current-state owners only. Retired, historical, draft, or unclassified material never enters it by construction.
 * Rendering is idempotent: if canonical content did not change, nothing is written and no diff appears.
@@ -203,11 +203,11 @@ DocCanon treats the agent entry as a **generated projection** instead:
 
 ### Retired material leaves the searchable tree
 
-Retiring a document is one operation: DocCanon moves it into the archive root, stamps it as `historical` or `superseded` with a short notice naming its owner or reason, and records the archive pattern in `.ignore` so routine text search skips it. Archaeology is still possible by explicit path or with ignore and hidden-file flags. `migrate scan` skips the archive, so retired material never comes back as a migration candidate.
+Retiring a document is one operation: DocAgent moves it into the archive root, stamps it as `historical` or `superseded` with a short notice naming its owner or reason, and records the archive pattern in `.ignore` so routine text search skips it. Archaeology is still possible by explicit path or with ignore and hidden-file flags. `migrate scan` skips the archive, so retired material never comes back as a migration candidate.
 
 ### Future work has a governed home
 
-Roadmaps, launch conditions, and known gaps live in `docs/plans/` with `doccanon_authority: plan`. Plans route to agents when relevant, never pretend to be shipped behavior, and a release cannot complete while a plan targeting that version is still unresolved (`active` or `abandoned`). When a goal ships, its outcome moves into release history and the plan retires.
+Roadmaps, launch conditions, and known gaps live in `docs/plans/` with `docagent_authority: plan`. Plans route to agents when relevant, never pretend to be shipped behavior, and a release cannot complete while a plan targeting that version is still unresolved (`active` or `abandoned`). When a goal ships, its outcome moves into release history and the plan retires.
 
 ---
 
@@ -216,12 +216,12 @@ Roadmaps, launch conditions, and known gaps live in `docs/plans/` with `doccanon
 Want to see the trust boundary directly?
 
 ```bash
-git clone https://github.com/Heluhan/Doccanon.git
-cd Doccanon
+git clone https://github.com/xiangruiSun/Doccanon_Agent.git
+cd DocAgent
 python3 scripts/demo.py
 ```
 
-The demo creates a disposable Git repository, establishes a governed baseline, changes covered code without updating its canonical owner, and shows DocCanon refusing to treat the stale state as synchronized.
+The demo creates a disposable Git repository, establishes a governed baseline, changes covered code without updating its canonical owner, and shows DocAgent refusing to treat the stale state as synchronized.
 
 ---
 
@@ -232,38 +232,38 @@ The demo creates a disposable Git repository, establishes a governed baseline, c
 For agents that use the shared project skill directory:
 
 ```bash
-gh skill install Heluhan/Doccanon doccanon --agent universal
+gh skill install xiangruiSun/Doccanon_Agent docagent --agent universal
 ```
 
 You can also install for a specific host:
 
 ```bash
 # Codex
-gh skill install Heluhan/Doccanon doccanon --agent codex
+gh skill install xiangruiSun/Doccanon_Agent docagent --agent codex
 
 # Claude Code
-gh skill install Heluhan/Doccanon doccanon --agent claude-code
+gh skill install xiangruiSun/Doccanon_Agent docagent --agent claude-code
 
 # Cursor
-gh skill install Heluhan/Doccanon doccanon --agent cursor
+gh skill install xiangruiSun/Doccanon_Agent docagent --agent cursor
 
 # OpenCode
-gh skill install Heluhan/Doccanon doccanon --agent opencode
+gh skill install xiangruiSun/Doccanon_Agent docagent --agent opencode
 ```
 
 Preview the skill before installing:
 
 ```bash
-gh skill preview Heluhan/Doccanon doccanon
+gh skill preview xiangruiSun/Doccanon_Agent docagent
 ```
 
 ### Manual install
 
-DocCanon also ships with its own installer:
+DocAgent also ships with its own installer:
 
 ```bash
-git clone https://github.com/Heluhan/Doccanon.git
-cd Doccanon
+git clone https://github.com/xiangruiSun/Doccanon_Agent.git
+cd DocAgent
 
 python3 install.py \
   --agent universal \
@@ -271,11 +271,11 @@ python3 install.py \
   --project /path/to/project
 ```
 
-DocCanon has no runtime service, API key, vector database, or model dependency.
+DocAgent has no runtime service, API key, vector database, or model dependency.
 
 The helper requires **Git** and **Python 3.10+**.
 
-### Updating DocCanon
+### Updating DocAgent
 
 Skill updates and project upgrades are separate layers. The skill copy is updated by the user or host tooling; a project agent never pulls code, and nothing updates automatically.
 
@@ -283,7 +283,7 @@ Skill updates and project upgrades are separate layers. The skill copy is update
 - `install.py` installs: update the source checkout and rerun the same command; owned copies are backed up first. `python3 install.py --check --json` reports installed versus source versions without writing.
 - Symlinked development checkouts: update the source checkout behind the link.
 
-After the skill copy is current, run `doccanon upgrade status` inside the project and reconcile the reported steps; `upgrade apply` stamps the new version once no semantic step remains.
+After the skill copy is current, run `docagent upgrade status` inside the project and reconcile the reported steps; `upgrade apply` stamps the new version once no semantic step remains.
 
 See the full [agent compatibility matrix](docs/agent-compatibility.md) for host-specific placement and discovery details.
 
@@ -291,7 +291,7 @@ See the full [agent compatibility matrix](docs/agent-compatibility.md) for host-
 
 ## Supported agents
 
-DocCanon includes installation targets for:
+DocAgent includes installation targets for:
 
 * Codex
 * Claude Code
@@ -307,16 +307,16 @@ Host discovery and activation behavior varies. The canonical project knowledge i
 
 ## Token efficiency
 
-DocCanon is designed around a simple idea:
+DocAgent is designed around a simple idea:
 
 > **Don't repeatedly spend context rediscovering knowledge the project already knows.**
 
-Instead of broad repository exploration before every task, DocCanon routes the agent to a small, fresh canonical bundle followed by targeted code verification.
+Instead of broad repository exploration before every task, DocAgent routes the agent to a small, fresh canonical bundle followed by targeted code verification.
 
 You can measure the context-volume mechanism locally:
 
 ```bash
-python3 /path/to/doccanon/skills/doccanon/scripts/measure_context.py \
+python3 /path/to/docagent/skills/docagent/scripts/measure_context.py \
   --project . \
   --intent "change session recovery" \
   --baseline tracked-code \
@@ -325,17 +325,17 @@ python3 /path/to/doccanon/skills/doccanon/scripts/measure_context.py \
 
 This is a context-reduction proxy, not observed model token usage or cost.
 
-For controlled measurements, see the [token benchmark protocol](skills/doccanon/references/token-benchmark.md).
+For controlled measurements, see the [token benchmark protocol](skills/docagent/references/token-benchmark.md).
 
 ---
 
-## What DocCanon is not
+## What DocAgent is not
 
-DocCanon is not a replacement for source code, a vector database, or a codebase RAG service.
+DocAgent is not a replacement for source code, a vector database, or a codebase RAG service.
 
 Code, tests, schemas, configuration, and direct runtime evidence remain the final proof of implementation behavior.
 
-DocCanon gives agents a better starting point — and keeps that starting point accountable to the code.
+DocAgent gives agents a better starting point — and keeps that starting point accountable to the code.
 
 ---
 
@@ -343,8 +343,8 @@ DocCanon gives agents a better starting point — and keeps that starting point 
 
 * [简体中文 README](README.zh-CN.md)
 * [Agent compatibility](docs/agent-compatibility.md)
-* [DocCanon skill specification](skills/doccanon/SKILL.md)
-* [Token benchmark protocol](skills/doccanon/references/token-benchmark.md)
+* [DocAgent skill specification](skills/docagent/SKILL.md)
+* [Token benchmark protocol](skills/docagent/references/token-benchmark.md)
 * [Contributing](CONTRIBUTING.md)
 * [Security](SECURITY.md)
 
@@ -356,4 +356,4 @@ MIT.
 
 ---
 
-**DocCanon turns codebase understanding from something every agent repeatedly reconstructs into something the project can preserve, verify, and reuse.**
+**DocAgent turns codebase understanding from something every agent repeatedly reconstructs into something the project can preserve, verify, and reuse.**

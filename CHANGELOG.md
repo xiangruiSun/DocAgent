@@ -25,7 +25,7 @@
 
 ## 0.13.0
 
-- Added an explicit upgrade mechanism: `.doccanon.yml` records `doccanon_version`, `upgrade status` reports a read-only reconciliation checklist, and `upgrade apply` performs idempotent mechanical cleanup and stamps the version only when no semantic step remains.
+- Added an explicit upgrade mechanism: `.docagent.yml` records `docagent_version`, `upgrade status` reports a read-only reconciliation checklist, and `upgrade apply` performs idempotent mechanical cleanup and stamps the version only when no semantic step remains.
 - Completion and promotion passes no longer rewrite hand-written agent entries; they block with `unreconciled-agent-entry` until the entry is reconciled via `render` or explicitly opted out.
 - Migration manifests now report frozen sources still in the tree and sources that no longer exist, with `legacy-sources-in-tree` and `migration-source-missing` check warnings.
 - Added `invalid-authority` and `unclassified-decision-record` warnings; accepted ADRs are documented as `append-only`.
@@ -35,7 +35,7 @@
 
 ## 0.12.0
 
-- Removed dead configuration and metadata: `.doccanon.yml` `schema_version`, `branch_policy`, and `reconsider` fields, the unused historical-authorities constant, and the unused `doccanon_plan` frontmatter field.
+- Removed dead configuration and metadata: `.docagent.yml` `schema_version`, `branch_policy`, and `reconsider` fields, the unused historical-authorities constant, and the unused `docagent_plan` frontmatter field.
 - Converged retirement semantics: `retire --disposition` now accepts only `historical` or `superseded`, stamps exactly that authority, reports which search-ignore file already covers the archive, and writes YAML frontmatter only for Markdown documents.
 - Added a `missing-plan-status` warning and documented the `superseded` authority in the governance contract.
 - Repository-meta files (root README, LICENSE, CHANGELOG, VCS/editor dotfiles) are no longer treated as implementation files during sync or freshness checks.
@@ -45,7 +45,7 @@
 
 ## 0.11.0
 
-- Added retirement relocation: `retire` moves obsolete documents into a configurable archive root (default `.doccanon/archive/`), stamps a non-active authority with a retirement notice, and records search exclusion.
+- Added retirement relocation: `retire` moves obsolete documents into a configurable archive root (default `.docagent/archive/`), stamps a non-active authority with a retirement notice, and records search exclusion.
 - Added `.ignore` management and an `archive-not-search-excluded` check warning, so ripgrep-based agents skip retired material by default while archaeology remains possible.
 - `migrate scan` now skips the archive root, and generated agent entries document the archive policy.
 - Added pointer stubs for high-traffic legacy entry points and protections against retiring active canonical documents.
@@ -54,7 +54,7 @@
 ## 0.10.0
 
 - Added a governed plans layer (`docs/plans/`) with the `plan` authority for milestones, launch readiness, and open gaps: routable in context, never current truth.
-- Added plan lifecycle metadata (`doccanon_status`, optional `doccanon_target`) with warnings for inactive or unclassified plans.
+- Added plan lifecycle metadata (`docagent_status`, optional `docagent_target`) with warnings for inactive or unclassified plans.
 - Added a release gate: `sync complete --release-version` fails while a plan targeting that version is not `ready` or `shipped`.
 - Added the plan template, docs map entry, agent entry retrieval policy and routing updates, and migration guidance for roadmaps.
 - Added tests for plan routing, rendering, warnings, and the release gate (37 passing).
@@ -69,7 +69,7 @@
 
 ## 0.8.0
 
-- Reframed DocCanon as verified project memory for coding agents.
+- Reframed DocAgent as verified project memory for coding agents.
 - Added safe project- and user-scoped installation for Codex, GitHub Copilot, Gemini CLI, OpenCode, Claude Code, Cline, and Cursor.
 - Added a disposable stale-document demo.
 - Added a context-volume proxy and a paired A/B protocol for honest token-efficiency claims.

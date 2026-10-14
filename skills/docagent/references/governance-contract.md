@@ -41,14 +41,14 @@ When `features` applies, domain coverage requires a complete `docs/features/mani
 | `architecture/` | Modules, data, integrations, deployment topology | Product rationale |
 | `features/` | One current-state contract per shipped feature plus a registry | Temporary plans or one giant product summary |
 | `plans/` | Intended future work, milestones, launch readiness, and open gaps | Current behavior, shipped history, or accepted decisions |
-| `adr/` | Confirmed decision context, choice, trade-offs, consequences; accepted records declare `doccanon_authority: append-only` | Current-state summaries |
+| `adr/` | Confirmed decision context, choice, trade-offs, consequences; accepted records declare `docagent_authority: append-only` | Current-state summaries |
 | `operations/` | Deployment, migration, monitoring, recovery | Product behavior |
 | `development/` | Time-bounded development milestones and verification | Current product truth |
 | `releases/` | Versioned shipped-change snapshots and known limitations | Future plans or branch-local claims |
 
-One fact has one canonical owner. Other canonical documents link to it. Migrated legacy sources are frozen provenance and are not maintained in parallel. Freezing is a DocCanon behavior: manifest disposition, relocation into the archive root, and default exclusion from context and text search. Do not add a custom enforcement system to each project. The repository-root agent entry (`AGENTS.md`), its adapters, and the owner registry (`docs/registry.json`) are generated projections of these owners; they are not canonical locations and must not become a hand-maintained second source of truth.
+One fact has one canonical owner. Other canonical documents link to it. Migrated legacy sources are frozen provenance and are not maintained in parallel. Freezing is a DocAgent behavior: manifest disposition, relocation into the archive root, and default exclusion from context and text search. Do not add a custom enforcement system to each project. The repository-root agent entry (`AGENTS.md`), its adapters, and the owner registry (`docs/registry.json`) are generated projections of these owners; they are not canonical locations and must not become a hand-maintained second source of truth.
 
-Plans are optional. A project promotes without a current-state owner for `plans/`; plans declare `doccanon_authority: plan` with a `doccanon_status` and an optional `doccanon_target`, and they never substitute for current-state behavior. When a goal ships or is abandoned, retire its plan and record the outcome in development or release history.
+Plans are optional. A project promotes without a current-state owner for `plans/`; plans declare `docagent_authority: plan` with a `docagent_status` and an optional `docagent_target`, and they never substitute for current-state behavior. When a goal ships or is abandoned, retire its plan and record the outcome in development or release history.
 
 ## Authority
 
@@ -72,11 +72,11 @@ The project context file (`CONTEXT.md`) is `human-confirmed` canonical language.
 Every current-state document must declare:
 
 ```yaml
-doccanon_authority: current-state
-doccanon_verified_at: <git-sha>
-doccanon_covers:
+docagent_authority: current-state
+docagent_verified_at: <git-sha>
+docagent_covers:
   - "path/to/code/**"
-doccanon_domains:
+docagent_domains:
   - "architecture"
 ```
 

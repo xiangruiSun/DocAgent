@@ -1,26 +1,26 @@
 # Agent compatibility
 
-DocCanon follows the directory-based Agent Skills format: a `SKILL.md` entrypoint plus local references, scripts, and assets. The deterministic helper behaves the same on every host; discovery and automatic activation are host responsibilities.
+DocAgent follows the directory-based Agent Skills format: a `SKILL.md` entrypoint plus local references, scripts, and assets. The deterministic helper behaves the same on every host; discovery and automatic activation are host responsibilities.
 
 | Host | Project install | User install | Notes |
 | --- | --- | --- | --- |
-| Codex | `.agents/skills/doccanon` | `~/.codex/skills/doccanon` | Native skill directory |
-| GitHub Copilot | `.agents/skills/doccanon` or `.github/skills/doccanon` | `~/.copilot/skills/doccanon` | GitHub CLI can manage published skills |
-| Gemini CLI | `.agents/skills/doccanon` or `.gemini/skills/doccanon` | `~/.gemini/skills/doccanon` | Native skill directory |
-| OpenCode | `.agents/skills/doccanon` or `.opencode/skills/doccanon` | `~/.config/opencode/skills/doccanon` | Native skill directory |
-| Claude Code | `.claude/skills/doccanon` | `~/.claude/skills/doccanon` | Native skill directory |
-| Cline | `.cline/skills/doccanon` | `~/.cline/skills/doccanon` | Skills may need enabling in Cline settings |
-| Cursor | `.agents/skills/doccanon` plus `.cursor/rules/doccanon.mdc` | Not automated | Uses an agent-requested project rule adapter |
+| Codex | `.agents/skills/docagent` | `~/.codex/skills/docagent` | Native skill directory |
+| GitHub Copilot | `.agents/skills/docagent` or `.github/skills/docagent` | `~/.copilot/skills/docagent` | GitHub CLI can manage published skills |
+| Gemini CLI | `.agents/skills/docagent` or `.gemini/skills/docagent` | `~/.gemini/skills/docagent` | Native skill directory |
+| OpenCode | `.agents/skills/docagent` or `.opencode/skills/docagent` | `~/.config/opencode/skills/docagent` | Native skill directory |
+| Claude Code | `.claude/skills/docagent` | `~/.claude/skills/docagent` | Native skill directory |
+| Cline | `.cline/skills/docagent` | `~/.cline/skills/docagent` | Skills may need enabling in Cline settings |
+| Cursor | `.agents/skills/docagent` plus `.cursor/rules/docagent.mdc` | Not automated | Uses an agent-requested project rule adapter |
 
 `python3 install.py --agent universal --scope project` is the lowest-duplication default for hosts that recognize `.agents/skills`. Use host-specific targets only when the host requires or prefers its own directory.
 
 Run `python3 install.py --dry-run ...` to inspect paths before writing. `python3 install.py --check --json` reports installed versus source versions and exits 1 when an update is available, without writing anything. Start or refresh the agent session after installing so discovery runs again.
 
-Skill updates are host-level: `gh skill update` for gh-managed installs, or update the source checkout and rerun `install.py` for managed copies. A project agent never fetches the skill itself; project-side reconciliation is `doccanon upgrade status`.
+Skill updates are host-level: `gh skill update` for gh-managed installs, or update the source checkout and rerun `install.py` for managed copies. A project agent never fetches the skill itself; project-side reconciliation is `docagent upgrade status`.
 
 ## Generated entry files
 
-Hosts load a repository-root instruction file at session start. DocCanon generates that file from the canonical library instead of leaving it hand-maintained:
+Hosts load a repository-root instruction file at session start. DocAgent generates that file from the canonical library instead of leaving it hand-maintained:
 
 - `AGENTS.md` is the shared entry for hosts that read the AGENTS.md standard, including Codex, Cursor, GitHub Copilot, and OpenCode.
 - Adapters are opt-in via `agent_adapters`: `claude` writes a thin `CLAUDE.md` that imports the shared entry with `@AGENTS.md`, and `gemini` writes `GEMINI.md`. The default is the Claude adapter; set `agent_entry: ""` to opt out of generation.

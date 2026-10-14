@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Measure DocCanon context size without pretending it is an A/B token result."""
+"""Measure DocAgent context size without pretending it is an A/B token result."""
 
 from __future__ import annotations
 
@@ -19,9 +19,9 @@ CODE_SUFFIXES = {
 }
 
 
-def load_doccanon():
-    path = Path(__file__).with_name("doccanon.py")
-    spec = importlib.util.spec_from_file_location("doccanon_helper", path)
+def load_docagent():
+    path = Path(__file__).with_name("docagent.py")
+    spec = importlib.util.spec_from_file_location("docagent_helper", path)
     if spec is None or spec.loader is None:
         raise RuntimeError(f"cannot load {path}")
     module = importlib.util.module_from_spec(spec)
@@ -62,7 +62,7 @@ def size(paths: list[Path], project: Path) -> dict[str, int]:
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Compare a DocCanon task bundle with an explicitly defined code-reading baseline"
+        description="Compare a DocAgent task bundle with an explicitly defined code-reading baseline"
     )
     parser.add_argument("--project", default=".")
     parser.add_argument("--intent", required=True)
@@ -98,17 +98,17 @@ def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
     configure_stdio()
     project = Path(args.project).expanduser().resolve()
-    helper = load_doccanon()
+    helper = load_docagent()
     bundle = helper.context_bundle(project, args.intent, args.limit, include_historical=False)
     if bundle.get("status") != "synchronized" and not args.allow_stale:
         print(
-            f"DocCanon context is {bundle.get('status')}, not synchronized; repair freshness before benchmarking. "
+            f"DocAgent context is {bundle.get('status')}, not synchronized; repair freshness before benchmarking. "
             "Use --allow-stale only for diagnosis.",
             file=sys.stderr,
         )
         return 2
     if not bundle.get("documents"):
-        print(f"No DocCanon context documents selected (status: {bundle.get('status')}).", file=sys.stderr)
+        print(f"No DocAgent context documents selected (status: {bundle.get('status')}).", file=sys.stderr)
         return 2
     context_paths = [Path(item["path"]) for item in bundle["documents"]]
 
@@ -137,9 +137,9 @@ def main(argv: list[str] | None = None) -> int:
         "status": "measured",
         "project": str(project),
         "intent": args.intent,
-        "doccanon_status": bundle.get("status"),
+        "docagent_status": bundle.get("status"),
         "metric": "lexical_proxy_units_v1",
-        "doccanon_context": {**context_size, "paths": [str(path) for path in context_paths]},
+        "docagent_context": {**context_size, "paths": [str(path) for path in context_paths]},
         "baseline": {**baseline_size, "definition": baseline_definition},
         "context_reduction_proxy_percent": reduction,
         "claim_boundary": (
@@ -150,7 +150,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.json:
         print(json.dumps(payload, ensure_ascii=False, indent=2))
     else:
-        print(f"DocCanon context: {context_size['files']} files / {context_size['proxy_units']} proxy units")
+        print(f"DocAgent context: {context_size['files']} files / {context_size['proxy_units']} proxy units")
         print(f"Baseline: {baseline_size['files']} files / {baseline_size['proxy_units']} proxy units")
         print(f"Context reduction proxy: {reduction}%")
         print(payload["claim_boundary"])

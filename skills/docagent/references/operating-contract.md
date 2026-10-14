@@ -1,4 +1,4 @@
-# DocCanon operating contract
+# DocAgent operating contract
 
 This contract is the self-contained product definition. Do not rely on a user's prior knowledge, an earlier conversation, or a project-specific prompt to supply these rules.
 
@@ -16,7 +16,7 @@ Treat context-size comparisons as mechanism evidence, not measured model savings
 4. Update every semantically affected feature and cross-cutting owner in the same change as code.
 5. Verify code and docs together before commit, PR, or merge.
 6. Generate an impact plan covering every changed implementation file and governed domain. Resolve every item through a canonical update or an evidence-backed exclusion.
-7. Pass the synchronization completion gate and automatically capture meaningful development and release history; never require the user to remember a DocCanon command.
+7. Pass the synchronization completion gate and automatically capture meaningful development and release history; never require the user to remember a DocAgent command.
 
 Never call enabled, indexed, clean, or mapped documentation synchronized unless the trust gate literally passes.
 
@@ -34,17 +34,17 @@ Never call enabled, indexed, clean, or mapped documentation synchronized unless 
 
 ## Admission
 
-- Ask once before enabling DocCanon for an unconfigured substantive project.
+- Ask once before enabling DocAgent for an unconfigured substantive project.
 - Recommend disabling it for a scratch project, disposable prototype, or one-off static page.
-- Persist both acceptance and refusal in `.doccanon.yml`. A disabled project stays silent until explicitly reconsidered.
+- Persist both acceptance and refusal in `.docagent.yml`. A disabled project stays silent until explicitly reconsidered.
 - Separate `enabled` from `governed`; bootstrap output is not automatically trustworthy.
 
 ## Version compatibility
 
-- Record the reconciled skill version in `.doccanon.yml` (`doccanon_version`); a missing value means the project predates the upgrade mechanism.
+- Record the reconciled skill version in `.docagent.yml` (`docagent_version`); a missing value means the project predates the upgrade mechanism.
 - Skill updates happen in the host layer. The project-side helper never fetches code, and nothing updates a skill automatically.
 - Treat upgrades as reviewed passes: deterministic detection, idempotent mechanical cleanup, and explicit semantic decisions. Never stamp a version while a semantic step remains.
-- Never rewrite artifacts that DocCanon did not generate; reconcile or opt out of hand-written agent entries first.
+- Never rewrite artifacts that DocAgent did not generate; reconcile or opt out of hand-written agent entries first.
 
 ## Distribution language
 
@@ -110,8 +110,8 @@ Canonical current-state documents must be useful change contracts, not inventori
 
 ## Optional Grill with Docs relationship
 
-DocCanon is self-contained. `grill-with-docs` may clarify terminology or decisions, but DocCanon must work without it. Depend on its outputs when available; never copy, fork, or modify that skill.
+DocAgent is self-contained. `grill-with-docs` may clarify terminology or decisions, but DocAgent must work without it. Depend on its outputs when available; never copy, fork, or modify that skill.
 
 ## Non-goals
 
-DocCanon is not a Git branch manager, a transcript store, a replacement for runtime verification, an excuse to document every component, or an authority for inferred product intent. It does not force governance on trivial projects and does not preserve obsolete prose as current truth. It does not preserve a hand-maintained agent instruction dump as truth.
+DocAgent is not a Git branch manager, a transcript store, a replacement for runtime verification, an excuse to document every component, or an authority for inferred product intent. It does not force governance on trivial projects and does not preserve obsolete prose as current truth. It does not preserve a hand-maintained agent instruction dump as truth.

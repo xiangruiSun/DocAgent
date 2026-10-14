@@ -8,8 +8,8 @@ import unittest
 from pathlib import Path
 
 
-SCRIPT = Path(__file__).resolve().parents[1] / "skills" / "doccanon" / "scripts" / "doccanon.py"
-SKILL_ROOT = Path(__file__).resolve().parents[1] / "skills" / "doccanon"
+SCRIPT = Path(__file__).resolve().parents[1] / "skills" / "docagent" / "scripts" / "docagent.py"
+SKILL_ROOT = Path(__file__).resolve().parents[1] / "skills" / "docagent"
 
 
 def run(command: list[str], cwd: Path, check: bool = True) -> subprocess.CompletedProcess[str]:
@@ -31,13 +31,13 @@ def git(root: Path, *args: str) -> str:
     return run(["git", *args], root).stdout.strip()
 
 
-class DocCanonCLITest(unittest.TestCase):
+class DocAgentCLITest(unittest.TestCase):
     def make_repo(self) -> tuple[tempfile.TemporaryDirectory[str], Path]:
         temp = tempfile.TemporaryDirectory()
         root = Path(temp.name)
         git(root, "init", "-q")
         git(root, "config", "user.email", "test@example.com")
-        git(root, "config", "user.name", "DocCanon Test")
+        git(root, "config", "user.name", "DocAgent Test")
         (root / "src").mkdir()
         (root / "src" / "app.py").write_text("print('v1')\n", encoding="utf-8")
         git(root, "add", ".")
@@ -61,7 +61,7 @@ class DocCanonCLITest(unittest.TestCase):
 
     def test_skill_package_links_every_reference(self) -> None:
         skill = (SKILL_ROOT / "SKILL.md").read_text(encoding="utf-8")
-        self.assertIn("name: doccanon", skill)
+        self.assertIn("name: docagent", skill)
         linked = set(re.findall(r"\(references/([^)]+)\)", skill))
         present = {path.name for path in (SKILL_ROOT / "references").glob("*.md")}
         self.assertEqual(present, linked)
@@ -72,7 +72,7 @@ class DocCanonCLITest(unittest.TestCase):
 
         enabled = json.loads(self.cli(root, "enable", "--json").stdout)
         self.assertEqual("enabled", enabled["status"])
-        self.assertTrue((root / ".doccanon.yml").exists())
+        self.assertTrue((root / ".docagent.yml").exists())
         self.assertTrue((root / "CONTEXT.md").exists())
         self.assertTrue((root / "docs" / "README.md").exists())
         bootstrapping = self.cli(root, "check", "--json", check=False)
@@ -81,7 +81,7 @@ class DocCanonCLITest(unittest.TestCase):
 
         disabled = json.loads(self.cli(root, "disable", "--reason", "one-off page", "--json").stdout)
         self.assertEqual("disabled", disabled["status"])
-        self.assertIn('status: "disabled"', (root / ".doccanon.yml").read_text(encoding="utf-8"))
+        self.assertIn('status: "disabled"', (root / ".docagent.yml").read_text(encoding="utf-8"))
         self.assertTrue((root / "docs" / "README.md").exists())
         checked = json.loads(self.cli(root, "check", "--json").stdout)
         self.assertEqual("disabled", checked["status"])
@@ -96,7 +96,7 @@ class DocCanonCLITest(unittest.TestCase):
         self.cli(root, "promote", "--domain", "architecture")
         git(root, "add", ".")
         git(root, "commit", "-qm", "govern architecture")
-        config_path = root / ".doccanon.yml"
+        config_path = root / ".docagent.yml"
         before = config_path.read_text(encoding="utf-8")
 
         again = json.loads(self.cli(root, "enable", "--json").stdout)
@@ -113,7 +113,7 @@ class DocCanonCLITest(unittest.TestCase):
         self.assertTrue((root / "docs" / "registry.json").is_file())
         extra = root / "docs" / "glossary-extra.md"
         extra.write_text(
-            "---\ndoccanon_authority: human-confirmed\n---\n\n# Extra glossary\n\nTerm.\n",
+            "---\ndocagent_authority: human-confirmed\n---\n\n# Extra glossary\n\nTerm.\n",
             encoding="utf-8",
         )
         checked = json.loads(self.cli(root, "check", "--json", check=False).stdout)
@@ -139,8 +139,8 @@ class DocCanonCLITest(unittest.TestCase):
         features.mkdir()
         contract = features / "legacy-feature.md"
         contract.write_text(
-            "---\ndoccanon_authority: current-state\ndoccanon_covers:\n  - \"src/**\"\n"
-            "doccanon_domains:\n  - \"features\"\ndoccanon_feature: legacy-feature\n---\n\n"
+            "---\ndocagent_authority: current-state\ndocagent_covers:\n  - \"src/**\"\n"
+            "docagent_domains:\n  - \"features\"\ndocagent_feature: legacy-feature\n---\n\n"
             "# Legacy feature\n\n## User outcome\n\nOld behavior.\n",
             encoding="utf-8",
         )
@@ -173,12 +173,12 @@ class DocCanonCLITest(unittest.TestCase):
         self.assertEqual("applied", applied["status"])
         self.assertIn("retired-feature-contract", applied["applied"])
         self.assertFalse(contract.exists())
-        archived = root / ".doccanon" / "archive" / "docs" / "features" / "legacy-feature.md"
+        archived = root / ".docagent" / "archive" / "docs" / "features" / "legacy-feature.md"
         self.assertTrue(archived.is_file())
         retired_manifest = json.loads(manifest.read_text(encoding="utf-8"))
         feature = retired_manifest["features"][0]
         self.assertEqual("retired", feature["status"])
-        self.assertIn(".doccanon/archive/", feature["document"])
+        self.assertIn(".docagent/archive/", feature["document"])
         self.assertEqual("complete", json.loads(self.cli(root, "features", "status", "--json").stdout)["status"])
 
     def test_staged_covered_code_requires_doc_update(self) -> None:
@@ -186,7 +186,7 @@ class DocCanonCLITest(unittest.TestCase):
         self.addCleanup(temp.cleanup)
         self.cli(root, "enable")
         git(root, "add", ".")
-        git(root, "commit", "-qm", "enable doccanon")
+        git(root, "commit", "-qm", "enable docagent")
         anchor = git(root, "rev-parse", "HEAD")
         architecture = root / "docs" / "architecture.md"
         self.write_architecture(architecture)
@@ -230,10 +230,10 @@ class DocCanonCLITest(unittest.TestCase):
         self.assertIn("AGENTS.md", created)
         self.assertIn("CLAUDE.md", created)
         entry = (root / "AGENTS.md").read_text(encoding="utf-8")
-        self.assertIn("Generated by DocCanon", entry)
+        self.assertIn("Generated by DocAgent", entry)
         self.assertIn("`CONTEXT.md`", entry)
-        self.assertIn("<!-- doccanon:custom:start -->", entry)
-        self.assertIn("<!-- doccanon:custom:end -->", entry)
+        self.assertIn("<!-- docagent:custom:start -->", entry)
+        self.assertIn("<!-- docagent:custom:end -->", entry)
         adapter = (root / "CLAUDE.md").read_text(encoding="utf-8")
         self.assertIn("@AGENTS.md", adapter)
         checked = json.loads(self.cli(root, "check", "--json", check=False).stdout)
@@ -310,7 +310,7 @@ class DocCanonCLITest(unittest.TestCase):
         entry = next(item for item in rendered["files"] if item["path"] == "AGENTS.md")
         self.assertTrue(entry["adopted"])
         adopted = (root / "AGENTS.md").read_text(encoding="utf-8")
-        self.assertIn("Generated by DocCanon", adopted)
+        self.assertIn("Generated by DocAgent", adopted)
         self.assertIn("Use pnpm for everything.", adopted)
 
     def test_unknown_authority_and_unclassified_adr_warn(self) -> None:
@@ -318,7 +318,7 @@ class DocCanonCLITest(unittest.TestCase):
         self.addCleanup(temp.cleanup)
         self.cli(root, "enable")
         (root / "docs" / "proposal.md").write_text(
-            "---\ndoccanon_authority: proposal\n---\n\n# Proposal\n\nFuture work.\n",
+            "---\ndocagent_authority: proposal\n---\n\n# Proposal\n\nFuture work.\n",
             encoding="utf-8",
         )
         adr = root / "docs" / "adr"
@@ -333,16 +333,16 @@ class DocCanonCLITest(unittest.TestCase):
         temp, root = self.make_repo()
         self.addCleanup(temp.cleanup)
         self.cli(root, "enable")
-        config_path = root / ".doccanon.yml"
+        config_path = root / ".docagent.yml"
         text = config_path.read_text(encoding="utf-8")
-        text = re.sub(r"doccanon_version: [^\n]*\n", "", text)
+        text = re.sub(r"docagent_version: [^\n]*\n", "", text)
         text = re.sub(r"registry: [^\n]*\n", "", text)
         text = "schema_version: 3\n" + text + 'branch_policy: "aware"\nreconsider: "manual"\n'
         config_path.write_text(text, encoding="utf-8")
         (root / "docs" / "registry.json").unlink()
         (root / "AGENTS.md").write_text("# House rules\n\nUse pnpm.\n", encoding="utf-8")
         (root / "docs" / "proposal.md").write_text(
-            "---\ndoccanon_authority: proposal\n---\n\n# Proposal\n\nFuture thing.\n",
+            "---\ndocagent_authority: proposal\n---\n\n# Proposal\n\nFuture thing.\n",
             encoding="utf-8",
         )
 
@@ -365,17 +365,17 @@ class DocCanonCLITest(unittest.TestCase):
         cleaned = config_path.read_text(encoding="utf-8")
         self.assertNotIn("schema_version", cleaned)
         self.assertNotIn("branch_policy", cleaned)
-        self.assertNotIn("doccanon_version", cleaned)
+        self.assertNotIn("docagent_version", cleaned)
 
         self.cli(root, "render")
         (root / "docs" / "proposal.md").write_text(
-            "---\ndoccanon_authority: plan\ndoccanon_status: active\n---\n\n# Proposal\n\nFuture thing.\n",
+            "---\ndocagent_authority: plan\ndocagent_status: active\n---\n\n# Proposal\n\nFuture thing.\n",
             encoding="utf-8",
         )
         final = json.loads(self.cli(root, "upgrade", "apply", "--json").stdout)
         self.assertEqual("applied", final["status"])
         stamped = config_path.read_text(encoding="utf-8")
-        self.assertIn(f'doccanon_version: "{report["skill_version"]}"', stamped)
+        self.assertIn(f'docagent_version: "{report["skill_version"]}"', stamped)
         self.assertIn("registry:", stamped)
         self.assertTrue((root / "docs" / "registry.json").is_file())
 
@@ -402,7 +402,7 @@ class DocCanonCLITest(unittest.TestCase):
             "architecture",
         )
         (root / "docs" / "old-plan.md").write_text(
-            "---\ndoccanon_authority: snapshot\n---\n# Old plan\n\nRetired material.\n",
+            "---\ndocagent_authority: snapshot\n---\n# Old plan\n\nRetired material.\n",
             encoding="utf-8",
         )
         self.cli(root, "promote", "--domain", "architecture")
@@ -450,9 +450,9 @@ class DocCanonCLITest(unittest.TestCase):
         git(root, "commit", "-qm", "legacy agent files")
         self.cli(root, "enable")
         entry = (root / "AGENTS.md").read_text(encoding="utf-8")
-        self.assertIn("Generated by DocCanon", entry)
+        self.assertIn("Generated by DocAgent", entry)
         self.assertIn("Use pnpm.", entry)
-        self.assertIn("<!-- doccanon:custom:start -->", entry)
+        self.assertIn("<!-- docagent:custom:start -->", entry)
         adapter = (root / "CLAUDE.md").read_text(encoding="utf-8")
         self.assertIn("@AGENTS.md", adapter)
         self.assertIn("Prefer plan mode.", adapter)
@@ -465,7 +465,7 @@ class DocCanonCLITest(unittest.TestCase):
         self.cli(root, "enable")
         context = root / "CONTEXT.md"
         text = context.read_text(encoding="utf-8")
-        self.assertIn("doccanon_authority: human-confirmed", text)
+        self.assertIn("docagent_authority: human-confirmed", text)
         context.write_text(
             text + "\n### Ledger seal\n\nThe ledger seal is the canonical name for the per-account "
             "integrity token; do not call it a balance hash.\n",
@@ -503,8 +503,8 @@ class DocCanonCLITest(unittest.TestCase):
         plans = root / "docs" / "plans"
         plans.mkdir()
         (plans / "v1-launch.md").write_text(
-            "---\ndoccanon_authority: plan\n"
-            "doccanon_status: active\ndoccanon_target: v1.0.0\n---\n\n"
+            "---\ndocagent_authority: plan\n"
+            "docagent_status: active\ndocagent_target: v1.0.0\n---\n\n"
             "# v1 launch\n\n## Goal\n\nShip the ledger seal to production with a verified rollback path.\n\n"
             "## Release conditions\n\n- [ ] Load test passes\n",
             encoding="utf-8",
@@ -534,13 +534,13 @@ class DocCanonCLITest(unittest.TestCase):
         plans = root / "docs" / "plans"
         plans.mkdir()
         (plans / "done.md").write_text(
-            "---\ndoccanon_authority: plan\ndoccanon_status: shipped\n---\n\n"
+            "---\ndocagent_authority: plan\ndocagent_status: shipped\n---\n\n"
             "# Shipped plan\n\n## Goal\n\nAlready shipped.\n",
             encoding="utf-8",
         )
         (plans / "drafty.md").write_text("# Drafty plan\n\nNo authority yet.\n", encoding="utf-8")
         (plans / "stateless.md").write_text(
-            "---\ndoccanon_authority: plan\n---\n\n# Stateless plan\n\n## Goal\n\nNo declared status.\n",
+            "---\ndocagent_authority: plan\n---\n\n# Stateless plan\n\n## Goal\n\nNo declared status.\n",
             encoding="utf-8",
         )
         checked = json.loads(self.cli(root, "check", "--json", check=False).stdout)
@@ -577,8 +577,8 @@ class DocCanonCLITest(unittest.TestCase):
         plans.mkdir()
         plan = plans / "v1-launch.md"
         plan.write_text(
-            "---\ndoccanon_authority: plan\n"
-            "doccanon_status: active\ndoccanon_target: v1.0.0\n---\n\n"
+            "---\ndocagent_authority: plan\n"
+            "docagent_status: active\ndocagent_target: v1.0.0\n---\n\n"
             "# v1 launch\n\n## Goal\n\nShip the ledger seal to production.\n\n"
             "## Release conditions\n\n- [ ] Load test passes\n",
             encoding="utf-8",
@@ -610,7 +610,7 @@ class DocCanonCLITest(unittest.TestCase):
         )
 
         plan.write_text(
-            plan.read_text(encoding="utf-8").replace("doccanon_status: active", "doccanon_status: ready"),
+            plan.read_text(encoding="utf-8").replace("docagent_status: active", "docagent_status: ready"),
             encoding="utf-8",
         )
         completed = json.loads(
@@ -657,18 +657,18 @@ class DocCanonCLITest(unittest.TestCase):
             ).stdout
         )
         self.assertEqual("retired", retired["status"])
-        self.assertEqual(".doccanon/archive/notes/legacy.md", retired["archived_to"])
+        self.assertEqual(".docagent/archive/notes/legacy.md", retired["archived_to"])
         self.assertFalse((root / "notes" / "legacy.md").exists())
-        archived = (root / ".doccanon" / "archive" / "notes" / "legacy.md").read_text(encoding="utf-8")
-        self.assertIn("doccanon_authority: historical", archived)
-        self.assertIn("Retired by DocCanon", archived)
+        archived = (root / ".docagent" / "archive" / "notes" / "legacy.md").read_text(encoding="utf-8")
+        self.assertIn("docagent_authority: historical", archived)
+        self.assertIn("Retired by DocAgent", archived)
         self.assertIn("docs/architecture.md", archived)
         ignore = (root / ".ignore").read_text(encoding="utf-8")
-        self.assertIn(".doccanon/archive/", ignore)
+        self.assertIn(".docagent/archive/", ignore)
         self.assertEqual(".ignore", retired["search_ignore"]["file"])
         self.assertTrue(retired["search_ignore"]["updated"])
         self.assertEqual("recorded", retired["archive_index"]["status"])
-        archive_index = (root / ".doccanon" / "archive" / "README.md").read_text(encoding="utf-8")
+        archive_index = (root / ".docagent" / "archive" / "README.md").read_text(encoding="utf-8")
         self.assertIn("notes/legacy.md", archive_index)
 
         (root / "notes" / "second.md").write_text("# Second\n\nOld too.\n", encoding="utf-8")
@@ -678,7 +678,7 @@ class DocCanonCLITest(unittest.TestCase):
 
         scanned = json.loads(self.cli(root, "inventory", "--json").stdout)
         self.assertNotIn(
-            ".doccanon/archive/notes/legacy.md",
+            ".docagent/archive/notes/legacy.md",
             {item["path"] for item in scanned["candidates"]},
         )
 
@@ -701,9 +701,9 @@ class DocCanonCLITest(unittest.TestCase):
         )
         self.assertEqual("OLD_GUIDE.md", pointer["pointer"])
         stub = legacy.read_text(encoding="utf-8")
-        self.assertIn(".doccanon/archive/OLD_GUIDE.md", stub)
+        self.assertIn(".docagent/archive/OLD_GUIDE.md", stub)
         self.assertIn("not current truth", stub)
-        self.assertTrue((root / ".doccanon" / "archive" / "OLD_GUIDE.md").exists())
+        self.assertTrue((root / ".docagent" / "archive" / "OLD_GUIDE.md").exists())
 
         refused = self.cli(root, "retire", "CONTEXT.md", "--json", check=False)
         self.assertEqual(2, refused.returncode)
@@ -712,7 +712,7 @@ class DocCanonCLITest(unittest.TestCase):
         active = root / "notes"
         active.mkdir()
         (active / "active.md").write_text(
-            "---\ndoccanon_authority: human-confirmed\n---\n\n# Active notes\n", encoding="utf-8"
+            "---\ndocagent_authority: human-confirmed\n---\n\n# Active notes\n", encoding="utf-8"
         )
         refused_active = self.cli(root, "retire", "notes/active.md", "--json", check=False)
         self.assertEqual(2, refused_active.returncode)
@@ -722,12 +722,12 @@ class DocCanonCLITest(unittest.TestCase):
         temp, root = self.make_repo()
         self.addCleanup(temp.cleanup)
         self.cli(root, "enable")
-        archived = root / ".doccanon" / "archive"
+        archived = root / ".docagent" / "archive"
         archived.mkdir(parents=True)
         (archived / "old.md").write_text("old\n", encoding="utf-8")
         checked = json.loads(self.cli(root, "check", "--json", check=False).stdout)
         self.assertIn("archive-not-search-excluded", {item["code"] for item in checked["findings"]})
-        (root / ".gitignore").write_text(".doccanon/archive/\n", encoding="utf-8")
+        (root / ".gitignore").write_text(".docagent/archive/\n", encoding="utf-8")
         checked_again = json.loads(self.cli(root, "check", "--json", check=False).stdout)
         self.assertNotIn("archive-not-search-excluded", {item["code"] for item in checked_again["findings"]})
 
@@ -742,14 +742,14 @@ class DocCanonCLITest(unittest.TestCase):
             self.cli(root, "retire", "notes/old.md", "--disposition", "superseded", "--json").stdout
         )
         self.assertEqual("superseded", retired["authority"])
-        archived_md = (root / ".doccanon" / "archive" / "notes" / "old.md").read_text(encoding="utf-8")
-        self.assertIn("doccanon_authority: superseded", archived_md)
+        archived_md = (root / ".docagent" / "archive" / "notes" / "old.md").read_text(encoding="utf-8")
+        self.assertIn("docagent_authority: superseded", archived_md)
 
         (notes / "old.txt").write_text("plain legacy text\n", encoding="utf-8")
         self.cli(root, "retire", "notes/old.txt", "--json")
-        archived_txt = (root / ".doccanon" / "archive" / "notes" / "old.txt").read_text(encoding="utf-8")
-        self.assertIn("Retired by DocCanon", archived_txt)
-        self.assertNotIn("doccanon_authority", archived_txt)
+        archived_txt = (root / ".docagent" / "archive" / "notes" / "old.txt").read_text(encoding="utf-8")
+        self.assertIn("Retired by DocAgent", archived_txt)
+        self.assertNotIn("docagent_authority", archived_txt)
 
         (notes / "bad.md").write_text("# Bad\n", encoding="utf-8")
         refused = self.cli(root, "retire", "notes/bad.md", "--disposition", "archived", "--json", check=False)
@@ -771,7 +771,7 @@ class DocCanonCLITest(unittest.TestCase):
         )
         historical = root / "docs" / "session-recovery-plan.md"
         historical.write_text(
-            "---\ndoccanon_authority: snapshot\n---\n# Session recovery plan\n\nOld proposal.\n",
+            "---\ndocagent_authority: snapshot\n---\n# Session recovery plan\n\nOld proposal.\n",
             encoding="utf-8",
         )
         self.cli(
@@ -801,7 +801,7 @@ class DocCanonCLITest(unittest.TestCase):
         self.cli(root, "enable")
         notes = root / "docs" / "paywall-notes.md"
         notes.write_text(
-            "---\ndoccanon_authority: human-confirmed\n---\n\n"
+            "---\ndocagent_authority: human-confirmed\n---\n\n"
             "# 付费墙说明\n\n付费墙只阻止进入第三章，前两章完整免费。\n",
             encoding="utf-8",
         )
@@ -818,13 +818,13 @@ class DocCanonCLITest(unittest.TestCase):
         self.cli(root, "enable")
         billing = root / "docs" / "billing.md"
         billing.write_text(
-            "---\ndoccanon_authority: human-confirmed\n---\n"
+            "---\ndocagent_authority: human-confirmed\n---\n"
             "# Free chapter boundary\n\nFree access covers two complete chapters; later chapters require entitlement.\n",
             encoding="utf-8",
         )
         unrelated = root / "docs" / "generic.md"
         unrelated.write_text(
-            "---\ndoccanon_authority: human-confirmed\n---\n"
+            "---\ndocagent_authority: human-confirmed\n---\n"
             "# Generic feature update\n\nThis document describes ordinary feature changes and updates.\n",
             encoding="utf-8",
         )
@@ -891,12 +891,12 @@ class DocCanonCLITest(unittest.TestCase):
             "--domain",
             "architecture",
             "--manifest",
-            "docs/operations/doccanon-migration.json",
+            "docs/operations/docagent-migration.json",
             check=False,
         )
         self.assertEqual(2, blocked.returncode)
 
-        manifest = root / "docs" / "operations" / "doccanon-migration.json"
+        manifest = root / "docs" / "operations" / "docagent-migration.json"
         payload = json.loads(manifest.read_text(encoding="utf-8"))
         for entry in payload["entries"]:
             entry.update(
@@ -945,7 +945,7 @@ class DocCanonCLITest(unittest.TestCase):
                 "--domain",
                 "architecture",
                 "--manifest",
-                "docs/operations/doccanon-migration.json",
+                "docs/operations/docagent-migration.json",
                 "--json",
             ).stdout
         )
@@ -959,7 +959,7 @@ class DocCanonCLITest(unittest.TestCase):
         notes.mkdir()
         (notes / "old.md").write_text("# Old note\n\nLegacy knowledge.\n", encoding="utf-8")
         self.cli(root, "migrate", "scan", "--allow-dirty", "--json")
-        manifest_path = root / "docs" / "operations" / "doccanon-migration.json"
+        manifest_path = root / "docs" / "operations" / "docagent-migration.json"
         payload = json.loads(manifest_path.read_text(encoding="utf-8"))
         for item in payload["entries"]:
             item.update(
@@ -975,10 +975,10 @@ class DocCanonCLITest(unittest.TestCase):
                 }
             )
         manifest_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-        config_path = root / ".doccanon.yml"
+        config_path = root / ".docagent.yml"
         config_path.write_text(
             config_path.read_text(encoding="utf-8")
-            + 'migration_manifest: "docs/operations/doccanon-migration.json"\n',
+            + 'migration_manifest: "docs/operations/docagent-migration.json"\n',
             encoding="utf-8",
         )
         status = json.loads(self.cli(root, "migrate", "status", "--json").stdout)
@@ -999,7 +999,7 @@ class DocCanonCLITest(unittest.TestCase):
         temp, root = self.make_repo()
         self.addCleanup(temp.cleanup)
         self.cli(root, "enable")
-        manifest = root / "docs" / "operations" / "doccanon-migration.json"
+        manifest = root / "docs" / "operations" / "docagent-migration.json"
         manifest.parent.mkdir(parents=True, exist_ok=True)
         payload = {
             "schema_version": 2,
@@ -1035,7 +1035,7 @@ class DocCanonCLITest(unittest.TestCase):
         self.cli(root, "enable")
         target = root / "docs" / "architecture.md"
         target.write_text("# Architecture\n\n## Runtime topology\n\nCurrent service.\n", encoding="utf-8")
-        manifest = root / "docs" / "operations" / "doccanon-migration.json"
+        manifest = root / "docs" / "operations" / "docagent-migration.json"
         manifest.parent.mkdir(parents=True, exist_ok=True)
         payload = {
             "schema_version": 2,
@@ -1083,7 +1083,7 @@ class DocCanonCLITest(unittest.TestCase):
         self.cli(root, "enable")
         target = root / "docs" / "architecture.md"
         target.write_text("# Architecture\n\n## Runtime topology\n\nCurrent service.\n", encoding="utf-8")
-        manifest = root / "docs" / "operations" / "doccanon-migration.json"
+        manifest = root / "docs" / "operations" / "docagent-migration.json"
         manifest.parent.mkdir(parents=True, exist_ok=True)
         payload = {
             "schema_version": 1,
@@ -1127,7 +1127,7 @@ class DocCanonCLITest(unittest.TestCase):
         self.cli(root, "enable")
         target = root / "docs" / "architecture.md"
         target.write_text("# Architecture\n\n## Runtime topology\n\nCurrent service.\n", encoding="utf-8")
-        manifest = root / "docs" / "operations" / "doccanon-migration.json"
+        manifest = root / "docs" / "operations" / "docagent-migration.json"
         manifest.parent.mkdir(parents=True, exist_ok=True)
         payload = {
             "schema_version": 2,
@@ -1183,7 +1183,7 @@ class DocCanonCLITest(unittest.TestCase):
         installed = json.loads(self.cli(root, "hook", "install", "--json").stdout)
         hook = Path(installed["path"])
         self.assertTrue(hook.exists())
-        self.assertIn("doccanon managed block", hook.read_text(encoding="utf-8"))
+        self.assertIn("docagent managed block", hook.read_text(encoding="utf-8"))
         removed = json.loads(self.cli(root, "hook", "uninstall", "--json").stdout)
         self.assertEqual("uninstalled", removed["status"])
         self.assertFalse(hook.exists())
@@ -1245,7 +1245,7 @@ class DocCanonCLITest(unittest.TestCase):
     def test_legacy_enabled_config_is_bootstrapping_not_synchronized(self) -> None:
         temp, root = self.make_repo()
         self.addCleanup(temp.cleanup)
-        (root / ".doccanon.yml").write_text(
+        (root / ".docagent.yml").write_text(
             'schema_version: 1\nstatus: "enabled"\ndocs_root: "docs"\ncontext_file: "CONTEXT.md"\n',
             encoding="utf-8",
         )
@@ -1433,7 +1433,7 @@ class DocCanonCLITest(unittest.TestCase):
         self.addCleanup(temp.cleanup)
         self.cli(root, "enable")
         git(root, "add", ".")
-        git(root, "commit", "-qm", "enable doccanon")
+        git(root, "commit", "-qm", "enable docagent")
         self.write_architecture(root / "docs" / "architecture.md")
         self.cli(root, "mark-verified", "docs/architecture.md", "--covers", "src/**", "--domain", "architecture")
         self.cli(root, "promote", "--domain", "architecture")
@@ -1539,10 +1539,10 @@ class DocCanonCLITest(unittest.TestCase):
         self.cli(root, "enable")
         (root / "docs" / "architecture.md").write_text(
             "---\n"
-            "doccanon_authority: current-state\n"
-            f"doccanon_verified_at: {foreign}\n"
-            "doccanon_covers:\n  - \"src/**\"\n"
-            "doccanon_domains:\n  - \"architecture\"\n"
+            "docagent_authority: current-state\n"
+            f"docagent_verified_at: {foreign}\n"
+            "docagent_covers:\n  - \"src/**\"\n"
+            "docagent_domains:\n  - \"architecture\"\n"
             "---\n# Architecture\n",
             encoding="utf-8",
         )

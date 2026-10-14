@@ -1,5 +1,5 @@
 ---
-doccanon_authority: human-confirmed
+docagent_authority: human-confirmed
 ---
 
 # Project Context

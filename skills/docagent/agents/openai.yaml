@@ -1,0 +1,4 @@
+interface:
+  display_name: "DocAgent"
+  short_description: "Verified project memory for coding agents"
+  default_prompt: "Use $docagent to set up or maintain branch-aware, evidence-backed project memory for this repository."

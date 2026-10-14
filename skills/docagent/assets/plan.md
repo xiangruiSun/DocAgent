@@ -1,7 +1,7 @@
 ---
-doccanon_authority: plan
-doccanon_status: active
-doccanon_target: replace-with-release-or-milestone
+docagent_authority: plan
+docagent_status: active
+docagent_target: replace-with-release-or-milestone
 ---
 
 # Plan name

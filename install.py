@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Install DocCanon for one or more coding-agent hosts.
+"""Install DocAgent for one or more coding-agent hosts.
 
 The installer copies the complete skill directory so bundled references, assets,
 and deterministic helpers remain available. Existing unowned directories are
@@ -18,28 +18,28 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parent
-SOURCE = REPO_ROOT / "skills" / "doccanon"
+SOURCE = REPO_ROOT / "skills" / "docagent"
 MANIFEST = REPO_ROOT / ".codex-plugin" / "plugin.json"
-MARKER = ".doccanon-install.json"
+MARKER = ".docagent-install.json"
 
 PROJECT_TARGETS = {
-    "universal": Path(".agents/skills/doccanon"),
-    "codex": Path(".agents/skills/doccanon"),
-    "copilot": Path(".github/skills/doccanon"),
-    "claude": Path(".claude/skills/doccanon"),
-    "gemini": Path(".gemini/skills/doccanon"),
-    "opencode": Path(".opencode/skills/doccanon"),
-    "cline": Path(".cline/skills/doccanon"),
+    "universal": Path(".agents/skills/docagent"),
+    "codex": Path(".agents/skills/docagent"),
+    "copilot": Path(".github/skills/docagent"),
+    "claude": Path(".claude/skills/docagent"),
+    "gemini": Path(".gemini/skills/docagent"),
+    "opencode": Path(".opencode/skills/docagent"),
+    "cline": Path(".cline/skills/docagent"),
 }
 
 USER_TARGETS = {
-    "universal": Path(".agents/skills/doccanon"),
-    "codex": Path(".codex/skills/doccanon"),
-    "copilot": Path(".copilot/skills/doccanon"),
-    "claude": Path(".claude/skills/doccanon"),
-    "gemini": Path(".gemini/skills/doccanon"),
-    "opencode": Path(".config/opencode/skills/doccanon"),
-    "cline": Path(".cline/skills/doccanon"),
+    "universal": Path(".agents/skills/docagent"),
+    "codex": Path(".codex/skills/docagent"),
+    "copilot": Path(".copilot/skills/docagent"),
+    "claude": Path(".claude/skills/docagent"),
+    "gemini": Path(".gemini/skills/docagent"),
+    "opencode": Path(".config/opencode/skills/docagent"),
+    "cline": Path(".cline/skills/docagent"),
 }
 
 
@@ -65,7 +65,7 @@ def owned_install(path: Path) -> bool:
         payload = json.loads(marker.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         return False
-    return payload.get("product") == "doccanon" and payload.get("managed_by") == "install.py"
+    return payload.get("product") == "docagent" and payload.get("managed_by") == "install.py"
 
 
 def installed_version(path: Path) -> str:
@@ -87,7 +87,7 @@ def next_backup_path(destination: Path) -> Path:
 
 
 def cursor_rule_path(project: Path) -> Path:
-    return project / ".cursor" / "rules" / "doccanon.mdc"
+    return project / ".cursor" / "rules" / "docagent.mdc"
 
 
 def cursor_rule(skill_path: Path, rule_path: Path) -> str:
@@ -98,8 +98,8 @@ def cursor_rule(skill_path: Path, rule_path: Path) -> str:
         "globs:\n"
         "alwaysApply: false\n"
         "---\n\n"
-        "For substantive repository work, follow the complete DocCanon workflow in "
-        f"@{reference}. Load only the referenced DocCanon resources needed for the current task.\n"
+        "For substantive repository work, follow the complete DocAgent workflow in "
+        f"@{reference}. Load only the referenced DocAgent resources needed for the current task.\n"
     )
 
 
@@ -120,8 +120,8 @@ def install_copy(destination: Path, agent: str, scope: str, dry_run: bool) -> di
 
     if not dry_run:
         destination.parent.mkdir(parents=True, exist_ok=True)
-        temporary_parent = Path(tempfile.mkdtemp(prefix=".doccanon-install-", dir=destination.parent))
-        staged = temporary_parent / "doccanon"
+        temporary_parent = Path(tempfile.mkdtemp(prefix=".docagent-install-", dir=destination.parent))
+        staged = temporary_parent / "docagent"
         try:
             shutil.copytree(
                 SOURCE,
@@ -131,7 +131,7 @@ def install_copy(destination: Path, agent: str, scope: str, dry_run: bool) -> di
             (staged / MARKER).write_text(
                 json.dumps(
                     {
-                        "product": "doccanon",
+                        "product": "docagent",
                         "version": version(),
                         "managed_by": "install.py",
                         "agent": agent,
@@ -157,7 +157,7 @@ def install_cursor(project: Path, dry_run: bool, install_skill: bool = True) -> 
     skill_path = target_path("universal", "project", project, Path.home())
     results = [install_copy(skill_path, "cursor", "project", dry_run)] if install_skill else []
     rule_path = cursor_rule_path(project)
-    if rule_path.exists() and "DocCanon" not in rule_path.read_text(encoding="utf-8", errors="replace"):
+    if rule_path.exists() and "DocAgent" not in rule_path.read_text(encoding="utf-8", errors="replace"):
         raise InstallError(f"refusing to overwrite unmanaged Cursor rule: {rule_path}")
     if not dry_run:
         rule_path.parent.mkdir(parents=True, exist_ok=True)
@@ -210,7 +210,7 @@ def check_install(destination: Path, agent: str, scope: str) -> dict[str, str]:
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Install the DocCanon agent skill")
+    parser = argparse.ArgumentParser(description="Install the DocAgent agent skill")
     parser.add_argument(
         "--agent",
         action="append",
@@ -293,7 +293,7 @@ def main(argv: list[str] | None = None) -> int:
         if args.json:
             print(json.dumps(payload, indent=2))
         else:
-            print(f"DocCanon {payload['version']}: check")
+            print(f"DocAgent {payload['version']}: check")
             for item in results:
                 detail = f" (installed {item['installed_version']})" if item.get("installed_version") else ""
                 print(f"- {item['agent']}: {item['status']}: {item['path']}{detail}")
@@ -308,7 +308,7 @@ def main(argv: list[str] | None = None) -> int:
             if args.uninstall:
                 results.append(uninstall(target_path("universal", "project", project, home), args.dry_run))
                 rule = cursor_rule_path(project)
-                if rule.exists() and "DocCanon" in rule.read_text(encoding="utf-8", errors="replace"):
+                if rule.exists() and "DocAgent" in rule.read_text(encoding="utf-8", errors="replace"):
                     if not args.dry_run:
                         rule.unlink()
                     results.append({"action": "uninstall-rule", "path": str(rule)})
@@ -330,7 +330,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.json:
         print(json.dumps(payload, indent=2))
     else:
-        print(f"DocCanon {payload['version']}: {'dry run' if args.dry_run else 'done'}")
+        print(f"DocAgent {payload['version']}: {'dry run' if args.dry_run else 'done'}")
         for item in results:
             print(f"- {item['action']}: {item['path']}")
             if item.get("backup"):
@@ -344,5 +344,5 @@ if __name__ == "__main__":
     try:
         raise SystemExit(main())
     except InstallError as error:
-        print(f"DocCanon install error: {error}", file=sys.stderr)
+        print(f"DocAgent install error: {error}", file=sys.stderr)
         raise SystemExit(2)

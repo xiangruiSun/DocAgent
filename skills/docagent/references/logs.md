@@ -2,7 +2,7 @@
 
 ## Automation boundary
 
-The DocCanon task loop, not the user, owns history capture. Never ask the user to remember or run a logging command. The helper's `log development` and `log release` operations are internal deterministic write primitives that the Skill may invoke after it has assembled evidence.
+The DocAgent task loop, not the user, owns history capture. Never ask the user to remember or run a logging command. The helper's `log development` and `log release` operations are internal deterministic write primitives that the Skill may invoke after it has assembled evidence.
 
 `check`, `preflight`, CI, and Git hooks remain read-only. They may detect missing or stale documentation, but must not modify a worktree during commit or validation.
 

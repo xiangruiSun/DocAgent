@@ -39,7 +39,7 @@ Use these exact second-level headings so `features status` can validate the libr
 - `## Implementation`
 - `## Verification`
 
-The frontmatter must include `doccanon_feature`, `current-state` authority, verified revision, `features` domain, and code coverage. The body must reference real implementation files.
+The frontmatter must include `docagent_feature`, `current-state` authority, verified revision, `features` domain, and code coverage. The body must reference real implementation files.
 
 Describe observed behavior compactly. Include access conditions, state transitions, negative paths, cross-service effects, and durable invariants when relevant. In Change guidance, identify extension points, coupled surfaces, migration needs, and failure-prone assumptions that a future change must account for. Avoid speculative improvements, generic product prose, component inventories, and line-by-line code narration.
 

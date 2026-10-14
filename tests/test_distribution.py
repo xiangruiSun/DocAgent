@@ -15,8 +15,8 @@ ROOT = Path(__file__).resolve().parents[1]
 INSTALLER = ROOT / "install.py"
 DEMO = ROOT / "scripts" / "demo.py"
 CHECKER = ROOT / "scripts" / "check_version_policy.py"
-HELPER = ROOT / "skills" / "doccanon" / "scripts" / "doccanon.py"
-MEASURE = ROOT / "skills" / "doccanon" / "scripts" / "measure_context.py"
+HELPER = ROOT / "skills" / "docagent" / "scripts" / "docagent.py"
+MEASURE = ROOT / "skills" / "docagent" / "scripts" / "measure_context.py"
 
 
 def run(*command: str, check: bool = True) -> subprocess.CompletedProcess[str]:
@@ -46,10 +46,10 @@ class DistributionTest(unittest.TestCase):
                 "--project", str(project), "--home", str(home), "--json",
             )
             installed = json.loads(run(*command).stdout)
-            destination = project / ".agents" / "skills" / "doccanon"
+            destination = project / ".agents" / "skills" / "docagent"
             self.assertEqual("install", installed["results"][0]["action"])
             self.assertTrue((destination / "SKILL.md").is_file())
-            self.assertTrue((destination / ".doccanon-install.json").is_file())
+            self.assertTrue((destination / ".docagent-install.json").is_file())
 
             updated = json.loads(run(*command).stdout)
             self.assertEqual("update", updated["results"][0]["action"])
@@ -62,7 +62,7 @@ class DistributionTest(unittest.TestCase):
     def test_installer_refuses_unmanaged_destination(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             project = Path(directory)
-            destination = project / ".agents" / "skills" / "doccanon"
+            destination = project / ".agents" / "skills" / "docagent"
             destination.mkdir(parents=True)
             (destination / "SKILL.md").write_text("user owned\n", encoding="utf-8")
             result = run(
@@ -84,9 +84,9 @@ class DistributionTest(unittest.TestCase):
             )
             paths = [item["path"] for item in payload["results"]]
             self.assertEqual(len(paths), len(set(paths)))
-            self.assertTrue((project / ".cursor" / "rules" / "doccanon.mdc").is_file())
-            self.assertTrue((project / ".cline" / "skills" / "doccanon" / "SKILL.md").is_file())
-            self.assertTrue((project / ".github" / "skills" / "doccanon" / "SKILL.md").is_file())
+            self.assertTrue((project / ".cursor" / "rules" / "docagent.mdc").is_file())
+            self.assertTrue((project / ".cline" / "skills" / "docagent" / "SKILL.md").is_file())
+            self.assertTrue((project / ".github" / "skills" / "docagent" / "SKILL.md").is_file())
 
     def test_demo_exposes_stale_gate(self) -> None:
         output = run("python3", str(DEMO)).stdout
@@ -96,7 +96,7 @@ class DistributionTest(unittest.TestCase):
 
     def test_skill_and_plugin_versions_match(self) -> None:
         plugin = json.loads((ROOT / ".codex-plugin" / "plugin.json").read_text(encoding="utf-8"))
-        skill = (ROOT / "skills" / "doccanon" / "SKILL.md").read_text(encoding="utf-8")
+        skill = (ROOT / "skills" / "docagent" / "SKILL.md").read_text(encoding="utf-8")
         match = re.search(r'(?m)^\s+version:\s*"?([^"\n]+?)"?\s*$', skill)
         self.assertIsNotNone(match)
         self.assertEqual(plugin["version"], match.group(1).strip())
@@ -106,7 +106,7 @@ class DistributionTest(unittest.TestCase):
             project = Path(directory)
             run("git", "init", "-q", str(project))
             run("git", "-C", str(project), "config", "user.email", "test@example.com")
-            run("git", "-C", str(project), "config", "user.name", "DocCanon Test")
+            run("git", "-C", str(project), "config", "user.name", "DocAgent Test")
             (project / ".codex-plugin").mkdir()
             (project / ".codex-plugin" / "plugin.json").write_text('{"version": "0.1.0"}\n', encoding="utf-8")
             run("git", "-C", str(project), "add", ".")
@@ -128,13 +128,13 @@ class DistributionTest(unittest.TestCase):
     def test_gh_managed_copy_reports_github_metadata(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            skill = root / "gh-skill" / "doccanon"
-            shutil.copytree(ROOT / "skills" / "doccanon", skill)
+            skill = root / "gh-skill" / "docagent"
+            shutil.copytree(ROOT / "skills" / "docagent", skill)
             skill_md = skill / "SKILL.md"
             text = skill_md.read_text(encoding="utf-8")
             text = text.replace(
                 "metadata:",
-                "metadata:\n    github-repo: https://github.com/Heluhan/Doccanon\n"
+                "metadata:\n    github-repo: https://github.com/xiangruiSun/Doccanon_Agent\n"
                 "    github-ref: refs/tags/v0.14.2",
                 1,
             )
@@ -143,7 +143,7 @@ class DistributionTest(unittest.TestCase):
             target.mkdir()
             payload = json.loads(
                 run(
-                    "python3", str(skill / "scripts" / "doccanon.py"), "--project", str(target),
+                    "python3", str(skill / "scripts" / "docagent.py"), "--project", str(target),
                     "upgrade", "status", "--json", check=False,
                 ).stdout
             )
@@ -158,9 +158,9 @@ class DistributionTest(unittest.TestCase):
             root = Path(directory)
             source = root / "source"
             (source / "scripts" / "__pycache__").mkdir(parents=True)
-            (source / "SKILL.md").write_text("---\nname: doccanon\n---\n", encoding="utf-8")
+            (source / "SKILL.md").write_text("---\nname: docagent\n---\n", encoding="utf-8")
             (source / "scripts" / "__pycache__" / "stale.pyc").write_bytes(b"stale")
-            spec = importlib.util.spec_from_file_location("doccanon_install", INSTALLER)
+            spec = importlib.util.spec_from_file_location("docagent_install", INSTALLER)
             module = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(module)
             module.SOURCE = source
@@ -189,7 +189,7 @@ class DistributionTest(unittest.TestCase):
             self.assertEqual(0, fresh.returncode)
             self.assertEqual("up-to-date", json.loads(fresh.stdout)["results"][0]["status"])
 
-            marker = project / ".agents" / "skills" / "doccanon" / ".doccanon-install.json"
+            marker = project / ".agents" / "skills" / "docagent" / ".docagent-install.json"
             payload = json.loads(marker.read_text(encoding="utf-8"))
             payload["version"] = "0.0.1"
             marker.write_text(json.dumps(payload), encoding="utf-8")
@@ -213,7 +213,7 @@ class DistributionTest(unittest.TestCase):
                 "python3", str(INSTALLER), "--agent", "universal", "--scope", "project",
                 "--project", str(project), "--home", str(home), "--json",
             )
-            installed_helper = project / ".agents" / "skills" / "doccanon" / "scripts" / "doccanon.py"
+            installed_helper = project / ".agents" / "skills" / "docagent" / "scripts" / "docagent.py"
             installed = json.loads(
                 run(
                     "python3", str(installed_helper), "--project", str(target),
@@ -227,10 +227,10 @@ class DistributionTest(unittest.TestCase):
             )
 
             link = root / "linked-skill"
-            link.symlink_to(ROOT / "skills" / "doccanon", target_is_directory=True)
+            link.symlink_to(ROOT / "skills" / "docagent", target_is_directory=True)
             linked = json.loads(
                 run(
-                    "python3", str(link / "scripts" / "doccanon.py"), "--project", str(target),
+                    "python3", str(link / "scripts" / "docagent.py"), "--project", str(target),
                     "upgrade", "status", "--json", check=False,
                 ).stdout
             )
@@ -241,7 +241,7 @@ class DistributionTest(unittest.TestCase):
             project = Path(directory)
             run("git", "init", "-q", str(project))
             run("git", "-C", str(project), "config", "user.email", "test@example.com")
-            run("git", "-C", str(project), "config", "user.name", "DocCanon Test")
+            run("git", "-C", str(project), "config", "user.name", "DocAgent Test")
             (project / "src").mkdir()
             (project / "src" / "app.py").write_text("print('ok')\n", encoding="utf-8")
             run("git", "-C", str(project), "add", ".")

@@ -1,11 +1,11 @@
 ---
-doccanon_authority: current-state
-doccanon_verified_at: unverified
-doccanon_covers:
+docagent_authority: current-state
+docagent_verified_at: unverified
+docagent_covers:
   - "replace/with/real/code/**"
-doccanon_domains:
+docagent_domains:
   - "features"
-doccanon_feature: replace-with-feature-id
+docagent_feature: replace-with-feature-id
 ---
 
 # Feature name

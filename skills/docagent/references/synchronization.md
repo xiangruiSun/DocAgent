@@ -1,13 +1,13 @@
 # End-to-end synchronization
 
-Use this protocol for every substantive task in a governed project. The user describes the development outcome; the Agent owns all DocCanon operations.
+Use this protocol for every substantive task in a governed project. The user describes the development outcome; the Agent owns all DocAgent operations.
 
 ## Impact plan
 
 After implementing and verifying code, run `sync plan --json`. Treat its output as a mandatory review queue:
 
 - `affected_features` maps changed implementation files to existing feature contracts.
-- `affected_current_state_owners` maps them to product, interaction, architecture, feature, or operations owners through `doccanon_covers`.
+- `affected_current_state_owners` maps them to product, interaction, architecture, feature, or operations owners through `docagent_covers`.
 - `unmapped_implementation_files` contains every changed implementation file claimed by neither a feature nor a current-state owner.
 - `review_domains` contains every governed domain that must receive an affected or excluded decision.
 

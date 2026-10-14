@@ -1,6 +1,6 @@
-# Upgrading an existing DocCanon project
+# Upgrading an existing DocAgent project
 
-DocCanon evolves with the skill, while projects keep the state written by older versions. An upgrade is a review pass over that legacy state: deterministic detection, idempotent mechanical cleanup, and explicit semantic decisions. It is not a fresh migration and never a silent rewrite.
+DocAgent evolves with the skill, while projects keep the state written by older versions. An upgrade is a review pass over that legacy state: deterministic detection, idempotent mechanical cleanup, and explicit semantic decisions. It is not a fresh migration and never a silent rewrite.
 
 ## Skill updates are host-level
 
@@ -15,13 +15,13 @@ Only after the skill is current, run the project-side reconciliation below. `upg
 
 ## Version anchor
 
-`.doccanon.yml` records `doccanon_version`: the skill version the project has been reconciled with. A missing value means the project predates the upgrade mechanism (legacy). Only a completed reconciliation pass stamps the version; ordinary task work never moves it.
+`.docagent.yml` records `docagent_version`: the skill version the project has been reconciled with. A missing value means the project predates the upgrade mechanism (legacy). Only a completed reconciliation pass stamps the version; ordinary task work never moves it.
 
 ## Detect and apply
 
 ```bash
-doccanon upgrade status --json   # read-only checklist
-doccanon upgrade apply --json    # mechanical cleanup, stamp only when clear
+docagent upgrade status --json   # read-only checklist
+docagent upgrade apply --json    # mechanical cleanup, stamp only when clear
 ```
 
 - `config-cleanup` (mechanical): removes fields retired by newer versions.
@@ -56,7 +56,7 @@ Never resolve a semantic step by disabling a check, deleting history, or editing
 | Artifact | Detection | Resolution |
 |---|---|---|
 | Unknown authority values (`proposal`, `decision`, ...) | `invalid-authority` warning | Classify into the declared vocabulary. Accepted decisions use `append-only`; future work uses `plan`; current behavior uses `current-state` with code coverage. |
-| Unclassified decision records | `unclassified-decision-record` warning | Accepted ADRs declare `doccanon_authority: append-only`. |
+| Unclassified decision records | `unclassified-decision-record` warning | Accepted ADRs declare `docagent_authority: append-only`. |
 
 ## Provenance legacy
 

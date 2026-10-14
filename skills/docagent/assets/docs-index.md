@@ -1,5 +1,5 @@
 ---
-doccanon_authority: generated
+docagent_authority: generated
 ---
 
 # Project Documentation
