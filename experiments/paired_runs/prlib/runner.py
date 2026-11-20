@@ -9,7 +9,7 @@ import time
 from pathlib import Path
 
 from . import checker
-from .util import BenchError, Ledger, ResourceSampler, excerpt, expand_command, extract_tar, hash_obj, init_snapshot_repo, kill_tree, now_iso, read_json, read_jsonl, run, sha256_bytes, sha256_file, workspace_diff, write_atomic, write_json
+from .util import BenchError, Ledger, ResourceSampler, excerpt, expand_command, extract_tar, hash_obj, init_snapshot_repo, kill_tree, now_iso, read_json, read_jsonl, remove_tree, run, sha256_bytes, sha256_file, workspace_diff, write_atomic, write_json
 
 ARMS = ("source_only", "static_stale", "selective_stale")
 TERMINAL = {"completed_patch", "completed_empty", "budget_exhausted", "action_limit", "infra_error"}
@@ -106,7 +106,7 @@ def run_attempt(manifest: dict, manifest_hash: str, issue: dict, arm: str, backe
     issue_dir = prepared / issue["instance_id"]
     workspace = work_root / attempt_id / "ws"
     if workspace.parent.exists():
-        shutil.rmtree(workspace.parent)
+        remove_tree(workspace.parent)
     extract_tar(Path(issue["snapshot_t"]), workspace)
     base_tree = tree_hash(workspace)
     init_snapshot_repo(workspace, "pre-fix snapshot")
@@ -202,7 +202,7 @@ def run_attempt(manifest: dict, manifest_hash: str, issue: dict, arm: str, backe
             init_snapshot_repo(clean, "pre-fix snapshot")
             applied = run(["git", "-c", "core.autocrlf=false", "apply", "--check", str(attempt_dir / "patch.diff")], cwd=clean)
             apply_check = {"ok": applied.returncode == 0, "detail": applied.stderr.strip()[:300] or "applies cleanly to a fresh pre-fix snapshot"}
-            shutil.rmtree(clean, ignore_errors=True)
+            remove_tree(clean)
 
     implementer = roles["implementer"]
     planner = roles["planner"]
@@ -241,5 +241,5 @@ def run_attempt(manifest: dict, manifest_hash: str, issue: dict, arm: str, backe
     write_json(attempt_dir / "summary.json", summary)
     state.update(status=status, finished_at=summary["finished_at"])
     write_json(attempt_dir / "state.json", state)
-    shutil.rmtree(work_root / attempt_id, ignore_errors=True)
+    remove_tree(work_root / attempt_id)
     return summary

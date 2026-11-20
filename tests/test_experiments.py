@@ -255,6 +255,7 @@ class EndToEndSmokeTest(unittest.TestCase):
             summaries = [util.read_json(p) for p in sorted((keep / "runs").glob("*/*/*/summary.json"))]
             self.assertEqual(len(summaries), 3)
             self.assertEqual(len({s["attempt_id"] for s in summaries}), 3)
+            self.assertEqual(list((keep / "work").glob("*")), [], "solver workspaces must be deleted after each attempt")
             self.assertTrue(all(s["is_live"] is False and s["status"] in runner.TERMINAL for s in summaries))
             self.assertTrue(all(s["patch"]["local_apply_check"]["ok"] for s in summaries))
             source = next(s for s in summaries if s["arm"] == "source_only")

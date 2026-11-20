@@ -23,6 +23,7 @@ import importlib.util
 import json
 import os
 import shutil
+import stat
 import subprocess
 import sys
 import tempfile
@@ -97,6 +98,20 @@ def sh(argv: list[str], cwd: Path | None = None, timeout: float | None = None, c
 
 def git(root: Path, *args: str, check: bool = True) -> str:
     return sh(["git", "-c", "core.autocrlf=false", *args], cwd=root, check=check).stdout.strip()
+
+
+def remove_tree(path: Path) -> None:
+    """Delete a directory even when Git left read-only files in it (Windows)."""
+
+    def force(function, target, _error):
+        os.chmod(target, stat.S_IWRITE)
+        function(target)
+
+    if Path(path).exists():
+        try:
+            shutil.rmtree(path, **({"onexc": force} if sys.version_info >= (3, 12) else {"onerror": force}))
+        except OSError:
+            pass
 
 
 def expand(argv: list[str]) -> list[str]:
@@ -416,7 +431,7 @@ def run_arm(case: dict, expected: dict, arm: str, order: int, backend: dict, rep
                 oracle["verdict"] = "budget_exhausted"
         ledger.event("oracle_outcome", role="oracle", stage="grade", action=oracle["kind"], evidence=oracle.get("detail"), check_status=oracle["verdict"])
     finally:
-        shutil.rmtree(work, ignore_errors=True)
+        remove_tree(work)
     totals = ledger.close(status=result.get("status"))
     summary = {
         "attempt_id": attempt_id, "case_id": case["case_id"], "arm": arm, "order": order, "finished_at": now(), "status": result.get("status"), "exit_reason": result.get("exit_reason"),
@@ -620,7 +635,7 @@ def cmd_smoke(args) -> int:
         print(f"smoke: {len(checks) - len(bad)}/{len(checks)} checks passed")
         return 1 if bad else 0
     finally:
-        shutil.rmtree(base, ignore_errors=True)
+        remove_tree(base)
 
 
 def main(argv: list[str] | None = None) -> int:

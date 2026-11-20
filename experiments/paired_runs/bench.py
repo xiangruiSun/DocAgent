@@ -26,7 +26,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from prlib import dataset, grading, prepare as prep, report as reporting, runner  # noqa: E402
-from prlib.util import EXPERIMENTS_DIR, BenchError, expand_command, git, host_info, now_iso, read_json, run as run_command, write_json  # noqa: E402
+from prlib.util import EXPERIMENTS_DIR, BenchError, expand_command, git, host_info, now_iso, read_json, remove_tree, run as run_command, write_json  # noqa: E402
 
 WILDCARD = set("*?[]{},; \t\n")
 
@@ -292,7 +292,7 @@ def cmd_smoke(args: argparse.Namespace) -> int:
         return 1 if failed else 0
     finally:
         if not args.keep:
-            shutil.rmtree(base, ignore_errors=True)
+            remove_tree(base)
 
 
 def main(argv: list[str] | None = None) -> int:

@@ -17,7 +17,7 @@ import shutil
 import sys
 from pathlib import Path
 
-from .util import HELPER, BenchError, git, sha256_bytes, sha256_file
+from .util import HELPER, BenchError, git, remove_tree, sha256_bytes, sha256_file
 
 BUILDER_VERSION = "memory-builder-1"
 EXCLUDED_PARTS = {"tests", "test", "testing", "doc", "docs", "examples", "example", "bench", "benchmarks", "scripts", "extra", "changelog", ".github", "build", "dist", "release", "bin"}
@@ -178,7 +178,7 @@ def build_routing_repo(root: Path, tree_s: Path, tree_t: Path, documents: list[d
     """Routing repository for the released helper: commit 1 source at s, commit 2 memory, commit 3 source at t."""
     helper = load_helper()
     if root.exists():
-        shutil.rmtree(root, ignore_errors=True)
+        remove_tree(root)
     root.mkdir(parents=True)
     root = root.resolve()  # the helper expects a resolved project root, as its own CLI passes
     git(root, "init", "-q", "-b", "main")

@@ -9,6 +9,7 @@ import os
 import platform
 import shutil
 import signal
+import stat
 import subprocess
 import sys
 import tarfile
@@ -110,6 +111,20 @@ def kill_tree(process: subprocess.Popen) -> None:
             os.killpg(os.getpgid(process.pid), signal.SIGKILL)
     except (OSError, ProcessLookupError):
         pass
+
+
+def remove_tree(path: Path) -> None:
+    """Delete a directory even when Git left read-only files in it (Windows)."""
+
+    def force(function, target, _error):
+        os.chmod(target, stat.S_IWRITE)
+        function(target)
+
+    if Path(path).exists():
+        try:
+            shutil.rmtree(path, **({"onexc": force} if sys.version_info >= (3, 12) else {"onerror": force}))
+        except OSError:
+            pass
 
 
 def extract_tar(tar_path: Path, target: Path) -> None:
