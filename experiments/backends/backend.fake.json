@@ -1,0 +1,5 @@
+{
+  "name": "fake",
+  "command": ["{python}", "{experiments}/backends/fake_agent.py"],
+  "settings": {}
+}

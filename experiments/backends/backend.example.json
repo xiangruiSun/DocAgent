@@ -1,0 +1,17 @@
+{
+  "name": "ollama-qwen3-14b-toolloop",
+  "command": ["{python}", "{experiments}/backends/toolloop_agent.py"],
+  "settings": {
+    "api_style": "ollama",
+    "base_url": "http://127.0.0.1:11434",
+    "model": "qwen3:14b",
+    "api_key_env": null,
+    "temperature": 0,
+    "seed": 20261119,
+    "num_ctx": 16384,
+    "think": false,
+    "location": "local",
+    "quantization": null
+  },
+  "_comment": "Redacted example. For a hosted endpoint set api_style to openai, base_url to the provider's /v1 URL, and api_key_env to the NAME of the environment variable that holds the key. Never put a key in this file."
+}

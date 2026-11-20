@@ -1,0 +1,4 @@
+{
+  "_comment": "Evaluator-only. Never copied into an agent workspace.",
+  "C00": {"label_at_t": "contradicted", "expected_fix": "Retry(total=3, allowed_methods=['GET', 'HEAD'])"}
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "_comment": "Schema example with ONE constructed case. It is a synthetic fixture and never a reportable observation. The four real cases go in cases.json; evaluator-only answers go in cases.evaluator.json next to it.",
+  "cases": [
+    {
+      "case_id": "C00",
+      "category": "interface_drift",
+      "project_url": "fixture://experiments/case_studies/fixtures/retry_fixture.py",
+      "repo": {"kind": "fixture", "script": "fixtures/retry_fixture.py"},
+      "s": "19b40076634924017d90bc8f2e1094c4259a3d5b",
+      "t": "41b4f833a2a59f76a1c7868bd1a3ea94acf19c54",
+      "paths": {"s": ["httpkit/retry.py"], "t": ["httpkit/retry.py"]},
+      "symbols": {"s": ["Retry.__init__"], "t": ["Retry.__init__"]},
+      "claim": {
+        "claim_id": "retry.keyword",
+        "statement": "To limit which HTTP methods are retried, pass `method_whitelist` to `Retry` in `httpkit/retry.py`.",
+        "covered_path": "httpkit/retry.py",
+        "predicate": {"type": "signature_has_param", "qualname": "Retry.__init__", "param": "method_whitelist"}
+      },
+      "change_origin": "injected_fixture",
+      "note_origin": "researcher_authored",
+      "task": {"kind": "patch", "prompt": "Change `make_default_retry` in `httpkit/client.py` so that the default policy only retries GET and HEAD requests."},
+      "oracle": {"command": ["{python}", "-c", "from httpkit.client import make_default_retry; r = make_default_retry(); assert sorted(r.methods) == ['GET', 'HEAD'], r.methods"], "expect_exit_code": 0, "timeout_s": 60},
+      "human_review": {"status": "not applicable", "note": "constructed schema example"}
+    }
+  ]
+}
