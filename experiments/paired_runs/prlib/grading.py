@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import shutil
+import subprocess
 import tempfile
 import time
 from pathlib import Path
@@ -86,9 +87,11 @@ def fetch_results(request_id: str, results_root: Path, remote: str = "origin", w
         listing = run(["git", "ls-tree", "-r", "--name-only", ref, prefix], cwd=REPO_ROOT).stdout.splitlines()
         if prefix + "done.json" in listing:
             target = results_root / request_id
-            for name in listing:
-                data = run(["git", "show", f"{ref}:{name}"], cwd=REPO_ROOT, check=True).stdout
-                write_atomic(target / name[len(prefix):], data)
+            # cat-file, not show: `git show ref:path` first stats that string as a file name and fails on long paths.
+            # Everything is read before anything is written, and done.json is written last, so a partial copy is never mistaken for a finished one.
+            files = {name: subprocess.run(["git", "cat-file", "blob", f"{ref}:{name}"], cwd=REPO_ROOT, stdout=subprocess.PIPE, check=True).stdout for name in listing}
+            for name in sorted(files, key=lambda item: item.endswith("/done.json")):
+                write_atomic(target / name[len(prefix):], files[name])
             return target
         if time.monotonic() >= deadline:
             return None
@@ -106,14 +109,23 @@ def read_outcome(results_dir: Path, name: str) -> dict:
         return {**outcome, "grading_status": "not_graded_empty_patch", "resolved": False, "apply_status": "not_run"}
     if outcome.get("error") or not report:
         return {**outcome, "grading_status": "infra_error", "resolved": None, "apply_status": "unknown"}
-    applied = bool(report.get("patch_successfully_applied")) or outcome.get("skip_patch")
+    # The harness sets patch_successfully_applied only when it could parse test results, so a patch that
+    # applies but breaks the test run shows False there. The apply step itself is read from the run log.
+    log = " ".join(outcome.get("apply_lines") or [])
+    applied = bool(report.get("patch_successfully_applied")) or bool(outcome.get("skip_patch")) or (">>>>> Applied Patch" in log and "Patch Apply Failed" not in log)
+    note = None
     if report.get("infra_failure"):
         status = "infra_error"
     elif not applied:
         status = "patch_apply_failed"
+    elif report.get("resolved"):
+        status = "resolved"
     else:
-        status = "resolved" if report.get("resolved") else "unresolved"
-    return {**outcome, "grading_status": status, "resolved": report.get("resolved") if status in {"resolved", "unresolved"} else (False if status == "patch_apply_failed" else None), "apply_status": "applied" if applied else "failed"}
+        status = "unresolved"
+        if not report.get("tests_status"):
+            note = "patch applied, but the test run produced no parseable results (the patched code could not be imported or collected); the harness reports resolved=false"
+    resolved = report.get("resolved") if status in {"resolved", "unresolved"} else (False if status == "patch_apply_failed" else None)
+    return {**outcome, "grading_status": status, "resolved": resolved, "apply_status": "applied" if applied else "failed", "grade_note": note}
 
 
 def control_verdict(results_dir: Path) -> dict:

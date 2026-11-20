@@ -77,7 +77,7 @@ def build(manifest: dict, manifest_hash: str, prepared: Path, runs_dir: Path, re
             if summary["patch"]["generation_status"] == "empty":
                 outcome, reason = "unresolved", "empty prediction: observed solver failure, not gradeable"
             elif official["grading_status"] in {"resolved", "unresolved"}:
-                outcome, reason = official["grading_status"], "official harness report"
+                outcome, reason = official["grading_status"], official.get("grade_note") or "official harness report"
             elif official["grading_status"] == "patch_apply_failed":
                 outcome, reason = "unresolved", "official harness could not apply the patch"
             else:

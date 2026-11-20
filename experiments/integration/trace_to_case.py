@@ -57,8 +57,12 @@ def official_outcome(results: Path | None, attempt_id: str) -> dict:
                 report = outcome.get("report") or {}
                 if outcome.get("skipped_empty"):
                     return {"kind": "patch", "verdict": "fail", "detail": "empty prediction; the official harness does not run tests for it", "official": True}
-                if report.get("patch_successfully_applied"):
-                    return {"kind": "patch", "verdict": "pass" if report.get("resolved") else "fail", "detail": f"official SWE-bench harness report, request {done.parent.name}: resolved={report.get('resolved')}", "official": True}
+                applied = bool(report.get("patch_successfully_applied")) or ">>>>> Applied Patch" in " ".join(outcome.get("apply_lines") or [])
+                if applied and report:
+                    detail = f"official SWE-bench harness report, request {done.parent.name}: resolved={report.get('resolved')}"
+                    if not report.get("tests_status"):
+                        detail += "; the patch applied but the test run produced no parseable results"
+                    return {"kind": "patch", "verdict": "pass" if report.get("resolved") else "fail", "detail": detail, "official": True}
                 return {"kind": "patch", "verdict": "fail" if report else "ungraded", "detail": f"official harness: {outcome.get('error') or 'patch did not apply'}", "official": True}
     return {"kind": "patch", "verdict": "ungraded", "detail": "no official grade imported", "official": False}
 

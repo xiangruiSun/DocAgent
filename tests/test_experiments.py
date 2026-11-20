@@ -243,6 +243,11 @@ class LedgerAndGradingTest(unittest.TestCase):
             put("attempt", {"patch_successfully_applied": False, "resolved": False})
             self.assertEqual(grading.read_outcome(results, "attempt")["grading_status"], "patch_apply_failed")
             self.assertEqual(grading.read_outcome(results, "never_sent")["grading_status"], "pending")
+            # a patch that applies but breaks the test run: the harness flag is False, the run log says it applied
+            put("broken", {"patch_successfully_applied": False, "resolved": False}, apply_lines=["INFO - >>>>> Applied Patch:", "INFO - Test runtime: 2.80 seconds"])
+            broken = grading.read_outcome(results, "broken")
+            self.assertEqual((broken["apply_status"], broken["grading_status"], broken["resolved"]), ("applied", "unresolved", False))
+            self.assertIn("no parseable results", broken["grade_note"])
 
 
 class EndToEndSmokeTest(unittest.TestCase):
