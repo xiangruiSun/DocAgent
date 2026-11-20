@@ -1,0 +1,68 @@
+{
+  "actions": 4,
+  "arm": "blind",
+  "attempt_id": "pytest-dev__pytest-11143__static_stale__seed20261119__a01",
+  "backend": {
+    "agent": "toolloop-1",
+    "api_style": "ollama",
+    "base_url": "http://127.0.0.1:11434",
+    "location": "local",
+    "model": "qwen3:14b",
+    "name": "ollama-qwen3-14b-toolloop",
+    "parameter_size": "14.8B",
+    "quantization": "Q4_K_M",
+    "version": "ollama 0.40.16"
+  },
+  "benchmark_arm": "static_stale",
+  "capabilities": {
+    "can_capture_diff": true,
+    "can_count_actions": true,
+    "can_limit_time": true,
+    "can_reset_session": true,
+    "observable_reads": true,
+    "usage_source": "provider_reported"
+  },
+  "case_id": "PILOT-pytest-dev-pytest-11143",
+  "check": null,
+  "exit_reason": "finished",
+  "final_answer": "Fixed the issue by modifying the 'is_rewrite_disabled' function to handle non-string docstring inputs.",
+  "first_inspected_path": "src/_pytest/assertion/rewrite.py",
+  "is_live": true,
+  "ledger": {
+    "events_total": 8,
+    "events_truncated": 0,
+    "truncated": false
+  },
+  "limits": {
+    "max_actions": 12,
+    "time_s": 360
+  },
+  "oracle": {
+    "detail": "official SWE-bench harness report, request pytest-dev__pytest-11143-attempts-03b3c25d-20261120t003216: resolved=False; the patch applied but the test run produced no parseable results",
+    "kind": "patch",
+    "official": true,
+    "verdict": "fail"
+  },
+  "order": 1,
+  "packet_final_sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e",
+  "packet_initial_sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e",
+  "patch_bytes": 551,
+  "resources": {
+    "host_min_available_mb": 11192,
+    "host_peak_used_mb": 21294,
+    "process_peak_mb": null,
+    "process_peak_note": "unavailable: no per-process sampler in the standard library",
+    "remote_memory": null,
+    "vram_peak_used_mb": 15854
+  },
+  "status": "completed_patch",
+  "timing": {
+    "wall_ms": 13353
+  },
+  "usage": {
+    "cache_read_tokens": null,
+    "input_tokens": 20756,
+    "output_tokens": 379,
+    "source": "provider_reported"
+  }
+}

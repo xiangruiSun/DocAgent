@@ -1,0 +1,20 @@
+{
+  "name": "pytest-dev__pytest-11143__static_stale__seed20261119__a01",
+  "run_id": "pytest-dev__pytest-11143__static_stale__seed20261119__a01",
+  "model_name_or_path": "ollama-qwen3-14b-toolloop__static_stale",
+  "arm": "static_stale",
+  "mode": "harness main(predictions_path=<attempt>.jsonl)",
+  "report": {
+    "patch_is_None": false,
+    "patch_exists": true,
+    "patch_successfully_applied": false,
+    "resolved": false,
+    "infra_failure": false
+  },
+  "has_test_output": true,
+  "apply_lines": [
+    "2026-11-20 00:33:36,784 - INFO - >>>>> Applied Patch:",
+    "2026-11-20 00:33:39,698 - INFO - Test runtime: 2.80 seconds"
+  ],
+  "elapsed_s": 18.7
+}

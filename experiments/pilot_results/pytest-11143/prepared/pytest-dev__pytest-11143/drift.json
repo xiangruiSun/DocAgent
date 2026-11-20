@@ -1,0 +1,86 @@
+[
+  {
+    "claim_id": "K00048",
+    "evidence": "line 630: def ExceptionInfo.getrepr(self, showlocals: bool=False, style: _TracebackStyle='long', abspath: bool=False, tbfilter: Union[bool, Callable[['ExceptionInfo[BaseException]'], Traceback]]=True, funcargs: bool=False, truncate_locals: bool=True, chain: bool=True)",
+    "exposed": false,
+    "mentioned_in_issue": false,
+    "old_text": "signature `_pytest._code.code.ExceptionInfo.getrepr(self, showlocals: bool=False, style: '_TracebackStyle'='long', abspath: bool=False, tbfilter: Union[bool, Callable[['ExceptionInfo[BaseException]'], Traceback]]=True, funcargs: bool=False, truncate_locals: bool=True, chain: bool=True)`",
+    "path": "src/_pytest/_code/code.py",
+    "repairable": true,
+    "routed": false,
+    "status": "contradicted",
+    "symbol": "_pytest._code.code.ExceptionInfo.getrepr"
+  },
+  {
+    "claim_id": "K00254",
+    "evidence": "line 944: def AssertionRewriter.visit_NamedExpr(self, name: ast.NamedExpr)",
+    "exposed": true,
+    "mentioned_in_issue": true,
+    "old_text": "signature `_pytest.assertion.rewrite.AssertionRewriter.visit_NamedExpr(self, name: namedExpr)`",
+    "path": "src/_pytest/assertion/rewrite.py",
+    "repairable": true,
+    "routed": true,
+    "status": "contradicted",
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.visit_NamedExpr"
+  },
+  {
+    "claim_id": "K00394",
+    "evidence": "line 688: def _get_multicapture(method: _CaptureMethod)",
+    "exposed": false,
+    "mentioned_in_issue": false,
+    "old_text": "signature `_pytest.capture._get_multicapture(method: '_CaptureMethod')`",
+    "path": "src/_pytest/capture.py",
+    "repairable": true,
+    "routed": false,
+    "status": "contradicted",
+    "symbol": "_pytest.capture._get_multicapture"
+  },
+  {
+    "claim_id": "K00395",
+    "evidence": "line 724: def CaptureManager.__init__(self, method: _CaptureMethod)",
+    "exposed": false,
+    "mentioned_in_issue": true,
+    "old_text": "signature `_pytest.capture.CaptureManager.__init__(self, method: '_CaptureMethod')`",
+    "path": "src/_pytest/capture.py",
+    "repairable": true,
+    "routed": false,
+    "status": "contradicted",
+    "symbol": "_pytest.capture.CaptureManager.__init__"
+  },
+  {
+    "claim_id": "K00432",
+    "evidence": "no definition of _format_args in the current file; new location unknown",
+    "exposed": false,
+    "mentioned_in_issue": false,
+    "old_text": "signature `_pytest.compat._format_args(func: Callable[..., Any])`",
+    "path": "src/_pytest/compat.py",
+    "repairable": false,
+    "routed": false,
+    "status": "contradicted",
+    "symbol": "_pytest.compat._format_args"
+  },
+  {
+    "claim_id": "K00468",
+    "evidence": "line 529: def PytestPluginManager._set_initial_conftests(self, args: Sequence[Union[str, Path]], pyargs: bool, noconftest: bool, rootpath: Path, confcutdir: Optional[Path], importmode: Union[ImportMode, str])",
+    "exposed": false,
+    "mentioned_in_issue": false,
+    "old_text": "signature `_pytest.config.PytestPluginManager._set_initial_conftests(self, namespace: argparse.Namespace, rootpath: Path, testpaths_ini: Sequence[str])`",
+    "path": "src/_pytest/config/__init__.py",
+    "repairable": true,
+    "routed": false,
+    "status": "contradicted",
+    "symbol": "_pytest.config.PytestPluginManager._set_initial_conftests"
+  },
+  {
+    "claim_id": "K01049",
+    "evidence": "no module-level assignment of TYPE_CHECKING in the current file",
+    "exposed": false,
+    "mentioned_in_issue": false,
+    "old_text": "default `_pytest.outcomes.TYPE_CHECKING = False`",
+    "path": "src/_pytest/outcomes.py",
+    "repairable": false,
+    "routed": false,
+    "status": "contradicted",
+    "symbol": "_pytest.outcomes.TYPE_CHECKING"
+  }
+]

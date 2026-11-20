@@ -1,0 +1,179 @@
+{
+  "entries": [
+    {
+      "claims_at_s": 1314,
+      "claims_not_supported_at_t": 144,
+      "contradicted": 133,
+      "contradicted_exposed": [
+        "K00787"
+      ],
+      "contradicted_mentioned": [
+        "K01005",
+        "K01007",
+        "K01012",
+        "K01014",
+        "K01015",
+        "K01016",
+        "K01017",
+        "K01018",
+        "K01019",
+        "K01021",
+        "K01022",
+        "K01034",
+        "K01042",
+        "K01043",
+        "K01049",
+        "K01053",
+        "K01057",
+        "K01059",
+        "K01060",
+        "K01061",
+        "K01063",
+        "K01067",
+        "K01077"
+      ],
+      "contradicted_mentioned_exposed": [],
+      "decision": "excluded from selection: issue-named claim changed but the router missed it (kept in this log as a router miss)",
+      "documents_at_s": 112,
+      "instance_id": "pytest-dev__pytest-7490",
+      "order": 0,
+      "router_miss": true,
+      "scope_files_changed_s_to_t": 41,
+      "skipped_ambiguous": 65,
+      "skipped_files": [],
+      "stale_documents_routed": 3
+    },
+    {
+      "claims_at_s": 3795,
+      "claims_not_supported_at_t": 29,
+      "contradicted": 29,
+      "contradicted_exposed": [
+        "K01666",
+        "K01667",
+        "K01668",
+        "K01676",
+        "K01693",
+        "K01694",
+        "K01695",
+        "K01712"
+      ],
+      "contradicted_mentioned": [
+        "K00619",
+        "K01003",
+        "K02647"
+      ],
+      "contradicted_mentioned_exposed": [],
+      "decision": "excluded from selection: issue-named claim changed but the router missed it (kept in this log as a router miss)",
+      "documents_at_s": 368,
+      "instance_id": "sphinx-doc__sphinx-7738",
+      "order": 1,
+      "router_miss": true,
+      "scope_files_changed_s_to_t": 59,
+      "skipped_ambiguous": 74,
+      "skipped_files": [],
+      "stale_documents_routed": 5
+    },
+    {
+      "claims_at_s": 11751,
+      "claims_not_supported_at_t": 22,
+      "contradicted": 22,
+      "contradicted_exposed": [],
+      "contradicted_mentioned": [],
+      "contradicted_mentioned_exposed": [],
+      "decision": "excluded: no issue-named claim changed between s and t",
+      "documents_at_s": 982,
+      "instance_id": "sympy__sympy-13471",
+      "order": 2,
+      "router_miss": false,
+      "scope_files_changed_s_to_t": 124,
+      "skipped_ambiguous": 122,
+      "skipped_files": [],
+      "stale_documents_routed": 5
+    },
+    {
+      "claims_at_s": 1399,
+      "claims_not_supported_at_t": 63,
+      "contradicted": 63,
+      "contradicted_exposed": [],
+      "contradicted_mentioned": [
+        "K00369",
+        "K01078",
+        "K01108",
+        "K01109",
+        "K01110"
+      ],
+      "contradicted_mentioned_exposed": [],
+      "decision": "excluded from selection: issue-named claim changed but the router missed it (kept in this log as a router miss)",
+      "documents_at_s": 127,
+      "instance_id": "pytest-dev__pytest-9359",
+      "order": 3,
+      "router_miss": true,
+      "scope_files_changed_s_to_t": 28,
+      "skipped_ambiguous": 71,
+      "skipped_files": [],
+      "stale_documents_routed": 1
+    },
+    {
+      "claims_at_s": 3907,
+      "claims_not_supported_at_t": 14,
+      "contradicted": 14,
+      "contradicted_exposed": [
+        "K01688"
+      ],
+      "contradicted_mentioned": [],
+      "contradicted_mentioned_exposed": [],
+      "decision": "excluded: no issue-named claim changed between s and t",
+      "documents_at_s": 374,
+      "instance_id": "sphinx-doc__sphinx-8435",
+      "order": 4,
+      "router_miss": false,
+      "scope_files_changed_s_to_t": 130,
+      "skipped_ambiguous": 79,
+      "skipped_files": [],
+      "stale_documents_routed": 4
+    },
+    {
+      "claims_at_s": 13287,
+      "claims_not_supported_at_t": 48,
+      "contradicted": 48,
+      "contradicted_exposed": [],
+      "contradicted_mentioned": [],
+      "contradicted_mentioned_exposed": [],
+      "decision": "excluded: no issue-named claim changed between s and t",
+      "documents_at_s": 1118,
+      "instance_id": "sympy__sympy-16988",
+      "order": 5,
+      "router_miss": false,
+      "scope_files_changed_s_to_t": 100,
+      "skipped_ambiguous": 142,
+      "skipped_files": [],
+      "stale_documents_routed": 3
+    },
+    {
+      "claims_at_s": 1535,
+      "claims_not_supported_at_t": 7,
+      "contradicted": 7,
+      "contradicted_exposed": [
+        "K00254"
+      ],
+      "contradicted_mentioned": [
+        "K00254",
+        "K00395"
+      ],
+      "contradicted_mentioned_exposed": [
+        "K00254"
+      ],
+      "decision": "selected as pilot: an issue-named claim changed between s and t and was routed",
+      "documents_at_s": 134,
+      "instance_id": "pytest-dev__pytest-11143",
+      "order": 6,
+      "router_miss": false,
+      "scope_files_changed_s_to_t": 33,
+      "skipped_ambiguous": 72,
+      "skipped_files": [],
+      "stale_documents_routed": 5
+    }
+  ],
+  "generated_at": "2026-11-20T00:22:02Z",
+  "selection_rule": "first candidates in round-robin order with a contradicted claim that the issue names and the released router exposed; outcomes of solvers are never consulted"
+}

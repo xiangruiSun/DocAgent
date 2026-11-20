@@ -1,0 +1,97 @@
+{
+  "cached_work": "routing and the stale packet are built once per issue and charged equally to static and selective",
+  "checker": {
+    "max_checks": 3,
+    "time_s": 45
+  },
+  "dataset": {
+    "name": "SWE-bench/SWE-bench_Lite",
+    "revision": "b0dde1093fe417d83b7184254edf8199c1f0dff5",
+    "split": "test"
+  },
+  "driver": {
+    "builder": "memory-builder-1",
+    "checker": "experimental-claim-checker-1",
+    "docagent_checkout_sha": "bf311583d1c19ead40ddb09b4f69ff8516459246",
+    "docagent_reference_sha": "cfd5224729c8b2eb7502e51934aa2a2a38501357",
+    "helper_sha256": "a612294a35f5fe75026863e1c6c0928b916d402089aaba48e044ec30f747dac2",
+    "worktree_dirty": false
+  },
+  "evaluator": {
+    "grader": "github_actions",
+    "remote": "origin",
+    "swebench_revision": "87ab1f6ced28f75ba73ca899dc759b019310944a",
+    "swebench_version": "5.0.1",
+    "timeout_s": 1800
+  },
+  "frozen_at": "2026-11-20T00:24:43Z",
+  "issues": [
+    {
+      "age_days": 30.6,
+      "arm_order": [
+        "static_stale",
+        "source_only",
+        "selective_stale"
+      ],
+      "environment_setup_commit": "10056865d2a4784934ce043908a0e78d0578f677",
+      "exposed_claims": 60,
+      "image": "swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-11143:latest",
+      "instance_id": "pytest-dev__pytest-11143",
+      "inventory_sha256": "8735dd44133ac8656f513d1761cd78bb9452642232d4654fb7387fd82066784f",
+      "issue_sha256": "d9ed54b67e037ab7dd1c4fbd64a530251f98d8eac2cbbd9e41956232e2d1a15c",
+      "packet_bytes": 7863,
+      "packet_sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e",
+      "prepared_at": "2026-11-20T00:24:43Z",
+      "repo": "pytest-dev/pytest",
+      "revision_rule": "nearest first-parent ancestor >= 30 days before t",
+      "routed_documents": [
+        "docs/memory/src/_pytest/assertion/rewrite.part02.md",
+        "docs/memory/src/_pytest/assertion/rewrite.part03.md",
+        "docs/memory/src/_pytest/assertion/rewrite.part01.md",
+        "docs/memory/src/_pytest/assertion/rewrite.part04.md",
+        "docs/memory/src/_pytest/runner.part02.md"
+      ],
+      "router": {
+        "helper_sha256": "a612294a35f5fe75026863e1c6c0928b916d402089aaba48e044ec30f747dac2",
+        "helper_version": "0.14.2",
+        "stale_documents_total": 90,
+        "status": "bootstrap-incomplete"
+      },
+      "row_sha256": "66104264966056f3d8a153afafe439ac15dc8ea943a0f8834051858a18ec3876",
+      "s": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+      "s_date": "2023-06-03T15:50:50Z",
+      "snapshot_s": "<repo>\\experiments\\.cache\\snapshots\\pytest-dev__pytest-11143\\s-b5ff089d2cc9.tar",
+      "snapshot_s_sha256": "1a0bad29a3fd0bcdd807bafc11abedd4fe6864c75ceffbaca8bbf59ef977ebfc",
+      "snapshot_t": "<repo>\\experiments\\.cache\\snapshots\\pytest-dev__pytest-11143\\t-6995257cf470.tar",
+      "snapshot_t_sha256": "0b4f27732a604c9270f95b4b89fe3d66062fc1824ae136d65a2200f6a817bce4",
+      "status": "pilot",
+      "t": "6995257cf470d2143ad1683824962de4071c0eb7",
+      "t_date": "2023-07-04T07:00:14Z",
+      "timing_ms": {
+        "build_memory": 483,
+        "prepare_total": 27835,
+        "route_and_check_freshness": 19250
+      },
+      "tree_t_sha256": "fd5f6a3d09419c6f0ff025d4c68d235b67a5ea154484f97a1d8d979f546a1c65",
+      "truncated_claims": 0
+    }
+  ],
+  "limits": {
+    "max_actions": 12,
+    "time_s": 360
+  },
+  "min_age_days": 30,
+  "packet": {
+    "doc_body_cap": 1500,
+    "max_bytes": 8000,
+    "max_docs": 5
+  },
+  "planner": {
+    "handoff_bytes": 600,
+    "max_actions": 2,
+    "time_s": 120
+  },
+  "schema_version": 1,
+  "seed": 20261119,
+  "token_accounting": "provider-reported tokens when the backend exposes them; context bound is a UTF-8 byte ceiling"
+}

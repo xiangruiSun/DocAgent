@@ -1,0 +1,199 @@
+{
+  "actions_used": 4,
+  "arm": "static_stale",
+  "attempt_id": "pytest-dev__pytest-11143__static_stale__seed20261119__a01",
+  "backend": {
+    "agent": "toolloop-1",
+    "api_style": "ollama",
+    "base_url": "http://127.0.0.1:11434",
+    "location": "local",
+    "model": "qwen3:14b",
+    "name": "ollama-qwen3-14b-toolloop",
+    "parameter_size": "14.8B",
+    "quantization": "Q4_K_M",
+    "version": "ollama 0.40.16"
+  },
+  "capabilities": {
+    "can_capture_diff": true,
+    "can_count_actions": true,
+    "can_limit_time": true,
+    "can_reset_session": true,
+    "observable_reads": true,
+    "usage_source": "provider_reported"
+  },
+  "checks": null,
+  "counters": {
+    "checks": 0,
+    "implementer_actions": 2,
+    "planner_actions": 2
+  },
+  "finished_at": "2026-11-20T00:28:32Z",
+  "generated_documents_in_workspace": 0,
+  "handoff": {
+    "byte_cap": 600,
+    "bytes": 514,
+    "truncated": false
+  },
+  "instance_id": "pytest-dev__pytest-11143",
+  "is_live": true,
+  "key": {
+    "arm": "static_stale",
+    "attempt": 1,
+    "instance_id": "pytest-dev__pytest-11143",
+    "manifest_hash": "03b3c25df19c735053c18431d06da2c8bc66937048ab80e26ab91fe2de27ee59",
+    "seed": 20261119,
+    "solver_config_hash": "9169e458b9face86b8dbd30ea062e73521e0e613e462a815aa4c2786cf7ab86d"
+  },
+  "limits": {
+    "max_actions": 12,
+    "time_s": 360
+  },
+  "packet": {
+    "exposed_claim_ids": [
+      "K00226",
+      "K00227",
+      "K00228",
+      "K00229",
+      "K00230",
+      "K00231",
+      "K00232",
+      "K00233",
+      "K00234",
+      "K00235",
+      "K00236",
+      "K00237",
+      "K00238",
+      "K00239",
+      "K00240",
+      "K00241",
+      "K00242",
+      "K00243",
+      "K00244",
+      "K00245",
+      "K00246",
+      "K00247",
+      "K00248",
+      "K00249",
+      "K00250",
+      "K00251",
+      "K00252",
+      "K00215",
+      "K00216",
+      "K00217",
+      "K00218",
+      "K00219",
+      "K00220",
+      "K00221",
+      "K00222",
+      "K00223",
+      "K00224",
+      "K00225",
+      "K00253",
+      "K00254",
+      "K00255",
+      "K00256",
+      "K00257",
+      "K00258",
+      "K00259",
+      "K00260",
+      "K00261",
+      "K00262",
+      "K00263",
+      "K00264",
+      "K01352",
+      "K01353",
+      "K01354",
+      "K01355",
+      "K01356",
+      "K01357",
+      "K01358",
+      "K01359",
+      "K01360",
+      "K01361"
+    ],
+    "final_bytes": 7863,
+    "final_sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e",
+    "initial_bytes": 7863,
+    "initial_sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e"
+  },
+  "patch": {
+    "bytes": 551,
+    "file": "patch.diff",
+    "generation_status": "patch",
+    "human_edited": false,
+    "local_apply_check": {
+      "detail": "applies cleanly to a fresh pre-fix snapshot",
+      "ok": true
+    },
+    "sha256": "b55cea3ad033bc1005dbf59c0d7d2c0c4972b3df0ca7791d3c27e5d601bc8f37"
+  },
+  "resources": {
+    "host_min_available_mb": 11192,
+    "host_peak_used_mb": 21294,
+    "process_peak_mb": null,
+    "process_peak_note": "unavailable: no per-process sampler in the standard library",
+    "remote_memory": null,
+    "vram_peak_used_mb": 15854
+  },
+  "roles": {
+    "implementer": {
+      "actions": 2,
+      "elapsed_ms": 3896,
+      "error": null,
+      "exit_code": 0,
+      "exit_reason": "finished",
+      "refused_after_limit": 0,
+      "status": "completed",
+      "usage": {
+        "cache_read_tokens": null,
+        "input_tokens": 4790,
+        "output_tokens": 178,
+        "source": "provider_reported"
+      },
+      "wall_ms": 4031
+    },
+    "planner": {
+      "actions": 2,
+      "elapsed_ms": 9099,
+      "error": null,
+      "exit_code": 0,
+      "exit_reason": "finished",
+      "refused_after_limit": 0,
+      "status": "completed",
+      "usage": {
+        "cache_read_tokens": null,
+        "input_tokens": 15966,
+        "output_tokens": 201,
+        "source": "provider_reported"
+      },
+      "wall_ms": 9251
+    }
+  },
+  "status": "completed_patch",
+  "timing": {
+    "over_deadline": false,
+    "solve_ms": 13353
+  },
+  "trace": {
+    "cap_bytes": 65536,
+    "counts": {
+      "claim_exposure": 1,
+      "handoff": 1,
+      "patch": 1,
+      "role_terminal": 2,
+      "tool_call": 4
+    },
+    "events_total": 9,
+    "events_truncated": 0,
+    "events_written": 9,
+    "ledger": "ledger.jsonl",
+    "truncated": false
+  },
+  "usage": {
+    "cache_read_tokens": null,
+    "input_tokens": 20756,
+    "output_tokens": 379,
+    "source": "provider_reported"
+  },
+  "workspace_tree_sha256": "fd5f6a3d09419c6f0ff025d4c68d235b67a5ea154484f97a1d8d979f546a1c65"
+}

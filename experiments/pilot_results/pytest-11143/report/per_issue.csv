@@ -1,0 +1,4 @@
+instance_id,issue_status,arm,attempt_id,live,terminal_state,generation,apply,grading,outcome,actions,checks,solve_s,input_tokens,output_tokens,host_peak_used_mb,vram_peak_mb,reads_to_relevant,handoff_overlap
+pytest-dev__pytest-11143,pilot,source_only,pytest-dev__pytest-11143__source_only__seed20261119__a01,True,completed_patch,patch,applied,resolved,resolved,8,0,8.4,34514,376,21508,15865,4,0.0
+pytest-dev__pytest-11143,pilot,static_stale,pytest-dev__pytest-11143__static_stale__seed20261119__a01,True,completed_patch,patch,applied,unresolved,unresolved,4,0,13.4,20756,379,21294,15854,1,
+pytest-dev__pytest-11143,pilot,selective_stale,pytest-dev__pytest-11143__selective_stale__seed20261119__a01,True,completed_patch,patch,applied,unresolved,unresolved,6,3,8.2,25099,326,21133,15934,1,

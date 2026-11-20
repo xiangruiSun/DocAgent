@@ -1,0 +1,50 @@
+{
+  "request_id": "pytest-dev__pytest-11143-controls-03b3c25d-20261120t002507",
+  "instance_id": "pytest-dev__pytest-11143",
+  "host": "runnervm0hi8g",
+  "os": "Linux-7.0.0-1020-azure-x86_64-with-glibc2.43",
+  "python": "3.11.18",
+  "cpu_logical": 4,
+  "memory_mb_start": {
+    "MemTotal": 15983,
+    "MemAvailable": 15031
+  },
+  "disk_free_gb_start": 86.5,
+  "docker": "29.4.2",
+  "runner": "GitHub Actions 1000000074",
+  "github_run": "44645806441",
+  "dataset_name": "SWE-bench/SWE-bench_Lite",
+  "split": "test",
+  "dataset_revision": "b0dde1093fe417d83b7184254edf8199c1f0dff5",
+  "swebench_revision_requested": "87ab1f6ced28f75ba73ca899dc759b019310944a",
+  "swebench_version": "5.0.1",
+  "swebench_install": [
+    "swebench @ git+https://github.com/SWE-bench/SWE-bench@87ab1f6ced28f75ba73ca899dc759b019310944a"
+  ],
+  "dataset_file": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Lite/resolve/b0dde1093fe417d83b7184254edf8199c1f0dff5/data/test-00000-of-00001.parquet",
+  "image": "swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-11143:latest",
+  "image_pull": "docker.io/swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-11143:latest",
+  "image_pull_s": 19.0,
+  "image_digest": "[\"swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-11143@sha256:e08ce142adec5ec985e867e910045734ec3c58fe174fc054c5f83855bed78fd4\"] sha256:e08ce142adec5ec985e867e910045734ec3c58fe174fc054c5f83855bed78fd4",
+  "items": {
+    "base_control": {
+      "run_id": "base-pytest-dev__pytest-11143-controls-03b3c25d-20261120t002507",
+      "elapsed_s": 27.3,
+      "error": null,
+      "resolved": false
+    },
+    "gold_control": {
+      "run_id": "gold-pytest-dev__pytest-11143-controls-03b3c25d-20261120t002507",
+      "elapsed_s": 24.6,
+      "error": null,
+      "resolved": true
+    }
+  },
+  "elapsed_s": 74.1,
+  "memory_mb_end": {
+    "MemTotal": 15983,
+    "MemAvailable": 14784
+  },
+  "disk_free_gb_end": 82.9,
+  "finished_at": "2026-11-20T00:27:43Z"
+}

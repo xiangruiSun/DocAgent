@@ -1,0 +1,902 @@
+[
+  {
+    "claim_id": "K00226",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 297,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "fp: IO[bytes], source_stat: os.stat_result, co: types.CodeType",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_write_pyc_fp",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._write_pyc_fp",
+    "text": "signature `_pytest.assertion.rewrite._write_pyc_fp(fp: IO[bytes], source_stat: os.stat_result, co: types.CodeType)`"
+  },
+  {
+    "claim_id": "K00227",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 315,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "state: 'AssertionState', co: types.CodeType, source_stat: os.stat_result, pyc: Path",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_write_pyc",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._write_pyc",
+    "text": "signature `_pytest.assertion.rewrite._write_pyc(state: 'AssertionState', co: types.CodeType, source_stat: os.stat_result, pyc: Path)`"
+  },
+  {
+    "claim_id": "K00228",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 340,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "fn: Path, config: Config",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_rewrite_test",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._rewrite_test",
+    "text": "signature `_pytest.assertion.rewrite._rewrite_test(fn: Path, config: Config)`"
+  },
+  {
+    "claim_id": "K00229",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 351,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "source: Path, pyc: Path, trace: Callable[[str], None]=lambda x: None",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_read_pyc",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._read_pyc",
+    "text": "signature `_pytest.assertion.rewrite._read_pyc(source: Path, pyc: Path, trace: Callable[[str], None]=lambda x: None)`"
+  },
+  {
+    "claim_id": "K00230",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 400,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "mod: ast.Module, source: bytes, module_path: Optional[str]=None, config: Optional[Config]=None",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "rewrite_asserts",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.rewrite_asserts",
+    "text": "signature `_pytest.assertion.rewrite.rewrite_asserts(mod: ast.Module, source: bytes, module_path: Optional[str]=None, config: Optional[Config]=None)`"
+  },
+  {
+    "claim_id": "K00231",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 410,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "obj: object",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_saferepr",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._saferepr",
+    "text": "signature `_pytest.assertion.rewrite._saferepr(obj: object)`"
+  },
+  {
+    "claim_id": "K00232",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 424,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "config: Optional[Config]",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_get_maxsize_for_saferepr",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._get_maxsize_for_saferepr",
+    "text": "signature `_pytest.assertion.rewrite._get_maxsize_for_saferepr(config: Optional[Config])`"
+  },
+  {
+    "claim_id": "K00233",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 434,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "obj: object",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_format_assertmsg",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._format_assertmsg",
+    "text": "signature `_pytest.assertion.rewrite._format_assertmsg(obj: object)`"
+  },
+  {
+    "claim_id": "K00234",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 456,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "obj: object",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_should_repr_global_name",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._should_repr_global_name",
+    "text": "signature `_pytest.assertion.rewrite._should_repr_global_name(obj: object)`"
+  },
+  {
+    "claim_id": "K00235",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 466,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "explanations: Iterable[str], is_or: bool",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_format_boolop",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._format_boolop",
+    "text": "signature `_pytest.assertion.rewrite._format_boolop(explanations: Iterable[str], is_or: bool)`"
+  },
+  {
+    "claim_id": "K00236",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 471,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "ops: Sequence[str], results: Sequence[bool], expls: Sequence[str], each_obj: Sequence[object]",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_call_reprcompare",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._call_reprcompare",
+    "text": "signature `_pytest.assertion.rewrite._call_reprcompare(ops: Sequence[str], results: Sequence[bool], expls: Sequence[str], each_obj: Sequence[object])`"
+  },
+  {
+    "claim_id": "K00237",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 491,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "lineno: int, orig: str, expl: str",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_call_assertion_pass",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._call_assertion_pass",
+    "text": "signature `_pytest.assertion.rewrite._call_assertion_pass(lineno: int, orig: str, expl: str)`"
+  },
+  {
+    "claim_id": "K00238",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 496,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_check_if_assertion_pass_impl",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._check_if_assertion_pass_impl",
+    "text": "signature `_pytest.assertion.rewrite._check_if_assertion_pass_impl()`"
+  },
+  {
+    "claim_id": "K00239",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 531,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "node: ast.AST",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "traverse_node",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.traverse_node",
+    "text": "signature `_pytest.assertion.rewrite.traverse_node(node: ast.AST)`"
+  },
+  {
+    "claim_id": "K00240",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 539,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "src: bytes",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "_get_assertion_exprs",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite._get_assertion_exprs",
+    "text": "signature `_pytest.assertion.rewrite._get_assertion_exprs(src: bytes)`"
+  },
+  {
+    "claim_id": "K00241",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 650,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, module_path: Optional[str], config: Optional[Config], source: bytes",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.__init__",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.__init__",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.__init__(self, module_path: Optional[str], config: Optional[Config], source: bytes)`"
+  },
+  {
+    "claim_id": "K00242",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 665,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, mod: ast.Module",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.run",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.run",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.run(self, mod: ast.Module)`"
+  },
+  {
+    "claim_id": "K00243",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 750,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "docstring: str",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.is_rewrite_disabled",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.is_rewrite_disabled",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.is_rewrite_disabled(docstring: str)`"
+  },
+  {
+    "claim_id": "K00244",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 753,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.variable",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.variable",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.variable(self)`"
+  },
+  {
+    "claim_id": "K00245",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 760,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, expr: ast.expr",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.assign",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.assign",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.assign(self, expr: ast.expr)`"
+  },
+  {
+    "claim_id": "K00246",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 766,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, expr: ast.expr",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.display",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.display",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.display(self, expr: ast.expr)`"
+  },
+  {
+    "claim_id": "K00247",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 770,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, name: str, *args: ast.expr",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.helper",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.helper",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.helper(self, name: str, *args: ast.expr)`"
+  },
+  {
+    "claim_id": "K00248",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 776,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, name: str",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.builtin",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.builtin",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.builtin(self, name: str)`"
+  },
+  {
+    "claim_id": "K00249",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 781,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, expr: ast.expr",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.explanation_param",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.explanation_param",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.explanation_param(self, expr: ast.expr)`"
+  },
+  {
+    "claim_id": "K00250",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 793,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.push_format_context",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.push_format_context",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.push_format_context(self)`"
+  },
+  {
+    "claim_id": "K00251",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 806,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, expl_expr: ast.expr",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.pop_format_context",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.pop_format_context",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.pop_format_context(self, expl_expr: ast.expr)`"
+  },
+  {
+    "claim_id": "K00252",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 826,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, node: ast.AST",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.generic_visit",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.generic_visit",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.generic_visit(self, node: ast.AST)`"
+  },
+  {
+    "claim_id": "K00215",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 64,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, config: Config",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewritingHook.__init__",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewritingHook.__init__",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewritingHook.__init__(self, config: Config)`"
+  },
+  {
+    "claim_id": "K00216",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 80,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, session: Optional[Session]",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewritingHook.set_session",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewritingHook.set_session",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewritingHook.set_session(self, session: Optional[Session])`"
+  },
+  {
+    "claim_id": "K00217",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 87,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, name: str, path: Optional[Sequence[Union[str, bytes]]]=None, target: Optional[types.ModuleType]=None",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewritingHook.find_spec",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewritingHook.find_spec",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewritingHook.find_spec(self, name: str, path: Optional[Sequence[Union[str, bytes]]]=None, target: Optional[types.ModuleType]=None)`"
+  },
+  {
+    "claim_id": "K00218",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 127,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, spec: importlib.machinery.ModuleSpec",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewritingHook.create_module",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewritingHook.create_module",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewritingHook.create_module(self, spec: importlib.machinery.ModuleSpec)`"
+  },
+  {
+    "claim_id": "K00219",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 132,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, module: types.ModuleType",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewritingHook.exec_module",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewritingHook.exec_module",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewritingHook.exec_module(self, module: types.ModuleType)`"
+  },
+  {
+    "claim_id": "K00220",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 174,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, name: str, state: 'AssertionState'",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewritingHook._early_rewrite_bailout",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewritingHook._early_rewrite_bailout",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewritingHook._early_rewrite_bailout(self, name: str, state: 'AssertionState')`"
+  },
+  {
+    "claim_id": "K00221",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 213,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, name: str, fn: str, state: 'AssertionState'",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewritingHook._should_rewrite",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewritingHook._should_rewrite",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewritingHook._should_rewrite(self, name: str, fn: str, state: 'AssertionState')`"
+  },
+  {
+    "claim_id": "K00222",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 234,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, name: str, state: 'AssertionState'",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewritingHook._is_marked_for_rewrite",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewritingHook._is_marked_for_rewrite",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewritingHook._is_marked_for_rewrite(self, name: str, state: 'AssertionState')`"
+  },
+  {
+    "claim_id": "K00223",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 247,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, *names: str",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewritingHook.mark_rewrite",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewritingHook.mark_rewrite",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewritingHook.mark_rewrite(self, *names: str)`"
+  },
+  {
+    "claim_id": "K00224",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 265,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, name: str",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewritingHook._warn_already_imported",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewritingHook._warn_already_imported",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewritingHook._warn_already_imported(self, name: str)`"
+  },
+  {
+    "claim_id": "K00225",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 275,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, pathname: Union[str, bytes]",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewritingHook.get_data",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewritingHook.get_data",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewritingHook.get_data(self, pathname: Union[str, bytes])`"
+  },
+  {
+    "claim_id": "K00253",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 832,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, assert_: ast.Assert",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.visit_Assert",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.visit_Assert",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.visit_Assert(self, assert_: ast.Assert)`"
+  },
+  {
+    "claim_id": "K00254",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 949,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, name: namedExpr",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.visit_NamedExpr",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.visit_NamedExpr",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.visit_NamedExpr(self, name: namedExpr)`"
+  },
+  {
+    "claim_id": "K00255",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 961,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, name: ast.Name",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.visit_Name",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.visit_Name",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.visit_Name(self, name: ast.Name)`"
+  },
+  {
+    "claim_id": "K00256",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 971,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, boolop: ast.BoolOp",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.visit_BoolOp",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.visit_BoolOp",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.visit_BoolOp(self, boolop: ast.BoolOp)`"
+  },
+  {
+    "claim_id": "K00257",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 1022,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, unary: ast.UnaryOp",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.visit_UnaryOp",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.visit_UnaryOp",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.visit_UnaryOp(self, unary: ast.UnaryOp)`"
+  },
+  {
+    "claim_id": "K00258",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 1028,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, binop: ast.BinOp",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.visit_BinOp",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.visit_BinOp",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.visit_BinOp(self, binop: ast.BinOp)`"
+  },
+  {
+    "claim_id": "K00259",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 1036,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, call: ast.Call",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.visit_Call",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.visit_Call",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.visit_Call(self, call: ast.Call)`"
+  },
+  {
+    "claim_id": "K00260",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 1069,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, starred: ast.Starred",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.visit_Starred",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.visit_Starred",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.visit_Starred(self, starred: ast.Starred)`"
+  },
+  {
+    "claim_id": "K00261",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 1075,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, attr: ast.Attribute",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.visit_Attribute",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.visit_Attribute",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.visit_Attribute(self, attr: ast.Attribute)`"
+  },
+  {
+    "claim_id": "K00262",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 1085,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, comp: ast.Compare",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.visit_Compare",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.AssertionRewriter.visit_Compare",
+    "text": "signature `_pytest.assertion.rewrite.AssertionRewriter.visit_Compare(self, comp: ast.Compare)`"
+  },
+  {
+    "claim_id": "K00263",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 1143,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "cache_dir: Path",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "try_makedirs",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.try_makedirs",
+    "text": "signature `_pytest.assertion.rewrite.try_makedirs(cache_dir: Path)`"
+  },
+  {
+    "claim_id": "K00264",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 1165,
+    "path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "file_path: Path",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "get_cache_dir",
+      "type": "signature"
+    },
+    "symbol": "_pytest.assertion.rewrite.get_cache_dir",
+    "text": "signature `_pytest.assertion.rewrite.get_cache_dir(file_path: Path)`"
+  },
+  {
+    "claim_id": "K01352",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 286,
+    "path": "src/_pytest/runner.py",
+    "predicate": {
+      "args": "self, result: Optional[TResult], excinfo: Optional[ExceptionInfo[BaseException]], start: float, stop: float, duration: float, when: \"Literal['collect', 'setup', 'call', 'teardown']\", *, _ispytest: bool=False",
+      "path": "src/_pytest/runner.py",
+      "qualname": "CallInfo.__init__",
+      "type": "signature"
+    },
+    "symbol": "_pytest.runner.CallInfo.__init__",
+    "text": "signature `_pytest.runner.CallInfo.__init__(self, result: Optional[TResult], excinfo: Optional[ExceptionInfo[BaseException]], start: float, stop: float, duration: float, when: \"Literal['collect', 'setup', 'call', 'teardown']\", *, _ispytest: bool=False)`"
+  },
+  {
+    "claim_id": "K01353",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 306,
+    "path": "src/_pytest/runner.py",
+    "predicate": {
+      "args": "self",
+      "path": "src/_pytest/runner.py",
+      "qualname": "CallInfo.result",
+      "type": "signature"
+    },
+    "symbol": "_pytest.runner.CallInfo.result",
+    "text": "signature `_pytest.runner.CallInfo.result(self)`"
+  },
+  {
+    "claim_id": "K01354",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 319,
+    "path": "src/_pytest/runner.py",
+    "predicate": {
+      "args": "cls, func: 'Callable[[], TResult]', when: \"Literal['collect', 'setup', 'call', 'teardown']\", reraise: Optional[Union[Type[BaseException], Tuple[Type[BaseException], ...]]]=None",
+      "path": "src/_pytest/runner.py",
+      "qualname": "CallInfo.from_call",
+      "type": "signature"
+    },
+    "symbol": "_pytest.runner.CallInfo.from_call",
+    "text": "signature `_pytest.runner.CallInfo.from_call(cls, func: 'Callable[[], TResult]', when: \"Literal['collect', 'setup', 'call', 'teardown']\", reraise: Optional[Union[Type[BaseException], Tuple[Type[BaseException], ...]]]=None)`"
+  },
+  {
+    "claim_id": "K01355",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 367,
+    "path": "src/_pytest/runner.py",
+    "predicate": {
+      "args": "item: Item, call: CallInfo[None]",
+      "path": "src/_pytest/runner.py",
+      "qualname": "pytest_runtest_makereport",
+      "type": "signature"
+    },
+    "symbol": "_pytest.runner.pytest_runtest_makereport",
+    "text": "signature `_pytest.runner.pytest_runtest_makereport(item: Item, call: CallInfo[None])`"
+  },
+  {
+    "claim_id": "K01356",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 371,
+    "path": "src/_pytest/runner.py",
+    "predicate": {
+      "args": "collector: Collector",
+      "path": "src/_pytest/runner.py",
+      "qualname": "pytest_make_collect_report",
+      "type": "signature"
+    },
+    "symbol": "_pytest.runner.pytest_make_collect_report",
+    "text": "signature `_pytest.runner.pytest_make_collect_report(collector: Collector)`"
+  },
+  {
+    "claim_id": "K01357",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 466,
+    "path": "src/_pytest/runner.py",
+    "predicate": {
+      "args": "self",
+      "path": "src/_pytest/runner.py",
+      "qualname": "SetupState.__init__",
+      "type": "signature"
+    },
+    "symbol": "_pytest.runner.SetupState.__init__",
+    "text": "signature `_pytest.runner.SetupState.__init__(self)`"
+  },
+  {
+    "claim_id": "K01358",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 478,
+    "path": "src/_pytest/runner.py",
+    "predicate": {
+      "args": "self, item: Item",
+      "path": "src/_pytest/runner.py",
+      "qualname": "SetupState.setup",
+      "type": "signature"
+    },
+    "symbol": "_pytest.runner.SetupState.setup",
+    "text": "signature `_pytest.runner.SetupState.setup(self, item: Item)`"
+  },
+  {
+    "claim_id": "K01359",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 499,
+    "path": "src/_pytest/runner.py",
+    "predicate": {
+      "args": "self, finalizer: Callable[[], object], node: Node",
+      "path": "src/_pytest/runner.py",
+      "qualname": "SetupState.addfinalizer",
+      "type": "signature"
+    },
+    "symbol": "_pytest.runner.SetupState.addfinalizer",
+    "text": "signature `_pytest.runner.SetupState.addfinalizer(self, finalizer: Callable[[], object], node: Node)`"
+  },
+  {
+    "claim_id": "K01360",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 509,
+    "path": "src/_pytest/runner.py",
+    "predicate": {
+      "args": "self, nextitem: Optional[Item]",
+      "path": "src/_pytest/runner.py",
+      "qualname": "SetupState.teardown_exact",
+      "type": "signature"
+    },
+    "symbol": "_pytest.runner.SetupState.teardown_exact",
+    "text": "signature `_pytest.runner.SetupState.teardown_exact(self, nextitem: Optional[Item])`"
+  },
+  {
+    "claim_id": "K01361",
+    "evidence_revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+    "kind": "signature",
+    "line": 544,
+    "path": "src/_pytest/runner.py",
+    "predicate": {
+      "args": "collector: Collector",
+      "path": "src/_pytest/runner.py",
+      "qualname": "collect_one_node",
+      "type": "signature"
+    },
+    "symbol": "_pytest.runner.collect_one_node",
+    "text": "signature `_pytest.runner.collect_one_node(collector: Collector)`"
+  }
+]

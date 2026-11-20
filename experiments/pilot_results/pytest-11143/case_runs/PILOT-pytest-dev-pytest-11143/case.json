@@ -1,0 +1,67 @@
+{
+  "case_id": "PILOT-pytest-dev-pytest-11143",
+  "category": "benchmark_pilot",
+  "change_origin": "natural_commit",
+  "claim": {
+    "claim_id": "K00254",
+    "covered_path": "src/_pytest/assertion/rewrite.py",
+    "predicate": {
+      "args": "self, name: namedExpr",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "qualname": "AssertionRewriter.visit_NamedExpr",
+      "type": "signature"
+    },
+    "statement": "signature `_pytest.assertion.rewrite.AssertionRewriter.visit_NamedExpr(self, name: namedExpr)`"
+  },
+  "evidence": {
+    "s": {
+      "evidence": "recorded by the issue-blind builder from the source at s: signature `_pytest.assertion.rewrite.AssertionRewriter.visit_NamedExpr(self, name: namedExpr)`",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "revision": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+      "status": "supported",
+      "verifier": "memory-builder-1"
+    },
+    "t": {
+      "evidence": "line 944: def AssertionRewriter.visit_NamedExpr(self, name: ast.NamedExpr)",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "repair": null,
+      "revision": "6995257cf470d2143ad1683824962de4071c0eb7",
+      "source": "experimental checker at prepare time (evaluator side)",
+      "status": "contradicted",
+      "verifier": "experimental-claim-checker-1"
+    }
+  },
+  "experimental_verifier": "experimental-claim-checker-1",
+  "human_review": {
+    "note": "development pilot; reused only to test integration, reserved from held-out evaluation",
+    "status": "pending"
+  },
+  "manifest_hash_inputs": {
+    "packet_sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e",
+    "snapshot_t_sha256": "0b4f27732a604c9270f95b4b89fe3d66062fc1824ae136d65a2200f6a817bce4"
+  },
+  "note_origin": "snapshot_generated",
+  "project_url": "https://github.com/pytest-dev/pytest",
+  "released_gate": {
+    "changed_covered_files": [
+      "src/_pytest/assertion/rewrite.py"
+    ],
+    "covered_file_changed": true,
+    "helper_sha256": "a612294a35f5fe75026863e1c6c0928b916d402089aaba48e044ec30f747dac2",
+    "routed_document": "docs/memory/src/_pytest/assertion/rewrite.part04.md",
+    "router_rank": 4,
+    "source": "released docagent.py context_bundle freshness findings"
+  },
+  "s": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+  "schema_version": 1,
+  "source": "integration adapter from paired_runs",
+  "t": "6995257cf470d2143ad1683824962de4071c0eb7",
+  "task": {
+    "instance_id": "pytest-dev__pytest-11143",
+    "issue_sha256": "d9ed54b67e037ab7dd1c4fbd64a530251f98d8eac2cbbd9e41956232e2d1a15c",
+    "kind": "patch",
+    "prompt": "Rewrite fails when first expression of file is a number and mistaken as docstring \n<!--\nThanks for submitting an issue!\n\nQuick check-list while reporting bugs:\n-->\n\n- [x] a detailed description of the bug or problem you are having\n- [x] output of `pip list` from the virtual environment you are using\n- [x] pytest and operating system versions\n- [x] minimal example if possible\n```\nInstalling collected packages: zipp, six, PyYAML, python-dateutil, MarkupSafe, importlib-metadata, watchdog, tomli, soupsieve, pyyaml-env-tag, pycparser, pluggy, packaging, mergedeep, Markdown, jinja2, iniconfig, ghp-import, exceptiongroup, click, websockets, urllib3, tqdm, smmap, pytest, pyee, mkdocs, lxml, importlib-resources, idna, cssselect, charset-normalizer, cffi, certifi, beautifulsoup4, attrs, appdirs, w3lib, typing-extensions, texttable, requests, pyzstd, pytest-metadata, pyquery, pyppmd, pyppeteer, pynacl, pymdown-extensions, pycryptodomex, pybcj, pyasn1, py, psutil, parse, multivolumefile, mkdocs-autorefs, inflate64, gitdb, fake-useragent, cryptography, comtypes, bs4, brotli, bcrypt, allure-python-commons, xlwt, xlrd, rsa, requests-html, pywinauto, python-i18n, python-dotenv, pytest-rerunfailure",
+    "prompt_truncated": true
+  },
+  "written_at": "2026-11-20T00:39:19Z"
+}

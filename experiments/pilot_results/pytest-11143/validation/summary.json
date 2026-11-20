@@ -1,0 +1,169 @@
+{
+  "agent_resolution": {
+    "selective_stale": {
+      "attempt_id": "pytest-dev__pytest-11143__selective_stale__seed20261119__a01",
+      "outcome": "unresolved",
+      "reason": "official harness report",
+      "terminal_state": "completed_patch"
+    },
+    "source_only": {
+      "attempt_id": "pytest-dev__pytest-11143__source_only__seed20261119__a01",
+      "outcome": "resolved",
+      "reason": "official harness report",
+      "terminal_state": "completed_patch"
+    },
+    "static_stale": {
+      "attempt_id": "pytest-dev__pytest-11143__static_stale__seed20261119__a01",
+      "outcome": "unresolved",
+      "reason": "patch applied, but the test run produced no parseable results (the patched code could not be imported or collected); the harness reports resolved=false",
+      "terminal_state": "completed_patch"
+    }
+  },
+  "commands": [
+    {
+      "command": "<python> \"<repo>\\experiments/backends/toolloop_agent.py\" --capabilities",
+      "exit_status": 0,
+      "seconds": 0.1,
+      "stage": "preflight"
+    },
+    {
+      "command": "<python> \"<repo>\\experiments\\paired_runs\\bench.py\" prepare --config experiments/out/pilot/study.pilot.json --out \"<repo>\\experiments\\out\\pilot\\prepared\" --instance-id pytest-dev__pytest-11143 --status pilot",
+      "exit_status": 0,
+      "seconds": 28.2,
+      "stage": "prepare"
+    },
+    {
+      "command": "<python> \"<repo>\\experiments\\paired_runs\\bench.py\" grade --manifest \"<repo>\\experiments\\out\\pilot\\prepared\\frozen.json\" --workers 1 --instance-id pytest-dev__pytest-11143 --controls --wait-s 2400.0 --push",
+      "exit_status": 2,
+      "seconds": 0.3,
+      "stage": "controls"
+    },
+    {
+      "command": "<python> \"<repo>\\experiments\\paired_runs\\bench.py\" grade --manifest \"<repo>\\experiments\\out\\pilot\\prepared\\frozen.json\" --workers 1 --instance-id pytest-dev__pytest-11143 --controls --wait-s 2400.0 --push",
+      "exit_status": 0,
+      "seconds": 125.6,
+      "stage": "controls"
+    },
+    {
+      "command": "<python> \"<repo>\\experiments\\paired_runs\\bench.py\" pilot --backend experiments\\out\\pilot\\backend.json --out \"<repo>\\experiments\\out\\pilot\\prepared\"",
+      "exit_status": 0,
+      "seconds": 49.1,
+      "stage": "solve"
+    },
+    {
+      "command": "<python> \"<repo>\\experiments\\paired_runs\\bench.py\" grade --manifest \"<repo>\\experiments\\out\\pilot\\prepared\\frozen.json\" --workers 1 --instance-id pytest-dev__pytest-11143 --wait-s 2400.0 --push",
+      "exit_status": 2,
+      "seconds": 125.2,
+      "stage": "grade"
+    },
+    {
+      "command": "<python> \"<repo>\\experiments\\paired_runs\\bench.py\" grade --manifest \"<repo>\\experiments\\out\\pilot\\prepared\\frozen.json\" --workers 1 --instance-id pytest-dev__pytest-11143 --wait-s 60.0 --push",
+      "exit_status": 0,
+      "seconds": 1.0,
+      "stage": "grade"
+    },
+    {
+      "command": "<python> \"<repo>\\experiments\\paired_runs\\bench.py\" report --manifest \"<repo>\\experiments\\out\\pilot\\prepared\\frozen.json\" --out \"<repo>\\experiments\\out\\pilot\\report\"",
+      "exit_status": 0,
+      "seconds": 0.2,
+      "stage": "report"
+    },
+    {
+      "command": "<python> \"<repo>\\experiments\\integration\\trace_to_case.py\" --manifest \"<repo>\\experiments\\out\\pilot\\prepared\\frozen.json\" --instance-id pytest-dev__pytest-11143 --case-id PILOT-pytest-dev-pytest-11143 --out \"<repo>\\experiments\\out\\pilot\\case_runs\" --results \"<repo>\\experiments\\.grader_store\\results\"",
+      "exit_status": 0,
+      "seconds": 0.1,
+      "stage": "report"
+    },
+    {
+      "command": "python -I cases.py replay --case PILOT-pytest-dev-pytest-11143 --runs <repo>\\experiments\\out\\pilot\\case_runs --offline",
+      "exit_status": 0,
+      "stage": "report"
+    },
+    {
+      "command": "python -I cases.py replay --case PILOT-pytest-dev-pytest-11143 --runs <repo>\\experiments\\out\\pilot\\case_runs --offline",
+      "exit_status": 0,
+      "stage": "report"
+    },
+    {
+      "command": "<python> \"<repo>\\experiments\\paired_runs\\bench.py\" report --manifest \"<repo>\\experiments\\out\\pilot\\prepared\\frozen.json\" --out \"<repo>\\experiments\\out\\pilot\\report\"",
+      "exit_status": 0,
+      "seconds": 0.2,
+      "stage": "report"
+    },
+    {
+      "command": "<python> \"<repo>\\experiments\\integration\\trace_to_case.py\" --manifest \"<repo>\\experiments\\out\\pilot\\prepared\\frozen.json\" --instance-id pytest-dev__pytest-11143 --case-id PILOT-pytest-dev-pytest-11143 --out \"<repo>\\experiments\\out\\pilot\\case_runs\" --results \"<repo>\\experiments\\.grader_store\\results\"",
+      "exit_status": 0,
+      "seconds": 0.1,
+      "stage": "report"
+    },
+    {
+      "command": "python -I cases.py replay --case PILOT-pytest-dev-pytest-11143 --runs <repo>\\experiments\\out\\pilot\\case_runs --offline",
+      "exit_status": 0,
+      "stage": "report"
+    },
+    {
+      "command": "python -I cases.py replay --case PILOT-pytest-dev-pytest-11143 --runs <repo>\\experiments\\out\\pilot\\case_runs --offline",
+      "exit_status": 0,
+      "stage": "report"
+    },
+    {
+      "command": "<python> \"<repo>\\experiments\\paired_runs\\bench.py\" report --manifest \"<repo>\\experiments\\out\\pilot\\prepared\\frozen.json\" --out \"<repo>\\experiments\\out\\pilot\\report\"",
+      "exit_status": 0,
+      "seconds": 0.2,
+      "stage": "report"
+    },
+    {
+      "command": "<python> \"<repo>\\experiments\\integration\\trace_to_case.py\" --manifest \"<repo>\\experiments\\out\\pilot\\prepared\\frozen.json\" --instance-id pytest-dev__pytest-11143 --case-id PILOT-pytest-dev-pytest-11143 --out \"<repo>\\experiments\\out\\pilot\\case_runs\" --results \"<repo>\\experiments\\.grader_store\\results\"",
+      "exit_status": 0,
+      "seconds": 0.1,
+      "stage": "report"
+    },
+    {
+      "command": "python -I cases.py replay --case PILOT-pytest-dev-pytest-11143 --runs <repo>\\experiments\\out\\pilot\\case_runs --offline",
+      "exit_status": 0,
+      "stage": "report"
+    },
+    {
+      "command": "python -I cases.py replay --case PILOT-pytest-dev-pytest-11143 --runs <repo>\\experiments\\out\\pilot\\case_runs --offline",
+      "exit_status": 0,
+      "stage": "report"
+    }
+  ],
+  "environment_controls": {
+    "base_control": {
+      "expected": "at least one FAIL_TO_PASS test runs and fails on the unmodified base",
+      "fail_to_pass_failed": [
+        "testing/test_assertrewrite.py::TestIssue11140::test_constant_not_picked_as_module_docstring"
+      ],
+      "fail_to_pass_passed": [],
+      "grading_status": "unresolved",
+      "ok": true
+    },
+    "gold_control": {
+      "expected": "official grader marks the reference patch resolved",
+      "grading_status": "resolved",
+      "ok": true
+    },
+    "status": "established"
+  },
+  "instance_id": "pytest-dev__pytest-11143",
+  "performance_conclusions": "pending the held-out study; this is one development pilot",
+  "pipeline_acceptance": {
+    "all_arms_live": true,
+    "all_arms_terminal": true,
+    "arms_with_conclusive_official_grade": [
+      "source_only",
+      "static_stale",
+      "selective_stale"
+    ],
+    "offline_case_replay": {
+      "model_calls": 0,
+      "ok": true,
+      "report": "<repo>\\experiments\\out\\pilot\\case_report\\PILOT-pytest-dev-pytest-11143.md",
+      "sha256": "1121d476a9410c615323de2e39400f4bdc5eb68433ddb2c225c44807c14e925f"
+    },
+    "open_gates": [],
+    "status": "accepted"
+  },
+  "total_command_seconds": 330.4
+}

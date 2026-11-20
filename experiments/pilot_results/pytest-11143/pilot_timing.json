@@ -1,0 +1,30 @@
+{
+  "cells": [
+    {
+      "arm": "static_stale",
+      "attempt_id": "pytest-dev__pytest-11143__static_stale__seed20261119__a01",
+      "instance_id": "pytest-dev__pytest-11143",
+      "reason": "terminal state already recorded; no new paid call",
+      "skipped": true,
+      "wall_s": 0.0
+    },
+    {
+      "arm": "source_only",
+      "attempt_id": "pytest-dev__pytest-11143__source_only__seed20261119__a01",
+      "instance_id": "pytest-dev__pytest-11143",
+      "reason": "terminal state already recorded; no new paid call",
+      "skipped": true,
+      "wall_s": 0.0
+    },
+    {
+      "arm": "selective_stale",
+      "attempt_id": "pytest-dev__pytest-11143__selective_stale__seed20261119__a01",
+      "instance_id": "pytest-dev__pytest-11143",
+      "reason": "terminal state already recorded; no new paid call",
+      "skipped": true,
+      "wall_s": 0.0
+    }
+  ],
+  "note": "budget held-out tiers with the slowest cell plus per-issue preparation and grading; reserve 20 minutes",
+  "slowest_cell_s": 0.0
+}

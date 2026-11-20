@@ -1,0 +1,73 @@
+{
+  "actions": 6,
+  "arm": "checked",
+  "attempt_id": "pytest-dev__pytest-11143__selective_stale__seed20261119__a01",
+  "backend": {
+    "agent": "toolloop-1",
+    "api_style": "ollama",
+    "base_url": "http://127.0.0.1:11434",
+    "location": "local",
+    "model": "qwen3:14b",
+    "name": "ollama-qwen3-14b-toolloop",
+    "parameter_size": "14.8B",
+    "quantization": "Q4_K_M",
+    "version": "ollama 0.40.16"
+  },
+  "benchmark_arm": "selective_stale",
+  "capabilities": {
+    "can_capture_diff": true,
+    "can_count_actions": true,
+    "can_limit_time": true,
+    "can_reset_session": true,
+    "observable_reads": true,
+    "usage_source": "provider_reported"
+  },
+  "case_id": "PILOT-pytest-dev-pytest-11143",
+  "check": {
+    "evidence": "the check budget (3 checks in retrieval order) ran out before this claim; it reached the agent as recorded",
+    "policy_action": "unchecked",
+    "status": "unchecked",
+    "verifier": "experimental-claim-checker-1"
+  },
+  "exit_reason": "finished",
+  "final_answer": "Changed the parameter type of is_rewrite_disabled from str to object in src/_pytest/assertion/rewrite.py.",
+  "first_inspected_path": "src/_pytest/assertion/rewrite.py",
+  "is_live": true,
+  "ledger": {
+    "events_total": 11,
+    "events_truncated": 0,
+    "truncated": false
+  },
+  "limits": {
+    "max_actions": 12,
+    "time_s": 360
+  },
+  "oracle": {
+    "detail": "official SWE-bench harness report, request pytest-dev__pytest-11143-attempts-03b3c25d-20261120t003216: resolved=False",
+    "kind": "patch",
+    "official": true,
+    "verdict": "fail"
+  },
+  "order": 2,
+  "packet_final_sha256": "00ccf56ae9dca39d2084ed23c9453d31e24ecf0ace8b8f71a0acfbde5b41b951",
+  "packet_initial_sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e",
+  "patch_bytes": 509,
+  "resources": {
+    "host_min_available_mb": 11353,
+    "host_peak_used_mb": 21133,
+    "process_peak_mb": null,
+    "process_peak_note": "unavailable: no per-process sampler in the standard library",
+    "remote_memory": null,
+    "vram_peak_used_mb": 15934
+  },
+  "status": "completed_patch",
+  "timing": {
+    "wall_ms": 8194
+  },
+  "usage": {
+    "cache_read_tokens": null,
+    "input_tokens": 25099,
+    "output_tokens": 326,
+    "source": "provider_reported"
+  }
+}

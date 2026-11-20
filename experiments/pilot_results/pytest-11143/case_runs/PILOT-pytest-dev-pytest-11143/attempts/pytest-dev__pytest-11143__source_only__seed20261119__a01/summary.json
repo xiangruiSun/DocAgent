@@ -1,0 +1,68 @@
+{
+  "actions": 8,
+  "arm": "source_only",
+  "attempt_id": "pytest-dev__pytest-11143__source_only__seed20261119__a01",
+  "backend": {
+    "agent": "toolloop-1",
+    "api_style": "ollama",
+    "base_url": "http://127.0.0.1:11434",
+    "location": "local",
+    "model": "qwen3:14b",
+    "name": "ollama-qwen3-14b-toolloop",
+    "parameter_size": "14.8B",
+    "quantization": "Q4_K_M",
+    "version": "ollama 0.40.16"
+  },
+  "benchmark_arm": "source_only",
+  "capabilities": {
+    "can_capture_diff": true,
+    "can_count_actions": true,
+    "can_limit_time": true,
+    "can_reset_session": true,
+    "observable_reads": true,
+    "usage_source": "provider_reported"
+  },
+  "case_id": "PILOT-pytest-dev-pytest-11143",
+  "check": null,
+  "exit_reason": "finished",
+  "final_answer": "Fixed the issue by modifying the 'is_rewrite_disabled' method to handle cases where 'docstring' might be an integer.",
+  "first_inspected_path": "testcases/基线/代理策略/SOCKS二级代理迭代二/在线用户/在线用户更新/上线用户",
+  "is_live": true,
+  "ledger": {
+    "events_total": 11,
+    "events_truncated": 0,
+    "truncated": false
+  },
+  "limits": {
+    "max_actions": 12,
+    "time_s": 360
+  },
+  "oracle": {
+    "detail": "official SWE-bench harness report, request pytest-dev__pytest-11143-attempts-03b3c25d-20261120t003216: resolved=True",
+    "kind": "patch",
+    "official": true,
+    "verdict": "pass"
+  },
+  "order": 3,
+  "packet_final_sha256": null,
+  "packet_initial_sha256": null,
+  "patch_bytes": 505,
+  "resources": {
+    "host_min_available_mb": 10978,
+    "host_peak_used_mb": 21508,
+    "process_peak_mb": null,
+    "process_peak_note": "unavailable: no per-process sampler in the standard library",
+    "remote_memory": null,
+    "vram_peak_used_mb": 15865
+  },
+  "status": "completed_patch",
+  "timing": {
+    "wall_ms": 8415
+  },
+  "usage": {
+    "cache_read_tokens": null,
+    "input_tokens": 34514,
+    "output_tokens": 376,
+    "source": "provider_reported"
+  }
+}

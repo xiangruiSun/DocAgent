@@ -1,0 +1,29 @@
+{
+  "entries": [
+    {
+      "claims_at_s": 1535,
+      "claims_not_supported_at_t": 7,
+      "contradicted": 7,
+      "contradicted_exposed": [
+        "K00254"
+      ],
+      "contradicted_mentioned": [
+        "K00254",
+        "K00395"
+      ],
+      "contradicted_mentioned_exposed": [
+        "K00254"
+      ],
+      "decision": "prepared by explicit id as pilot",
+      "documents_at_s": 134,
+      "instance_id": "pytest-dev__pytest-11143",
+      "router_miss": false,
+      "scope_files_changed_s_to_t": 33,
+      "skipped_ambiguous": 72,
+      "skipped_files": [],
+      "stale_documents_routed": 5
+    }
+  ],
+  "generated_at": "2026-11-20T00:24:43Z",
+  "selection_rule": "first candidates in round-robin order with a contradicted claim that the issue names and the released router exposed; outcomes of solvers are never consulted"
+}

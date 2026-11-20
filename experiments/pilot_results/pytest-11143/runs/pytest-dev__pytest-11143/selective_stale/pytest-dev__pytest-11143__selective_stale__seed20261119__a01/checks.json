@@ -1,0 +1,331 @@
+{
+  "check_ms": 18,
+  "checker": "experimental-claim-checker-1",
+  "checks": 3,
+  "decisions": [
+    {
+      "check_ms": 6,
+      "claim_id": "K00226",
+      "evidence": "line 292: def _write_pyc_fp(fp: IO[bytes], source_stat: os.stat_result, co: types.CodeType)",
+      "line": 292,
+      "old_text": "signature `_pytest.assertion.rewrite._write_pyc_fp(fp: IO[bytes], source_stat: os.stat_result, co: types.CodeType)`",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "policy_action": "reuse",
+      "repair_text": null,
+      "status": "supported",
+      "symbol": "_pytest.assertion.rewrite._write_pyc_fp"
+    },
+    {
+      "check_ms": 6,
+      "claim_id": "K00227",
+      "evidence": "line 310: def _write_pyc(state: 'AssertionState', co: types.CodeType, source_stat: os.stat_result, pyc: Path)",
+      "line": 310,
+      "old_text": "signature `_pytest.assertion.rewrite._write_pyc(state: 'AssertionState', co: types.CodeType, source_stat: os.stat_result, pyc: Path)`",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "policy_action": "reuse",
+      "repair_text": null,
+      "status": "supported",
+      "symbol": "_pytest.assertion.rewrite._write_pyc"
+    },
+    {
+      "check_ms": 5,
+      "claim_id": "K00228",
+      "evidence": "line 335: def _rewrite_test(fn: Path, config: Config)",
+      "line": 335,
+      "old_text": "signature `_pytest.assertion.rewrite._rewrite_test(fn: Path, config: Config)`",
+      "path": "src/_pytest/assertion/rewrite.py",
+      "policy_action": "reuse",
+      "repair_text": null,
+      "status": "supported",
+      "symbol": "_pytest.assertion.rewrite._rewrite_test"
+    }
+  ],
+  "skipped": [
+    {
+      "claim_id": "K00229",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00230",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00231",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00232",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00233",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00234",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00235",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00236",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00237",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00238",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00239",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00240",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00241",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00242",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00243",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00244",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00245",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00246",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00247",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00248",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00249",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00250",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00251",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00252",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00215",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00216",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00217",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00218",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00219",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00220",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00221",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00222",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00223",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00224",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00225",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00253",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00254",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00255",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00256",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00257",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00258",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00259",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00260",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00261",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00262",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00263",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K00264",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K01352",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K01353",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K01354",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K01355",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K01356",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K01357",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K01358",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K01359",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K01360",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    },
+    {
+      "claim_id": "K01361",
+      "reason": "check budget exhausted",
+      "status": "skipped"
+    }
+  ],
+  "suspect_claims": 60
+}

@@ -1,0 +1,136 @@
+{
+  "byte_cap": 8000,
+  "bytes": 7863,
+  "doc_cap": 5,
+  "documents": [
+    {
+      "changed_files": [
+        "src/_pytest/assertion/rewrite.py"
+      ],
+      "claim_ids": [
+        "K00226",
+        "K00227",
+        "K00228",
+        "K00229",
+        "K00230",
+        "K00231",
+        "K00232",
+        "K00233",
+        "K00234",
+        "K00235",
+        "K00236",
+        "K00237",
+        "K00238"
+      ],
+      "covers": "src/_pytest/assertion/rewrite.py",
+      "doc_path": "docs/memory/src/_pytest/assertion/rewrite.part02.md",
+      "dropped_claim_ids": [],
+      "rank": 1,
+      "score": 213.197,
+      "stale": true
+    },
+    {
+      "changed_files": [
+        "src/_pytest/assertion/rewrite.py"
+      ],
+      "claim_ids": [
+        "K00239",
+        "K00240",
+        "K00241",
+        "K00242",
+        "K00243",
+        "K00244",
+        "K00245",
+        "K00246",
+        "K00247",
+        "K00248",
+        "K00249",
+        "K00250",
+        "K00251",
+        "K00252"
+      ],
+      "covers": "src/_pytest/assertion/rewrite.py",
+      "doc_path": "docs/memory/src/_pytest/assertion/rewrite.part03.md",
+      "dropped_claim_ids": [],
+      "rank": 2,
+      "score": 192.392,
+      "stale": true
+    },
+    {
+      "changed_files": [
+        "src/_pytest/assertion/rewrite.py"
+      ],
+      "claim_ids": [
+        "K00215",
+        "K00216",
+        "K00217",
+        "K00218",
+        "K00219",
+        "K00220",
+        "K00221",
+        "K00222",
+        "K00223",
+        "K00224",
+        "K00225"
+      ],
+      "covers": "src/_pytest/assertion/rewrite.py",
+      "doc_path": "docs/memory/src/_pytest/assertion/rewrite.part01.md",
+      "dropped_claim_ids": [],
+      "rank": 3,
+      "score": 182.598,
+      "stale": true
+    },
+    {
+      "changed_files": [
+        "src/_pytest/assertion/rewrite.py"
+      ],
+      "claim_ids": [
+        "K00253",
+        "K00254",
+        "K00255",
+        "K00256",
+        "K00257",
+        "K00258",
+        "K00259",
+        "K00260",
+        "K00261",
+        "K00262",
+        "K00263",
+        "K00264"
+      ],
+      "covers": "src/_pytest/assertion/rewrite.py",
+      "doc_path": "docs/memory/src/_pytest/assertion/rewrite.part04.md",
+      "dropped_claim_ids": [],
+      "rank": 4,
+      "score": 170.541,
+      "stale": true
+    },
+    {
+      "changed_files": [
+        "src/_pytest/runner.py"
+      ],
+      "claim_ids": [
+        "K01352",
+        "K01353",
+        "K01354",
+        "K01355",
+        "K01356",
+        "K01357",
+        "K01358",
+        "K01359",
+        "K01360",
+        "K01361"
+      ],
+      "covers": "src/_pytest/runner.py",
+      "doc_path": "docs/memory/src/_pytest/runner.part02.md",
+      "dropped_claim_ids": [],
+      "rank": 5,
+      "score": 168.0,
+      "stale": true
+    }
+  ],
+  "router_status": "bootstrap-incomplete",
+  "sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e",
+  "token_accounting": "UTF-8 bytes; no tokenizer for this backend",
+  "truncated_claims": 0
+}

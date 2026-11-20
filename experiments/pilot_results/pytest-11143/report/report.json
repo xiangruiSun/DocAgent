@@ -1,0 +1,409 @@
+{
+  "generated_at": "2026-11-20T00:39:19Z",
+  "interpretation": "Counts, paired differences and traces only. With two to six issues one result moves the estimate a lot; no population-wide speed-up or significance claim. Pilot issues are development runs and are excluded from the paired table. Performance conclusions are pending the held-out study.",
+  "issues": [
+    {
+      "arms": {
+        "selective_stale": {
+          "actions_used": 6,
+          "apply_status": "applied",
+          "attempt_id": "pytest-dev__pytest-11143__selective_stale__seed20261119__a01",
+          "backend": {
+            "agent": "toolloop-1",
+            "api_style": "ollama",
+            "base_url": "http://127.0.0.1:11434",
+            "location": "local",
+            "model": "qwen3:14b",
+            "name": "ollama-qwen3-14b-toolloop",
+            "parameter_size": "14.8B",
+            "quantization": "Q4_K_M",
+            "version": "ollama 0.40.16"
+          },
+          "checking": {
+            "check_ms": 18,
+            "checks": 3,
+            "repairs": [],
+            "supported_exposed": 59,
+            "supported_rejected": 0,
+            "suspect_claims": 60
+          },
+          "counters": {
+            "checks": 3,
+            "implementer_actions": 1,
+            "planner_actions": 2
+          },
+          "exploration": {
+            "distinct_paths": 1,
+            "edited_paths": [
+              "src/_pytest/assertion/rewrite.py"
+            ],
+            "handoff_overlap_ratio": null,
+            "implementer_reads": 0,
+            "implementer_reads_overlapping_planner": 0,
+            "reached_relevant_source": true,
+            "read_actions": 2,
+            "reads_until_first_relevant_source": 1,
+            "relevance_annotation": "present"
+          },
+          "generation_status": "patch",
+          "grading_s": 21.7,
+          "grading_status": "unresolved",
+          "is_live": true,
+          "local_apply_check": {
+            "detail": "applies cleanly to a fresh pre-fix snapshot",
+            "ok": true
+          },
+          "outcome": "unresolved",
+          "outdated_claims": {
+            "acted_upon": "needs human review of the trace",
+            "corrected": 0,
+            "eligible_contradicted": 1,
+            "exposed": 1,
+            "omitted_or_unresolved": 0,
+            "relevance_annotation": "present",
+            "routed": 1
+          },
+          "packet": {
+            "final_bytes": 8877,
+            "final_sha256": "00ccf56ae9dca39d2084ed23c9453d31e24ecf0ace8b8f71a0acfbde5b41b951",
+            "initial_bytes": 7863,
+            "initial_sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e"
+          },
+          "patch_bytes": 509,
+          "patch_sha256": "484626e9acea39a54221d72ebe597d4b576b0f76f76b86550a3090f4db0459bd",
+          "reason": "official harness report",
+          "resources": {
+            "host_min_available_mb": 11353,
+            "host_peak_used_mb": 21133,
+            "process_peak_mb": null,
+            "process_peak_note": "unavailable: no per-process sampler in the standard library",
+            "remote_memory": null,
+            "vram_peak_used_mb": 15934
+          },
+          "solve_ms": 8194,
+          "status": "completed_patch",
+          "trace": {
+            "cap_bytes": 65536,
+            "counts": {
+              "check": 60,
+              "claim_exposure": 1,
+              "handoff": 1,
+              "patch": 1,
+              "role_terminal": 2,
+              "tool_call": 3
+            },
+            "events_total": 68,
+            "events_truncated": 0,
+            "events_written": 68,
+            "ledger": "ledger.jsonl",
+            "truncated": false
+          },
+          "usage": {
+            "cache_read_tokens": null,
+            "input_tokens": 25099,
+            "output_tokens": 326,
+            "source": "provider_reported"
+          }
+        },
+        "source_only": {
+          "actions_used": 8,
+          "apply_status": "applied",
+          "attempt_id": "pytest-dev__pytest-11143__source_only__seed20261119__a01",
+          "backend": {
+            "agent": "toolloop-1",
+            "api_style": "ollama",
+            "base_url": "http://127.0.0.1:11434",
+            "location": "local",
+            "model": "qwen3:14b",
+            "name": "ollama-qwen3-14b-toolloop",
+            "parameter_size": "14.8B",
+            "quantization": "Q4_K_M",
+            "version": "ollama 0.40.16"
+          },
+          "checking": {
+            "check_ms": null,
+            "checks": 0,
+            "repairs": [],
+            "supported_exposed": null,
+            "supported_rejected": null,
+            "suspect_claims": null
+          },
+          "counters": {
+            "checks": 0,
+            "implementer_actions": 6,
+            "planner_actions": 2
+          },
+          "exploration": {
+            "distinct_paths": 4,
+            "edited_paths": [
+              "src/_pytest/assertion/rewrite.py"
+            ],
+            "handoff_overlap_ratio": 0.0,
+            "implementer_reads": 2,
+            "implementer_reads_overlapping_planner": 0,
+            "reached_relevant_source": true,
+            "read_actions": 7,
+            "reads_until_first_relevant_source": 4,
+            "relevance_annotation": "present"
+          },
+          "generation_status": "patch",
+          "grading_s": 30.6,
+          "grading_status": "resolved",
+          "is_live": true,
+          "local_apply_check": {
+            "detail": "applies cleanly to a fresh pre-fix snapshot",
+            "ok": true
+          },
+          "outcome": "resolved",
+          "outdated_claims": {
+            "acted_upon": "needs human review of the trace",
+            "corrected": 0,
+            "eligible_contradicted": 1,
+            "exposed": 0,
+            "omitted_or_unresolved": 0,
+            "relevance_annotation": "present",
+            "routed": 1
+          },
+          "packet": {
+            "final_bytes": 0,
+            "final_sha256": null,
+            "initial_bytes": 0,
+            "initial_sha256": null
+          },
+          "patch_bytes": 505,
+          "patch_sha256": "02bfaf8c9766e96b9014a5e3724c25923854b8c4ab3e360fd8cac00a7d666842",
+          "reason": "official harness report",
+          "resources": {
+            "host_min_available_mb": 10978,
+            "host_peak_used_mb": 21508,
+            "process_peak_mb": null,
+            "process_peak_note": "unavailable: no per-process sampler in the standard library",
+            "remote_memory": null,
+            "vram_peak_used_mb": 15865
+          },
+          "solve_ms": 8415,
+          "status": "completed_patch",
+          "trace": {
+            "cap_bytes": 65536,
+            "counts": {
+              "handoff": 1,
+              "patch": 1,
+              "role_terminal": 2,
+              "tool_call": 8
+            },
+            "events_total": 12,
+            "events_truncated": 0,
+            "events_written": 12,
+            "ledger": "ledger.jsonl",
+            "truncated": false
+          },
+          "usage": {
+            "cache_read_tokens": null,
+            "input_tokens": 34514,
+            "output_tokens": 376,
+            "source": "provider_reported"
+          }
+        },
+        "static_stale": {
+          "actions_used": 4,
+          "apply_status": "applied",
+          "attempt_id": "pytest-dev__pytest-11143__static_stale__seed20261119__a01",
+          "backend": {
+            "agent": "toolloop-1",
+            "api_style": "ollama",
+            "base_url": "http://127.0.0.1:11434",
+            "location": "local",
+            "model": "qwen3:14b",
+            "name": "ollama-qwen3-14b-toolloop",
+            "parameter_size": "14.8B",
+            "quantization": "Q4_K_M",
+            "version": "ollama 0.40.16"
+          },
+          "checking": {
+            "check_ms": null,
+            "checks": 0,
+            "repairs": [],
+            "supported_exposed": 59,
+            "supported_rejected": 0,
+            "suspect_claims": null
+          },
+          "counters": {
+            "checks": 0,
+            "implementer_actions": 2,
+            "planner_actions": 2
+          },
+          "exploration": {
+            "distinct_paths": 1,
+            "edited_paths": [
+              "src/_pytest/assertion/rewrite.py"
+            ],
+            "handoff_overlap_ratio": null,
+            "implementer_reads": 0,
+            "implementer_reads_overlapping_planner": 0,
+            "reached_relevant_source": true,
+            "read_actions": 2,
+            "reads_until_first_relevant_source": 1,
+            "relevance_annotation": "present"
+          },
+          "generation_status": "patch",
+          "grading_s": 18.7,
+          "grading_status": "unresolved",
+          "is_live": true,
+          "local_apply_check": {
+            "detail": "applies cleanly to a fresh pre-fix snapshot",
+            "ok": true
+          },
+          "outcome": "unresolved",
+          "outdated_claims": {
+            "acted_upon": "needs human review of the trace",
+            "corrected": 0,
+            "eligible_contradicted": 1,
+            "exposed": 1,
+            "omitted_or_unresolved": 0,
+            "relevance_annotation": "present",
+            "routed": 1
+          },
+          "packet": {
+            "final_bytes": 7863,
+            "final_sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e",
+            "initial_bytes": 7863,
+            "initial_sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e"
+          },
+          "patch_bytes": 551,
+          "patch_sha256": "b55cea3ad033bc1005dbf59c0d7d2c0c4972b3df0ca7791d3c27e5d601bc8f37",
+          "reason": "patch applied, but the test run produced no parseable results (the patched code could not be imported or collected); the harness reports resolved=false",
+          "resources": {
+            "host_min_available_mb": 11192,
+            "host_peak_used_mb": 21294,
+            "process_peak_mb": null,
+            "process_peak_note": "unavailable: no per-process sampler in the standard library",
+            "remote_memory": null,
+            "vram_peak_used_mb": 15854
+          },
+          "solve_ms": 13353,
+          "status": "completed_patch",
+          "trace": {
+            "cap_bytes": 65536,
+            "counts": {
+              "claim_exposure": 1,
+              "handoff": 1,
+              "patch": 1,
+              "role_terminal": 2,
+              "tool_call": 4
+            },
+            "events_total": 9,
+            "events_truncated": 0,
+            "events_written": 9,
+            "ledger": "ledger.jsonl",
+            "truncated": false
+          },
+          "usage": {
+            "cache_read_tokens": null,
+            "input_tokens": 20756,
+            "output_tokens": 379,
+            "source": "provider_reported"
+          }
+        }
+      },
+      "claims_not_supported_at_t": 7,
+      "controls": {
+        "base_control": {
+          "expected": "at least one FAIL_TO_PASS test runs and fails on the unmodified base",
+          "fail_to_pass_failed": [
+            "testing/test_assertrewrite.py::TestIssue11140::test_constant_not_picked_as_module_docstring"
+          ],
+          "fail_to_pass_passed": [],
+          "grading_status": "unresolved",
+          "ok": true
+        },
+        "environment": {
+          "cpu_logical": 4,
+          "dataset_file": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Lite/resolve/b0dde1093fe417d83b7184254edf8199c1f0dff5/data/test-00000-of-00001.parquet",
+          "dataset_name": "SWE-bench/SWE-bench_Lite",
+          "dataset_revision": "b0dde1093fe417d83b7184254edf8199c1f0dff5",
+          "disk_free_gb_end": 82.9,
+          "disk_free_gb_start": 86.5,
+          "docker": "29.4.2",
+          "elapsed_s": 74.1,
+          "finished_at": "2026-11-20T00:27:43Z",
+          "github_run": "44645806441",
+          "host": "runnervm0hi8g",
+          "image": "swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-11143:latest",
+          "image_digest": "[\"swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-11143@sha256:e08ce142adec5ec985e867e910045734ec3c58fe174fc054c5f83855bed78fd4\"] sha256:e08ce142adec5ec985e867e910045734ec3c58fe174fc054c5f83855bed78fd4",
+          "image_pull": "docker.io/swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-11143:latest",
+          "image_pull_s": 19.0,
+          "instance_id": "pytest-dev__pytest-11143",
+          "items": {
+            "base_control": {
+              "elapsed_s": 27.3,
+              "error": null,
+              "resolved": false,
+              "run_id": "base-pytest-dev__pytest-11143-controls-03b3c25d-20261120t002507"
+            },
+            "gold_control": {
+              "elapsed_s": 24.6,
+              "error": null,
+              "resolved": true,
+              "run_id": "gold-pytest-dev__pytest-11143-controls-03b3c25d-20261120t002507"
+            }
+          },
+          "memory_mb_end": {
+            "MemAvailable": 14784,
+            "MemTotal": 15983
+          },
+          "memory_mb_start": {
+            "MemAvailable": 15031,
+            "MemTotal": 15983
+          },
+          "os": "Linux-7.0.0-1020-azure-x86_64-with-glibc2.43",
+          "python": "3.11.18",
+          "request_id": "pytest-dev__pytest-11143-controls-03b3c25d-20261120t002507",
+          "runner": "GitHub Actions 1000000074",
+          "split": "test",
+          "swebench_install": [
+            "swebench @ git+https://github.com/SWE-bench/SWE-bench@87ab1f6ced28f75ba73ca899dc759b019310944a"
+          ],
+          "swebench_revision_requested": "87ab1f6ced28f75ba73ca899dc759b019310944a",
+          "swebench_version": "5.0.1"
+        },
+        "gold_control": {
+          "expected": "official grader marks the reference patch resolved",
+          "grading_status": "resolved",
+          "ok": true
+        },
+        "ok": true
+      },
+      "instance_id": "pytest-dev__pytest-11143",
+      "packet_sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e",
+      "repo": "pytest-dev/pytest",
+      "s": "b5ff089d2cc939b042c8ad7a6a0e1850fc169907",
+      "status": "pilot",
+      "t": "6995257cf470d2143ad1683824962de4071c0eb7",
+      "timing_ms": {
+        "build_memory": 483,
+        "prepare_total": 27835,
+        "route_and_check_freshness": 19250
+      }
+    }
+  ],
+  "manifest_hash": "03b3c25df19c735053c18431d06da2c8bc66937048ab80e26ab91fe2de27ee59",
+  "model_calls_made_by_this_report": 0,
+  "primary_paired_success": {
+    "both_resolved": 0,
+    "complete_pairs": 0,
+    "held_out_issues": 0,
+    "missing": 0,
+    "neither_resolved": 0,
+    "paired_difference": null,
+    "selective_only": 0,
+    "sensitivity_if_missing_all_favour_selective": null,
+    "sensitivity_if_missing_all_favour_static": null,
+    "static_only": 0
+  },
+  "unmeasured": [
+    "full current-source rebuild",
+    "released DocAgent review-and-sync workflow",
+    "fresh-memory arms",
+    "rebuild amortisation for H=1,5,20"
+  ]
+}

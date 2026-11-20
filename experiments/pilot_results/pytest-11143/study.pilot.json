@@ -1,0 +1,59 @@
+{
+  "_comment": "Study configuration. Every value here is frozen into the manifest. Paths are relative to the repository root and are ignored by Git.",
+  "dataset": {
+    "name": "SWE-bench/SWE-bench_Lite",
+    "split": "test",
+    "revision": "b0dde1093fe417d83b7184254edf8199c1f0dff5"
+  },
+  "evaluator": {
+    "swebench_revision": "87ab1f6ced28f75ba73ca899dc759b019310944a",
+    "swebench_version": "5.0.1",
+    "timeout_s": 1800,
+    "grader": "github_actions",
+    "remote": "origin"
+  },
+  "seed": 20261119,
+  "repos": [
+    "pytest-dev/pytest",
+    "sphinx-doc/sphinx",
+    "sympy/sympy"
+  ],
+  "min_age_days": 30,
+  "limits": {
+    "time_s": 360,
+    "max_actions": 12
+  },
+  "planner": {
+    "max_actions": 2,
+    "handoff_bytes": 600,
+    "time_s": 120
+  },
+  "checker": {
+    "max_checks": 3,
+    "time_s": 45
+  },
+  "packet": {
+    "max_docs": 5,
+    "max_bytes": 8000,
+    "doc_body_cap": 1500
+  },
+  "screen": {
+    "max_candidates": 9,
+    "timebox_minutes": 15
+  },
+  "tier": {
+    "held_out": 0
+  },
+  "relevance": {
+    "pytest-dev__pytest-11143": {
+      "paths": [
+        "src/_pytest/assertion/rewrite.py"
+      ],
+      "claim_ids": [
+        "K00254"
+      ],
+      "annotator": "pipeline operator (Claude Code), from the issue text and the pre-fix source only; the fix was not consulted",
+      "rationale": "The issue's traceback is in assertion rewriting (src/_pytest/assertion/rewrite.py). K00254 records a method signature of AssertionRewriter in that module whose annotation changed between s and t. It is in the task's module but is not the code path the traceback names, so its relevance is module-level only."
+    }
+  }
+}

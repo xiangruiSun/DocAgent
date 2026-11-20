@@ -1,0 +1,530 @@
+{
+  "actions_used": 6,
+  "arm": "selective_stale",
+  "attempt_id": "pytest-dev__pytest-11143__selective_stale__seed20261119__a01",
+  "backend": {
+    "agent": "toolloop-1",
+    "api_style": "ollama",
+    "base_url": "http://127.0.0.1:11434",
+    "location": "local",
+    "model": "qwen3:14b",
+    "name": "ollama-qwen3-14b-toolloop",
+    "parameter_size": "14.8B",
+    "quantization": "Q4_K_M",
+    "version": "ollama 0.40.16"
+  },
+  "capabilities": {
+    "can_capture_diff": true,
+    "can_count_actions": true,
+    "can_limit_time": true,
+    "can_reset_session": true,
+    "observable_reads": true,
+    "usage_source": "provider_reported"
+  },
+  "checks": {
+    "check_ms": 18,
+    "checker": "experimental-claim-checker-1",
+    "checks": 3,
+    "decisions": [
+      {
+        "check_ms": 6,
+        "claim_id": "K00226",
+        "evidence": "line 292: def _write_pyc_fp(fp: IO[bytes], source_stat: os.stat_result, co: types.CodeType)",
+        "line": 292,
+        "old_text": "signature `_pytest.assertion.rewrite._write_pyc_fp(fp: IO[bytes], source_stat: os.stat_result, co: types.CodeType)`",
+        "path": "src/_pytest/assertion/rewrite.py",
+        "policy_action": "reuse",
+        "repair_text": null,
+        "status": "supported",
+        "symbol": "_pytest.assertion.rewrite._write_pyc_fp"
+      },
+      {
+        "check_ms": 6,
+        "claim_id": "K00227",
+        "evidence": "line 310: def _write_pyc(state: 'AssertionState', co: types.CodeType, source_stat: os.stat_result, pyc: Path)",
+        "line": 310,
+        "old_text": "signature `_pytest.assertion.rewrite._write_pyc(state: 'AssertionState', co: types.CodeType, source_stat: os.stat_result, pyc: Path)`",
+        "path": "src/_pytest/assertion/rewrite.py",
+        "policy_action": "reuse",
+        "repair_text": null,
+        "status": "supported",
+        "symbol": "_pytest.assertion.rewrite._write_pyc"
+      },
+      {
+        "check_ms": 5,
+        "claim_id": "K00228",
+        "evidence": "line 335: def _rewrite_test(fn: Path, config: Config)",
+        "line": 335,
+        "old_text": "signature `_pytest.assertion.rewrite._rewrite_test(fn: Path, config: Config)`",
+        "path": "src/_pytest/assertion/rewrite.py",
+        "policy_action": "reuse",
+        "repair_text": null,
+        "status": "supported",
+        "symbol": "_pytest.assertion.rewrite._rewrite_test"
+      }
+    ],
+    "skipped": [
+      {
+        "claim_id": "K00229",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00230",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00231",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00232",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00233",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00234",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00235",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00236",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00237",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00238",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00239",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00240",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00241",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00242",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00243",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00244",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00245",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00246",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00247",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00248",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00249",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00250",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00251",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00252",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00215",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00216",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00217",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00218",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00219",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00220",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00221",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00222",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00223",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00224",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00225",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00253",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00254",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00255",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00256",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00257",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00258",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00259",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00260",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00261",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00262",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00263",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K00264",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K01352",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K01353",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K01354",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K01355",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K01356",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K01357",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K01358",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K01359",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K01360",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      },
+      {
+        "claim_id": "K01361",
+        "reason": "check budget exhausted",
+        "status": "skipped"
+      }
+    ],
+    "suspect_claims": 60
+  },
+  "counters": {
+    "checks": 3,
+    "implementer_actions": 1,
+    "planner_actions": 2
+  },
+  "finished_at": "2026-11-20T00:29:02Z",
+  "generated_documents_in_workspace": 0,
+  "handoff": {
+    "byte_cap": 600,
+    "bytes": 524,
+    "truncated": false
+  },
+  "instance_id": "pytest-dev__pytest-11143",
+  "is_live": true,
+  "key": {
+    "arm": "selective_stale",
+    "attempt": 1,
+    "instance_id": "pytest-dev__pytest-11143",
+    "manifest_hash": "03b3c25df19c735053c18431d06da2c8bc66937048ab80e26ab91fe2de27ee59",
+    "seed": 20261119,
+    "solver_config_hash": "9169e458b9face86b8dbd30ea062e73521e0e613e462a815aa4c2786cf7ab86d"
+  },
+  "limits": {
+    "max_actions": 12,
+    "time_s": 360
+  },
+  "packet": {
+    "exposed_claim_ids": [
+      "K00226",
+      "K00227",
+      "K00228",
+      "K00229",
+      "K00230",
+      "K00231",
+      "K00232",
+      "K00233",
+      "K00234",
+      "K00235",
+      "K00236",
+      "K00237",
+      "K00238",
+      "K00239",
+      "K00240",
+      "K00241",
+      "K00242",
+      "K00243",
+      "K00244",
+      "K00245",
+      "K00246",
+      "K00247",
+      "K00248",
+      "K00249",
+      "K00250",
+      "K00251",
+      "K00252",
+      "K00215",
+      "K00216",
+      "K00217",
+      "K00218",
+      "K00219",
+      "K00220",
+      "K00221",
+      "K00222",
+      "K00223",
+      "K00224",
+      "K00225",
+      "K00253",
+      "K00254",
+      "K00255",
+      "K00256",
+      "K00257",
+      "K00258",
+      "K00259",
+      "K00260",
+      "K00261",
+      "K00262",
+      "K00263",
+      "K00264",
+      "K01352",
+      "K01353",
+      "K01354",
+      "K01355",
+      "K01356",
+      "K01357",
+      "K01358",
+      "K01359",
+      "K01360",
+      "K01361"
+    ],
+    "final_bytes": 8877,
+    "final_sha256": "00ccf56ae9dca39d2084ed23c9453d31e24ecf0ace8b8f71a0acfbde5b41b951",
+    "initial_bytes": 7863,
+    "initial_sha256": "2a2f7e4aa88148d89c9dddec8dc0b48c9ba743b7ca7dd74a00dc6931e54b237e"
+  },
+  "patch": {
+    "bytes": 509,
+    "file": "patch.diff",
+    "generation_status": "patch",
+    "human_edited": false,
+    "local_apply_check": {
+      "detail": "applies cleanly to a fresh pre-fix snapshot",
+      "ok": true
+    },
+    "sha256": "484626e9acea39a54221d72ebe597d4b576b0f76f76b86550a3090f4db0459bd"
+  },
+  "resources": {
+    "host_min_available_mb": 11353,
+    "host_peak_used_mb": 21133,
+    "process_peak_mb": null,
+    "process_peak_note": "unavailable: no per-process sampler in the standard library",
+    "remote_memory": null,
+    "vram_peak_used_mb": 15934
+  },
+  "roles": {
+    "implementer": {
+      "actions": 1,
+      "elapsed_ms": 2505,
+      "error": null,
+      "exit_code": 0,
+      "exit_reason": "finished",
+      "refused_after_limit": 0,
+      "status": "completed",
+      "usage": {
+        "cache_read_tokens": null,
+        "input_tokens": 10259,
+        "output_tokens": 103,
+        "source": "provider_reported"
+      },
+      "wall_ms": 2654
+    },
+    "planner": {
+      "actions": 2,
+      "elapsed_ms": 5307,
+      "error": null,
+      "exit_code": 0,
+      "exit_reason": "finished",
+      "refused_after_limit": 0,
+      "status": "completed",
+      "usage": {
+        "cache_read_tokens": null,
+        "input_tokens": 14840,
+        "output_tokens": 223,
+        "source": "provider_reported"
+      },
+      "wall_ms": 5450
+    }
+  },
+  "status": "completed_patch",
+  "timing": {
+    "over_deadline": false,
+    "solve_ms": 8194
+  },
+  "trace": {
+    "cap_bytes": 65536,
+    "counts": {
+      "check": 60,
+      "claim_exposure": 1,
+      "handoff": 1,
+      "patch": 1,
+      "role_terminal": 2,
+      "tool_call": 3
+    },
+    "events_total": 68,
+    "events_truncated": 0,
+    "events_written": 68,
+    "ledger": "ledger.jsonl",
+    "truncated": false
+  },
+  "usage": {
+    "cache_read_tokens": null,
+    "input_tokens": 25099,
+    "output_tokens": 326,
+    "source": "provider_reported"
+  },
+  "workspace_tree_sha256": "fd5f6a3d09419c6f0ff025d4c68d235b67a5ea154484f97a1d8d979f546a1c65"
+}

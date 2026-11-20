@@ -1,0 +1,14 @@
+{
+  "attempt_id": "pytest-dev__pytest-11143__source_only__seed20261119__a01",
+  "finished_at": "2026-11-20T00:28:47Z",
+  "key": {
+    "arm": "source_only",
+    "attempt": 1,
+    "instance_id": "pytest-dev__pytest-11143",
+    "manifest_hash": "03b3c25df19c735053c18431d06da2c8bc66937048ab80e26ab91fe2de27ee59",
+    "seed": 20261119,
+    "solver_config_hash": "9169e458b9face86b8dbd30ea062e73521e0e613e462a815aa4c2786cf7ab86d"
+  },
+  "started_at": "2026-11-20T00:28:32Z",
+  "status": "completed_patch"
+}
