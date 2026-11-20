@@ -251,7 +251,7 @@ def released_gate(repo: Path, case: dict) -> dict:
         with tempfile.TemporaryDirectory(prefix="gate-") as temp:
             sh(["git", "clone", "--quiet", str(repo), temp], check=True)
             git(Path(temp), "checkout", "--quiet", case["t"])
-            changed = sorted(helper.diff_since(Path(temp), case["s"]))
+            changed = sorted(helper.diff_since(Path(temp).resolve(), case["s"]))
         covered = [f for f in changed if helper.match_any(f, [case["claim"]["covered_path"]])]
         return {"source": "released docagent.py diff_since + match_any", "helper_sha256": sha(HELPER.read_bytes()), "covered_file_changed": bool(covered), "changed_covered_files": covered, "files_changed_s_to_t": len(changed)}
     except Exception as exc:  # the gate is informative; a failure here must not hide the case

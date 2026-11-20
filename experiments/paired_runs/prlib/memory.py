@@ -180,6 +180,7 @@ def build_routing_repo(root: Path, tree_s: Path, tree_t: Path, documents: list[d
     if root.exists():
         shutil.rmtree(root, ignore_errors=True)
     root.mkdir(parents=True)
+    root = root.resolve()  # the helper expects a resolved project root, as its own CLI passes
     git(root, "init", "-q", "-b", "main")
     git(root, "config", "user.email", "bench@docagent.local")
     git(root, "config", "user.name", "DocAgent Bench")
@@ -208,7 +209,7 @@ def build_routing_repo(root: Path, tree_s: Path, tree_t: Path, documents: list[d
 
 def route(root: Path, intent: str, limit: int) -> dict:
     """Unmodified released router. Returns ranked documents and its freshness findings."""
-    bundle = load_helper().context_bundle(root, intent, limit)
+    bundle = load_helper().context_bundle(root.resolve(), intent, limit)
     if bundle.get("status") in {"unconfigured", "disabled"}:
         raise BenchError(f"released helper reports {bundle.get('status')}")
     stale = {f["document"]: f.get("files") or [] for f in bundle.get("freshness_findings", []) if f.get("code") == "stale-document"}

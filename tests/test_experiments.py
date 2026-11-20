@@ -163,6 +163,35 @@ class CheckerTest(unittest.TestCase):
         self.assertEqual(checker.check_claim(self.claims["m.f"], self.tree)["status"], "unresolved")
 
 
+class RoutingRepoTest(unittest.TestCase):
+    def test_routing_works_through_an_aliased_temp_path(self) -> None:
+        """macOS temp directories are symlinks; the released helper needs a resolved project root."""
+        with tempfile.TemporaryDirectory() as temp:
+            real = Path(temp) / "real"
+            alias = Path(temp) / "alias"
+            real.mkdir()
+            try:
+                if sys.platform == "win32":
+                    made = subprocess.run(["cmd", "/c", "mklink", "/J", str(alias), str(real)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode == 0
+                else:
+                    alias.symlink_to(real, target_is_directory=True)
+                    made = True
+            except OSError:
+                made = False
+            if not made:
+                self.skipTest("cannot create a directory alias on this host")
+            for label, body in (("s", "def f(a):\n    return a\n"), ("t", "def f(a, b=2):\n    return a\n")):
+                (alias / label / "pkg").mkdir(parents=True)
+                (alias / label / "pkg" / "mod.py").write_text(body, encoding="utf-8")
+            inventory = memory.build_claims(alias / "s", "s" * 40)
+            documents = memory.build_documents(inventory, 1500)
+            routing = memory.build_routing_repo(alias / "routing", alias / "s", alias / "t", documents)
+            routed = memory.route(alias / "routing", "f in pkg mod fails", 5)
+            self.assertEqual(routing["changed_scope_files"], ["pkg/mod.py"])
+            self.assertEqual(len(routed["documents"]), 1)
+            self.assertEqual(list(routed["stale_documents"].values()), [["pkg/mod.py"]])
+
+
 class LedgerAndGradingTest(unittest.TestCase):
     def test_trace_truncation_keeps_terminal_counters(self) -> None:
         with tempfile.TemporaryDirectory() as temp:

@@ -141,8 +141,9 @@ def run_attempt(manifest: dict, manifest_hash: str, issue: dict, arm: str, backe
                 check_report = checker.selective_packet(packet, claims, workspace, min(int(check_limits["max_checks"]), actions_left), min(float(check_limits["time_s"]), max(remaining(), 0)))
                 for decision in check_report["decisions"]:
                     ledger.event("check", stage="verify", role="checker", claim_id=decision["claim_id"], path=decision["path"], symbol=decision["symbol"], check_status=decision["status"], policy_action=decision["policy_action"], observation=decision["evidence"], old_text=decision["old_text"], new_text=decision.get("repair_text"), check_ms=decision["check_ms"], counters={"actions": 1, "checks": 1})
-                for item in check_report["skipped"]:
-                    ledger.event("check", stage="verify", role="checker", claim_id=item["claim_id"], check_status="skipped", policy_action="unchecked", observation=item["reason"])
+                if check_report["skipped"]:  # one compact event; the full list is in checks.json
+                    skipped = check_report["skipped"]
+                    ledger.event("checks_skipped", stage="verify", role="checker", check_status="skipped", policy_action="unchecked", observation=f"{len(skipped)} suspect claims left unchecked ({skipped[0]['claim_id']} .. {skipped[-1]['claim_id']}): {skipped[0]['reason']}", skipped_claims=len(skipped))
                 counters["checks"] = check_report["checks"]
                 actions_left -= check_report["checks"]
                 final = check_report["text"].encode("utf-8")
