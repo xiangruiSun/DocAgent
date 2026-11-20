@@ -530,15 +530,20 @@ def render_case(case_dir: Path) -> str:
     ledgers = {arm: read_jsonl(summary["_dir"] / "ledger.jsonl") for arm, summary in attempts.items()}
     lines += ["", "## Side by side", ""]
     order = [a for a in ("source_only", "blind", "checked") if a in ledgers]
-    acts = {arm: [e for e in ledgers[arm] if e.get("event_type") in {"source_read", "source_edit", "check", "gate", "terminal_answer", "oracle_outcome", "handoff"}] for arm in order}
+    acts = {arm: [e for e in ledgers[arm] if e.get("event_type") in {"source_read", "source_edit", "check", "checks_skipped", "gate", "terminal_answer", "oracle_outcome", "handoff"}] for arm in order}
     lines += ["| Step | " + " | ".join(order) + " |", "|---|" + "---|" * len(order)]
     for step in range(max((len(v) for v in acts.values()), default=0)):
         cells = []
         for arm in order:
             if step < len(acts[arm]):
                 e = acts[arm][step]
-                detail = e.get("path") or e.get("check_status") or ""
-                cells.append(f"#{e['seq']} {e['event_type']} {detail}".strip())
+                if e["event_type"] == "check":
+                    detail = f"{e.get('claim_id')} {e.get('check_status')} -> {e.get('policy_action')}"
+                elif e["event_type"] == "checks_skipped":
+                    detail = f"{e.get('skipped_claims')} claims"
+                else:
+                    detail = e.get("path") or (e.get("action") or "").split(" ")[0] if e["event_type"].startswith("source_") else (e.get("check_status") or "")
+                cells.append(f"#{e['seq']} {e['event_type']} {detail}".strip().replace("|", "/"))
             else:
                 cells.append("")
         lines.append(f"| {step + 1} | " + " | ".join(cells) + " |")
@@ -556,6 +561,8 @@ def render_case(case_dir: Path) -> str:
         events = ledgers[arm]
         touched = [e["seq"] for e in events if e.get("event_type") in {"source_read", "source_edit"} and e.get("path") == claim["covered_path"]]
         reliance = f"the agent accessed the claimed path `{claim['covered_path']}` at event(s) {touched}; whether it relied on the note is **unknown**" if touched else "no recorded access to the claimed path; reliance is **unknown**"
+        if arm == "source_only":
+            reliance = f"no stored note was given to this session; it accessed `{claim['covered_path']}` at event(s) {touched}" if touched else "no stored note was given to this session"
         terminal = next((e for e in events if e.get("event_type") == "terminal_answer"), {})
         graded = next((e for e in events if e.get("event_type") == "oracle_outcome"), {})
         lines += [f"- **{arm}** (`{summary['attempt_id']}`, ledger `attempts/{summary['attempt_id']}/ledger.jsonl`): {reliance}. Terminal answer at event {terminal.get('seq')}: \"{summary.get('final_answer')}\". Patch: {summary.get('patch_bytes')} bytes. Oracle at event {graded.get('seq')}: **{summary['oracle']['verdict']}** ({summary['oracle'].get('detail')}). Trace truncated: {summary['ledger'].get('truncated')}."]

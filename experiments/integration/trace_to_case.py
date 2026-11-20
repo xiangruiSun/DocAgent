@@ -77,6 +77,14 @@ def convert_events(ledger: list[dict], run_id: str, oracle: dict) -> list[dict]:
         kind = event.get("event_type")
         if kind == "claim_exposure":
             add("claim_exposure", event, action="inject routed stale packet")
+        elif kind == "check" and event.get("check_status") == "skipped":
+            if rows and rows[-1]["event_type"] == "checks_skipped":  # collapse a run of skipped checks into one row
+                rows[-1]["skipped_claims"] += 1
+                rows[-1]["evidence"] = f"{rows[-1]['skipped_claims']} suspect claims left unchecked: {event.get('observation')}"
+            else:
+                add("checks_skipped", event, action="check budget exhausted", skipped_claims=1)
+        elif kind == "checks_skipped":
+            add("checks_skipped", event, action="check budget exhausted", skipped_claims=event.get("skipped_claims"))
         elif kind == "check":
             add("check", event, action="check predicate against current source", old_text=event.get("old_text"), new_text=event.get("new_text"))
         elif kind == "tool_call":
@@ -113,7 +121,8 @@ def main(argv: list[str] | None = None) -> int:
     attempts = {arm: first_attempt(runs, args.instance_id, arm) for arm in ARM_MAP}
     selective = attempts.get("selective_stale")
     decisions = ((selective[0].get("checks") or {}).get("decisions") or []) if selective else []
-    claim_id = args.claim_id or (decisions[0]["claim_id"] if decisions else next((c for c in exposed if c in drift), None) or next(iter(exposed), None))
+    # A staleness case is about a claim that drifted: prefer an exposed claim that fails at t, then a checked one.
+    claim_id = args.claim_id or next((c for c in exposed if c in drift), None) or (decisions[0]["claim_id"] if decisions else next(iter(exposed), None))
     if claim_id is None or claim_id not in exposed:
         print("error: no exposed claim to feature; the router returned an empty packet", file=sys.stderr)
         return 2
@@ -168,7 +177,7 @@ def main(argv: list[str] | None = None) -> int:
         write_json(target / "summary.json", {
             "attempt_id": summary["attempt_id"], "case_id": args.case_id, "arm": ARM_MAP[arm], "benchmark_arm": arm, "order": order, "status": summary["status"], "exit_reason": summary["roles"]["implementer"].get("exit_reason"),
             "is_live": summary["is_live"], "backend": summary["backend"], "capabilities": summary.get("capabilities") or {}, "packet_initial_sha256": summary["packet"]["initial_sha256"], "packet_final_sha256": summary["packet"]["final_sha256"],
-            "check": {"status": decision["status"], "policy_action": decision["policy_action"], "evidence": decision["evidence"], "verifier": manifest["driver"]["checker"]} if arm == "selective_stale" and decision else None,
+            "check": None if arm != "selective_stale" else ({"status": decision["status"], "policy_action": decision["policy_action"], "evidence": decision["evidence"], "verifier": manifest["driver"]["checker"]} if decision else {"status": "unchecked", "policy_action": "unchecked", "evidence": f"the check budget ({len(decisions)} checks in retrieval order) ran out before this claim; it reached the agent as recorded", "verifier": manifest["driver"]["checker"]}),
             "final_answer": terminal.get("evidence") or "", "first_inspected_path": reads[0]["path"] if reads else None, "actions": summary["actions_used"], "limits": summary["limits"], "patch_bytes": summary["patch"]["bytes"], "oracle": oracle,
             "timing": {"wall_ms": summary["timing"]["solve_ms"]}, "usage": summary["usage"], "resources": summary["resources"], "ledger": {"events_total": len(events), "events_truncated": summary["trace"]["events_truncated"], "truncated": summary["trace"]["truncated"]},
         })

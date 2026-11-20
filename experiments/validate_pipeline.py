@@ -230,7 +230,7 @@ def main(argv: list[str] | None = None) -> int:
                         digests.append(json.loads(result.stdout)["sha256"])
                 replay = {"ok": len(digests) == 2 and digests[0] == digests[1], "report": str(args.out / "case_report" / f"{case_id}.md"), "sha256": digests[0] if digests else None, "model_calls": 0}
                 summary = verdicts(read_json(args.out / "report" / "report.json"), instance_id, replay)
-                summary.update(instance_id=instance_id, elapsed_s=round(time.monotonic() - started, 1), commands=run.state["commands"])
+                summary.update(instance_id=instance_id, total_command_seconds=round(sum(c.get("seconds") or 0 for c in run.state["commands"]), 1), commands=run.state["commands"])
                 write_json(args.out / "validation" / "summary.json", summary)
                 run.mark("report", acceptance=summary["pipeline_acceptance"]["status"])
                 print(json.dumps({k: summary[k] for k in ("environment_controls", "pipeline_acceptance", "agent_resolution")}, indent=2, default=str)[:6000])
