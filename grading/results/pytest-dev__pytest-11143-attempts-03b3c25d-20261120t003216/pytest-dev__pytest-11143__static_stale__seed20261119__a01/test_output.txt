@@ -1,0 +1,3799 @@
++ source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /opt/miniconda3/bin/conda
+++++ dirname /opt/miniconda3/bin
++++ PATH=/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+++ /opt/miniconda3/bin/conda shell.posix activate testbed
++ ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_1=/opt/miniconda3
+++ CONDA_PREFIX_1=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ cd /testbed
++ git config --global --add safe.directory /testbed
++ cd /testbed
++ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   src/_pytest/assertion/rewrite.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
++ git show
+commit 793bffd60376d576f85c3eaebaaf5f7445ecee1d
+Author: SWE-bench <setup@swebench.com>
+Date:   Sat Aug 15 07:32:37 2026 +0000
+
+    SWE-bench
+
+diff --git a/.coveragerc b/.coveragerc
+old mode 100644
+new mode 100755
+diff --git a/.gitattributes b/.gitattributes
+old mode 100644
+new mode 100755
+diff --git a/.gitblameignore b/.gitblameignore
+old mode 100644
+new mode 100755
+diff --git a/.github/FUNDING.yml b/.github/FUNDING.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/ISSUE_TEMPLATE/1_bug_report.md b/.github/ISSUE_TEMPLATE/1_bug_report.md
+old mode 100644
+new mode 100755
+diff --git a/.github/ISSUE_TEMPLATE/2_feature_request.md b/.github/ISSUE_TEMPLATE/2_feature_request.md
+old mode 100644
+new mode 100755
+diff --git a/.github/ISSUE_TEMPLATE/config.yml b/.github/ISSUE_TEMPLATE/config.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/PULL_REQUEST_TEMPLATE.md b/.github/PULL_REQUEST_TEMPLATE.md
+old mode 100644
+new mode 100755
+diff --git a/.github/config.yml b/.github/config.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/dependabot.yml b/.github/dependabot.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/labels.toml b/.github/labels.toml
+old mode 100644
+new mode 100755
+diff --git a/.github/workflows/backport.yml b/.github/workflows/backport.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/workflows/deploy.yml b/.github/workflows/deploy.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/workflows/prepare-release-pr.yml b/.github/workflows/prepare-release-pr.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/workflows/stale.yml b/.github/workflows/stale.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/workflows/test.yml b/.github/workflows/test.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/workflows/update-plugin-list.yml b/.github/workflows/update-plugin-list.yml
+old mode 100644
+new mode 100755
+diff --git a/.gitignore b/.gitignore
+old mode 100644
+new mode 100755
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+old mode 100644
+new mode 100755
+diff --git a/.readthedocs.yml b/.readthedocs.yml
+old mode 100644
+new mode 100755
+diff --git a/AUTHORS b/AUTHORS
+old mode 100644
+new mode 100755
+diff --git a/CHANGELOG.rst b/CHANGELOG.rst
+old mode 100644
+new mode 100755
+diff --git a/CITATION b/CITATION
+old mode 100644
+new mode 100755
+diff --git a/CODE_OF_CONDUCT.md b/CODE_OF_CONDUCT.md
+old mode 100644
+new mode 100755
+diff --git a/CONTRIBUTING.rst b/CONTRIBUTING.rst
+old mode 100644
+new mode 100755
+diff --git a/LICENSE b/LICENSE
+old mode 100644
+new mode 100755
+diff --git a/OPENCOLLECTIVE.rst b/OPENCOLLECTIVE.rst
+old mode 100644
+new mode 100755
+diff --git a/README.rst b/README.rst
+old mode 100644
+new mode 100755
+diff --git a/RELEASING.rst b/RELEASING.rst
+old mode 100644
+new mode 100755
+diff --git a/TIDELIFT.rst b/TIDELIFT.rst
+old mode 100644
+new mode 100755
+diff --git a/bench/bench.py b/bench/bench.py
+old mode 100644
+new mode 100755
+diff --git a/bench/bench_argcomplete.py b/bench/bench_argcomplete.py
+old mode 100644
+new mode 100755
+diff --git a/bench/empty.py b/bench/empty.py
+old mode 100644
+new mode 100755
+diff --git a/bench/manyparam.py b/bench/manyparam.py
+old mode 100644
+new mode 100755
+diff --git a/bench/skip.py b/bench/skip.py
+old mode 100644
+new mode 100755
+diff --git a/bench/unit_test.py b/bench/unit_test.py
+old mode 100644
+new mode 100755
+diff --git a/bench/xunit.py b/bench/xunit.py
+old mode 100644
+new mode 100755
+diff --git a/changelog/10337.bugfix.rst b/changelog/10337.bugfix.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/10447.bugfix.rst b/changelog/10447.bugfix.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/10811.bugfix.rst b/changelog/10811.bugfix.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/11011.doc.rst b/changelog/11011.doc.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/11151.breaking.rst b/changelog/11151.breaking.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/3664.deprecation.rst b/changelog/3664.deprecation.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/7363.breaking.rst b/changelog/7363.breaking.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/8976.breaking.rst b/changelog/8976.breaking.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/9036.bugfix.rst b/changelog/9036.bugfix.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/9288.breaking.rst b/changelog/9288.breaking.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/README.rst b/changelog/README.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/_template.rst b/changelog/_template.rst
+old mode 100644
+new mode 100755
+diff --git a/codecov.yml b/codecov.yml
+old mode 100644
+new mode 100755
+diff --git a/doc/en/Makefile b/doc/en/Makefile
+old mode 100644
+new mode 100755
+diff --git a/doc/en/_templates/globaltoc.html b/doc/en/_templates/globaltoc.html
+old mode 100644
+new mode 100755
+diff --git a/doc/en/_templates/layout.html b/doc/en/_templates/layout.html
+old mode 100644
+new mode 100755
+diff --git a/doc/en/_templates/links.html b/doc/en/_templates/links.html
+old mode 100644
+new mode 100755
+diff --git a/doc/en/_templates/relations.html b/doc/en/_templates/relations.html
+old mode 100644
+new mode 100755
+diff --git a/doc/en/_templates/sidebarintro.html b/doc/en/_templates/sidebarintro.html
+old mode 100644
+new mode 100755
+diff --git a/doc/en/_templates/slim_searchbox.html b/doc/en/_templates/slim_searchbox.html
+old mode 100644
+new mode 100755
+diff --git a/doc/en/adopt.rst b/doc/en/adopt.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/index.rst b/doc/en/announce/index.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.0.0.rst b/doc/en/announce/release-2.0.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.0.1.rst b/doc/en/announce/release-2.0.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.0.2.rst b/doc/en/announce/release-2.0.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.0.3.rst b/doc/en/announce/release-2.0.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.1.0.rst b/doc/en/announce/release-2.1.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.1.1.rst b/doc/en/announce/release-2.1.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.1.2.rst b/doc/en/announce/release-2.1.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.1.3.rst b/doc/en/announce/release-2.1.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.2.0.rst b/doc/en/announce/release-2.2.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.2.1.rst b/doc/en/announce/release-2.2.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.2.2.rst b/doc/en/announce/release-2.2.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.2.4.rst b/doc/en/announce/release-2.2.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.3.0.rst b/doc/en/announce/release-2.3.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.3.1.rst b/doc/en/announce/release-2.3.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.3.2.rst b/doc/en/announce/release-2.3.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.3.3.rst b/doc/en/announce/release-2.3.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.3.4.rst b/doc/en/announce/release-2.3.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.3.5.rst b/doc/en/announce/release-2.3.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.4.0.rst b/doc/en/announce/release-2.4.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.4.1.rst b/doc/en/announce/release-2.4.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.4.2.rst b/doc/en/announce/release-2.4.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.5.0.rst b/doc/en/announce/release-2.5.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.5.1.rst b/doc/en/announce/release-2.5.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.5.2.rst b/doc/en/announce/release-2.5.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.6.0.rst b/doc/en/announce/release-2.6.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.6.1.rst b/doc/en/announce/release-2.6.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.6.2.rst b/doc/en/announce/release-2.6.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.6.3.rst b/doc/en/announce/release-2.6.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.7.0.rst b/doc/en/announce/release-2.7.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.7.1.rst b/doc/en/announce/release-2.7.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.7.2.rst b/doc/en/announce/release-2.7.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.8.2.rst b/doc/en/announce/release-2.8.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.8.3.rst b/doc/en/announce/release-2.8.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.8.4.rst b/doc/en/announce/release-2.8.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.8.5.rst b/doc/en/announce/release-2.8.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.8.6.rst b/doc/en/announce/release-2.8.6.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.8.7.rst b/doc/en/announce/release-2.8.7.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.9.0.rst b/doc/en/announce/release-2.9.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.9.1.rst b/doc/en/announce/release-2.9.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.9.2.rst b/doc/en/announce/release-2.9.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.0.rst b/doc/en/announce/release-3.0.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.1.rst b/doc/en/announce/release-3.0.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.2.rst b/doc/en/announce/release-3.0.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.3.rst b/doc/en/announce/release-3.0.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.4.rst b/doc/en/announce/release-3.0.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.5.rst b/doc/en/announce/release-3.0.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.6.rst b/doc/en/announce/release-3.0.6.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.7.rst b/doc/en/announce/release-3.0.7.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.1.0.rst b/doc/en/announce/release-3.1.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.1.1.rst b/doc/en/announce/release-3.1.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.1.2.rst b/doc/en/announce/release-3.1.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.1.3.rst b/doc/en/announce/release-3.1.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.10.0.rst b/doc/en/announce/release-3.10.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.10.1.rst b/doc/en/announce/release-3.10.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.2.0.rst b/doc/en/announce/release-3.2.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.2.1.rst b/doc/en/announce/release-3.2.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.2.2.rst b/doc/en/announce/release-3.2.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.2.3.rst b/doc/en/announce/release-3.2.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.2.4.rst b/doc/en/announce/release-3.2.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.2.5.rst b/doc/en/announce/release-3.2.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.3.0.rst b/doc/en/announce/release-3.3.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.3.1.rst b/doc/en/announce/release-3.3.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.3.2.rst b/doc/en/announce/release-3.3.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.4.0.rst b/doc/en/announce/release-3.4.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.4.1.rst b/doc/en/announce/release-3.4.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.4.2.rst b/doc/en/announce/release-3.4.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.5.0.rst b/doc/en/announce/release-3.5.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.5.1.rst b/doc/en/announce/release-3.5.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.6.0.rst b/doc/en/announce/release-3.6.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.6.1.rst b/doc/en/announce/release-3.6.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.6.2.rst b/doc/en/announce/release-3.6.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.6.3.rst b/doc/en/announce/release-3.6.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.6.4.rst b/doc/en/announce/release-3.6.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.7.0.rst b/doc/en/announce/release-3.7.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.7.1.rst b/doc/en/announce/release-3.7.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.7.2.rst b/doc/en/announce/release-3.7.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.7.3.rst b/doc/en/announce/release-3.7.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.7.4.rst b/doc/en/announce/release-3.7.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.8.0.rst b/doc/en/announce/release-3.8.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.8.1.rst b/doc/en/announce/release-3.8.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.8.2.rst b/doc/en/announce/release-3.8.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.9.0.rst b/doc/en/announce/release-3.9.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.9.1.rst b/doc/en/announce/release-3.9.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.9.2.rst b/doc/en/announce/release-3.9.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.9.3.rst b/doc/en/announce/release-3.9.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.0.0.rst b/doc/en/announce/release-4.0.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.0.1.rst b/doc/en/announce/release-4.0.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.0.2.rst b/doc/en/announce/release-4.0.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.1.0.rst b/doc/en/announce/release-4.1.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.1.1.rst b/doc/en/announce/release-4.1.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.2.0.rst b/doc/en/announce/release-4.2.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.2.1.rst b/doc/en/announce/release-4.2.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.3.0.rst b/doc/en/announce/release-4.3.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.3.1.rst b/doc/en/announce/release-4.3.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.4.0.rst b/doc/en/announce/release-4.4.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.4.1.rst b/doc/en/announce/release-4.4.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.4.2.rst b/doc/en/announce/release-4.4.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.5.0.rst b/doc/en/announce/release-4.5.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.0.rst b/doc/en/announce/release-4.6.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.1.rst b/doc/en/announce/release-4.6.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.2.rst b/doc/en/announce/release-4.6.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.3.rst b/doc/en/announce/release-4.6.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.4.rst b/doc/en/announce/release-4.6.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.5.rst b/doc/en/announce/release-4.6.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.6.rst b/doc/en/announce/release-4.6.6.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.7.rst b/doc/en/announce/release-4.6.7.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.8.rst b/doc/en/announce/release-4.6.8.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.9.rst b/doc/en/announce/release-4.6.9.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.0.0.rst b/doc/en/announce/release-5.0.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.0.1.rst b/doc/en/announce/release-5.0.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.1.0.rst b/doc/en/announce/release-5.1.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.1.1.rst b/doc/en/announce/release-5.1.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.1.2.rst b/doc/en/announce/release-5.1.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.1.3.rst b/doc/en/announce/release-5.1.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.2.0.rst b/doc/en/announce/release-5.2.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.2.1.rst b/doc/en/announce/release-5.2.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.2.2.rst b/doc/en/announce/release-5.2.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.2.3.rst b/doc/en/announce/release-5.2.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.2.4.rst b/doc/en/announce/release-5.2.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.3.0.rst b/doc/en/announce/release-5.3.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.3.1.rst b/doc/en/announce/release-5.3.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.3.2.rst b/doc/en/announce/release-5.3.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.3.3.rst b/doc/en/announce/release-5.3.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.3.4.rst b/doc/en/announce/release-5.3.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.3.5.rst b/doc/en/announce/release-5.3.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.4.0.rst b/doc/en/announce/release-5.4.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.4.1.rst b/doc/en/announce/release-5.4.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.4.2.rst b/doc/en/announce/release-5.4.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.4.3.rst b/doc/en/announce/release-5.4.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.0.0.rst b/doc/en/announce/release-6.0.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.0.0rc1.rst b/doc/en/announce/release-6.0.0rc1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.0.1.rst b/doc/en/announce/release-6.0.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.0.2.rst b/doc/en/announce/release-6.0.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.1.0.rst b/doc/en/announce/release-6.1.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.1.1.rst b/doc/en/announce/release-6.1.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.1.2.rst b/doc/en/announce/release-6.1.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.2.0.rst b/doc/en/announce/release-6.2.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.2.1.rst b/doc/en/announce/release-6.2.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.2.2.rst b/doc/en/announce/release-6.2.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.2.3.rst b/doc/en/announce/release-6.2.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.2.4.rst b/doc/en/announce/release-6.2.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.2.5.rst b/doc/en/announce/release-6.2.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.0.0.rst b/doc/en/announce/release-7.0.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.0.0rc1.rst b/doc/en/announce/release-7.0.0rc1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.0.1.rst b/doc/en/announce/release-7.0.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.1.0.rst b/doc/en/announce/release-7.1.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.1.1.rst b/doc/en/announce/release-7.1.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.1.2.rst b/doc/en/announce/release-7.1.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.1.3.rst b/doc/en/announce/release-7.1.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.2.0.rst b/doc/en/announce/release-7.2.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.2.1.rst b/doc/en/announce/release-7.2.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.2.2.rst b/doc/en/announce/release-7.2.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.3.0.rst b/doc/en/announce/release-7.3.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.3.1.rst b/doc/en/announce/release-7.3.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.3.2.rst b/doc/en/announce/release-7.3.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.4.0.rst b/doc/en/announce/release-7.4.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/sprint2016.rst b/doc/en/announce/sprint2016.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/backwards-compatibility.rst b/doc/en/backwards-compatibility.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/builtin.rst b/doc/en/builtin.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/changelog.rst b/doc/en/changelog.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/conf.py b/doc/en/conf.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/conftest.py b/doc/en/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/contact.rst b/doc/en/contact.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/contents.rst b/doc/en/contents.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/contributing.rst b/doc/en/contributing.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/deprecations.rst b/doc/en/deprecations.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/development_guide.rst b/doc/en/development_guide.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/assertion/failure_demo.py b/doc/en/example/assertion/failure_demo.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/assertion/global_testmodule_config/conftest.py b/doc/en/example/assertion/global_testmodule_config/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/assertion/global_testmodule_config/test_hello_world.py b/doc/en/example/assertion/global_testmodule_config/test_hello_world.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/assertion/test_failures.py b/doc/en/example/assertion/test_failures.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/assertion/test_setup_flow_example.py b/doc/en/example/assertion/test_setup_flow_example.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/attic.rst b/doc/en/example/attic.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/conftest.py b/doc/en/example/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/fixture_availability.svg b/doc/en/example/fixtures/fixture_availability.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/fixture_availability_plugins.svg b/doc/en/example/fixtures/fixture_availability_plugins.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse.py b/doc/en/example/fixtures/test_fixtures_order_autouse.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse.svg b/doc/en/example/fixtures/test_fixtures_order_autouse.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse_flat.svg b/doc/en/example/fixtures/test_fixtures_order_autouse_flat.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse_multiple_scopes.py b/doc/en/example/fixtures/test_fixtures_order_autouse_multiple_scopes.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse_multiple_scopes.svg b/doc/en/example/fixtures/test_fixtures_order_autouse_multiple_scopes.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse_temp_effects.py b/doc/en/example/fixtures/test_fixtures_order_autouse_temp_effects.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse_temp_effects.svg b/doc/en/example/fixtures/test_fixtures_order_autouse_temp_effects.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_dependencies.py b/doc/en/example/fixtures/test_fixtures_order_dependencies.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_dependencies.svg b/doc/en/example/fixtures/test_fixtures_order_dependencies.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_dependencies_flat.svg b/doc/en/example/fixtures/test_fixtures_order_dependencies_flat.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_dependencies_unclear.svg b/doc/en/example/fixtures/test_fixtures_order_dependencies_unclear.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_scope.py b/doc/en/example/fixtures/test_fixtures_order_scope.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_scope.svg b/doc/en/example/fixtures/test_fixtures_order_scope.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_request_different_scope.py b/doc/en/example/fixtures/test_fixtures_request_different_scope.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_request_different_scope.svg b/doc/en/example/fixtures/test_fixtures_request_different_scope.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/index.rst b/doc/en/example/index.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/markers.rst b/doc/en/example/markers.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/multipython.py b/doc/en/example/multipython.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/nonpython.rst b/doc/en/example/nonpython.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/nonpython/__init__.py b/doc/en/example/nonpython/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/nonpython/conftest.py b/doc/en/example/nonpython/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/nonpython/test_simple.yaml b/doc/en/example/nonpython/test_simple.yaml
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/parametrize.rst b/doc/en/example/parametrize.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/pythoncollection.py b/doc/en/example/pythoncollection.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/pythoncollection.rst b/doc/en/example/pythoncollection.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/reportingdemo.rst b/doc/en/example/reportingdemo.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/simple.rst b/doc/en/example/simple.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/special.rst b/doc/en/example/special.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/xfail_demo.py b/doc/en/example/xfail_demo.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/explanation/anatomy.rst b/doc/en/explanation/anatomy.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/explanation/fixtures.rst b/doc/en/explanation/fixtures.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/explanation/flaky.rst b/doc/en/explanation/flaky.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/explanation/goodpractices.rst b/doc/en/explanation/goodpractices.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/explanation/index.rst b/doc/en/explanation/index.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/explanation/pythonpath.rst b/doc/en/explanation/pythonpath.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/funcarg_compare.rst b/doc/en/funcarg_compare.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/funcargs.rst b/doc/en/funcargs.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/getting-started.rst b/doc/en/getting-started.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/historical-notes.rst b/doc/en/historical-notes.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/history.rst b/doc/en/history.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/assert.rst b/doc/en/how-to/assert.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/bash-completion.rst b/doc/en/how-to/bash-completion.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/cache.rst b/doc/en/how-to/cache.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/capture-stdout-stderr.rst b/doc/en/how-to/capture-stdout-stderr.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/capture-warnings.rst b/doc/en/how-to/capture-warnings.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/doctest.rst b/doc/en/how-to/doctest.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/existingtestsuite.rst b/doc/en/how-to/existingtestsuite.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/failures.rst b/doc/en/how-to/failures.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/fixtures.rst b/doc/en/how-to/fixtures.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/index.rst b/doc/en/how-to/index.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/logging.rst b/doc/en/how-to/logging.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/mark.rst b/doc/en/how-to/mark.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/monkeypatch.rst b/doc/en/how-to/monkeypatch.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/nose.rst b/doc/en/how-to/nose.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/output.rst b/doc/en/how-to/output.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/parametrize.rst b/doc/en/how-to/parametrize.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/plugins.rst b/doc/en/how-to/plugins.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/skipping.rst b/doc/en/how-to/skipping.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/tmp_path.rst b/doc/en/how-to/tmp_path.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/unittest.rst b/doc/en/how-to/unittest.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/usage.rst b/doc/en/how-to/usage.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/writing_hook_functions.rst b/doc/en/how-to/writing_hook_functions.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/writing_plugins.rst b/doc/en/how-to/writing_plugins.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/xunit_setup.rst b/doc/en/how-to/xunit_setup.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/cramer2.png b/doc/en/img/cramer2.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/favicon.png b/doc/en/img/favicon.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/freiburg2.jpg b/doc/en/img/freiburg2.jpg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/gaynor3.png b/doc/en/img/gaynor3.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/keleshev.png b/doc/en/img/keleshev.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/pullrequest.png b/doc/en/img/pullrequest.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/pylib.png b/doc/en/img/pylib.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/pytest1.png b/doc/en/img/pytest1.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/pytest_logo_curves.svg b/doc/en/img/pytest_logo_curves.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/theuni.png b/doc/en/img/theuni.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/index.rst b/doc/en/index.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/license.rst b/doc/en/license.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/naming20.rst b/doc/en/naming20.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/proposals/parametrize_with_fixtures.rst b/doc/en/proposals/parametrize_with_fixtures.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/pytest.ini b/doc/en/pytest.ini
+old mode 100644
+new mode 100755
+diff --git a/doc/en/recwarn.rst b/doc/en/recwarn.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/reference/customize.rst b/doc/en/reference/customize.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/reference/exit-codes.rst b/doc/en/reference/exit-codes.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/reference/fixtures.rst b/doc/en/reference/fixtures.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/reference/index.rst b/doc/en/reference/index.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/reference/plugin_list.rst b/doc/en/reference/plugin_list.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/reference/reference.rst b/doc/en/reference/reference.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/requirements.txt b/doc/en/requirements.txt
+old mode 100644
+new mode 100755
+diff --git a/doc/en/sponsor.rst b/doc/en/sponsor.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/talks.rst b/doc/en/talks.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/tidelift.rst b/doc/en/tidelift.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/yieldfixture.rst b/doc/en/yieldfixture.rst
+old mode 100644
+new mode 100755
+diff --git a/extra/get_issues.py b/extra/get_issues.py
+old mode 100644
+new mode 100755
+diff --git a/pyproject.toml b/pyproject.toml
+old mode 100644
+new mode 100755
+diff --git a/scripts/prepare-release-pr.py b/scripts/prepare-release-pr.py
+old mode 100644
+new mode 100755
+diff --git a/scripts/publish-gh-release-notes.py b/scripts/publish-gh-release-notes.py
+old mode 100644
+new mode 100755
+diff --git a/scripts/release.major.rst b/scripts/release.major.rst
+old mode 100644
+new mode 100755
+diff --git a/scripts/release.minor.rst b/scripts/release.minor.rst
+old mode 100644
+new mode 100755
+diff --git a/scripts/release.patch.rst b/scripts/release.patch.rst
+old mode 100644
+new mode 100755
+diff --git a/scripts/release.pre.rst b/scripts/release.pre.rst
+old mode 100644
+new mode 100755
+diff --git a/scripts/release.py b/scripts/release.py
+old mode 100644
+new mode 100755
+diff --git a/scripts/towncrier-draft-to-file.py b/scripts/towncrier-draft-to-file.py
+old mode 100644
+new mode 100755
+diff --git a/scripts/update-plugin-list.py b/scripts/update-plugin-list.py
+old mode 100644
+new mode 100755
+diff --git a/setup.cfg b/setup.cfg
+old mode 100644
+new mode 100755
+diff --git a/setup.py b/setup.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/__init__.py b/src/_pytest/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_argcomplete.py b/src/_pytest/_argcomplete.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_code/__init__.py b/src/_pytest/_code/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_code/code.py b/src/_pytest/_code/code.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_code/source.py b/src/_pytest/_code/source.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_io/__init__.py b/src/_pytest/_io/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_io/saferepr.py b/src/_pytest/_io/saferepr.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_io/terminalwriter.py b/src/_pytest/_io/terminalwriter.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_io/wcwidth.py b/src/_pytest/_io/wcwidth.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_py/__init__.py b/src/_pytest/_py/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_py/error.py b/src/_pytest/_py/error.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_py/path.py b/src/_pytest/_py/path.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/assertion/__init__.py b/src/_pytest/assertion/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/assertion/rewrite.py b/src/_pytest/assertion/rewrite.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/assertion/truncate.py b/src/_pytest/assertion/truncate.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/assertion/util.py b/src/_pytest/assertion/util.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/capture.py b/src/_pytest/capture.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/compat.py b/src/_pytest/compat.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/config/__init__.py b/src/_pytest/config/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/config/argparsing.py b/src/_pytest/config/argparsing.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/config/compat.py b/src/_pytest/config/compat.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/config/exceptions.py b/src/_pytest/config/exceptions.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/config/findpaths.py b/src/_pytest/config/findpaths.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/debugging.py b/src/_pytest/debugging.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/deprecated.py b/src/_pytest/deprecated.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/doctest.py b/src/_pytest/doctest.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/faulthandler.py b/src/_pytest/faulthandler.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/fixtures.py b/src/_pytest/fixtures.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/freeze_support.py b/src/_pytest/freeze_support.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/helpconfig.py b/src/_pytest/helpconfig.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/hookspec.py b/src/_pytest/hookspec.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/junitxml.py b/src/_pytest/junitxml.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/legacypath.py b/src/_pytest/legacypath.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/logging.py b/src/_pytest/logging.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/main.py b/src/_pytest/main.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/mark/__init__.py b/src/_pytest/mark/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/mark/expression.py b/src/_pytest/mark/expression.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/mark/structures.py b/src/_pytest/mark/structures.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/monkeypatch.py b/src/_pytest/monkeypatch.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/nodes.py b/src/_pytest/nodes.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/nose.py b/src/_pytest/nose.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/outcomes.py b/src/_pytest/outcomes.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/pastebin.py b/src/_pytest/pastebin.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/pathlib.py b/src/_pytest/pathlib.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/py.typed b/src/_pytest/py.typed
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/pytester.py b/src/_pytest/pytester.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/pytester_assertions.py b/src/_pytest/pytester_assertions.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/python.py b/src/_pytest/python.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/python_api.py b/src/_pytest/python_api.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/python_path.py b/src/_pytest/python_path.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/recwarn.py b/src/_pytest/recwarn.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/reports.py b/src/_pytest/reports.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/runner.py b/src/_pytest/runner.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/scope.py b/src/_pytest/scope.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/setuponly.py b/src/_pytest/setuponly.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/setupplan.py b/src/_pytest/setupplan.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/skipping.py b/src/_pytest/skipping.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/stash.py b/src/_pytest/stash.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/stepwise.py b/src/_pytest/stepwise.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/terminal.py b/src/_pytest/terminal.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/threadexception.py b/src/_pytest/threadexception.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/timing.py b/src/_pytest/timing.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/tmpdir.py b/src/_pytest/tmpdir.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/unittest.py b/src/_pytest/unittest.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/unraisableexception.py b/src/_pytest/unraisableexception.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/warning_types.py b/src/_pytest/warning_types.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/warnings.py b/src/_pytest/warnings.py
+old mode 100644
+new mode 100755
+diff --git a/src/py.py b/src/py.py
+old mode 100644
+new mode 100755
+diff --git a/src/pytest/__init__.py b/src/pytest/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/pytest/__main__.py b/src/pytest/__main__.py
+old mode 100644
+new mode 100755
+diff --git a/src/pytest/py.typed b/src/pytest/py.typed
+old mode 100644
+new mode 100755
+diff --git a/testing/_py/test_local.py b/testing/_py/test_local.py
+old mode 100644
+new mode 100755
+diff --git a/testing/acceptance_test.py b/testing/acceptance_test.py
+old mode 100644
+new mode 100755
+diff --git a/testing/code/test_code.py b/testing/code/test_code.py
+old mode 100644
+new mode 100755
+diff --git a/testing/code/test_excinfo.py b/testing/code/test_excinfo.py
+old mode 100644
+new mode 100755
+diff --git a/testing/code/test_source.py b/testing/code/test_source.py
+old mode 100644
+new mode 100755
+diff --git a/testing/conftest.py b/testing/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/deprecated_test.py b/testing/deprecated_test.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/README.rst b/testing/example_scripts/README.rst
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/__init__.py b/testing/example_scripts/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/acceptance/fixture_mock_integration.py b/testing/example_scripts/acceptance/fixture_mock_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/collect_init_tests/pytest.ini b/testing/example_scripts/collect/collect_init_tests/pytest.ini
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/collect_init_tests/tests/__init__.py b/testing/example_scripts/collect/collect_init_tests/tests/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/collect_init_tests/tests/test_foo.py b/testing/example_scripts/collect/collect_init_tests/tests/test_foo.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/package_infinite_recursion/__init__.pyi b/testing/example_scripts/collect/package_infinite_recursion/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/package_infinite_recursion/conftest.py b/testing/example_scripts/collect/package_infinite_recursion/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/package_infinite_recursion/tests/__init__.py b/testing/example_scripts/collect/package_infinite_recursion/tests/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/package_infinite_recursion/tests/test_basic.py b/testing/example_scripts/collect/package_infinite_recursion/tests/test_basic.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/package_init_given_as_arg/pkg/__init__.py b/testing/example_scripts/collect/package_init_given_as_arg/pkg/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/package_init_given_as_arg/pkg/test_foo.py b/testing/example_scripts/collect/package_init_given_as_arg/pkg/test_foo.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/config/collect_pytest_prefix/__init__.pyi b/testing/example_scripts/config/collect_pytest_prefix/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/config/collect_pytest_prefix/conftest.py b/testing/example_scripts/config/collect_pytest_prefix/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/config/collect_pytest_prefix/test_foo.py b/testing/example_scripts/config/collect_pytest_prefix/test_foo.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/conftest_usageerror/__init__.pyi b/testing/example_scripts/conftest_usageerror/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/conftest_usageerror/conftest.py b/testing/example_scripts/conftest_usageerror/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_dataclasses.py b/testing/example_scripts/dataclasses/test_compare_dataclasses.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_dataclasses_field_comparison_off.py b/testing/example_scripts/dataclasses/test_compare_dataclasses_field_comparison_off.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_dataclasses_verbose.py b/testing/example_scripts/dataclasses/test_compare_dataclasses_verbose.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_dataclasses_with_custom_eq.py b/testing/example_scripts/dataclasses/test_compare_dataclasses_with_custom_eq.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_initvar.py b/testing/example_scripts/dataclasses/test_compare_initvar.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_recursive_dataclasses.py b/testing/example_scripts/dataclasses/test_compare_recursive_dataclasses.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_two_different_dataclasses.py b/testing/example_scripts/dataclasses/test_compare_two_different_dataclasses.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/doctest/main_py/__main__.py b/testing/example_scripts/doctest/main_py/__main__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/doctest/main_py/test_normal_module.py b/testing/example_scripts/doctest/main_py/test_normal_module.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/custom_item/__init__.pyi b/testing/example_scripts/fixtures/custom_item/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/custom_item/conftest.py b/testing/example_scripts/fixtures/custom_item/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/custom_item/foo/__init__.py b/testing/example_scripts/fixtures/custom_item/foo/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/custom_item/foo/test_foo.py b/testing/example_scripts/fixtures/custom_item/foo/test_foo.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub1/__init__.py b/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub1/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub1/conftest.py b/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub1/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub1/test_in_sub1.py b/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub1/test_in_sub1.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub2/__init__.py b/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub2/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub2/conftest.py b/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub2/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub2/test_in_sub2.py b/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub2/test_in_sub2.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_detect_recursive_dependency_error.py b/testing/example_scripts/fixtures/fill_fixtures/test_detect_recursive_dependency_error.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/__init__.pyi b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/conftest.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/pkg/__init__.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/pkg/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/pkg/conftest.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/pkg/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/pkg/test_spam.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/pkg/test_spam.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_module/__init__.pyi b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_module/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_module/conftest.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_module/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_module/test_extend_fixture_conftest_module.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_module/test_extend_fixture_conftest_module.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_module_class.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_module_class.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_basic.py b/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_basic.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_lookup_classlevel.py b/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_lookup_classlevel.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_lookup_modulelevel.py b/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_lookup_modulelevel.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_lookupfails.py b/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_lookupfails.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/test_fixture_named_request.py b/testing/example_scripts/fixtures/test_fixture_named_request.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/test_getfixturevalue_dynamic.py b/testing/example_scripts/fixtures/test_getfixturevalue_dynamic.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/issue88_initial_file_multinodes/__init__.pyi b/testing/example_scripts/issue88_initial_file_multinodes/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/issue88_initial_file_multinodes/conftest.py b/testing/example_scripts/issue88_initial_file_multinodes/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/issue88_initial_file_multinodes/test_hello.py b/testing/example_scripts/issue88_initial_file_multinodes/test_hello.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/issue_519.py b/testing/example_scripts/issue_519.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/junit-10.xsd b/testing/example_scripts/junit-10.xsd
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/marks/marks_considered_keywords/__init__.pyi b/testing/example_scripts/marks/marks_considered_keywords/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/marks/marks_considered_keywords/conftest.py b/testing/example_scripts/marks/marks_considered_keywords/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/marks/marks_considered_keywords/test_marks_as_keywords.py b/testing/example_scripts/marks/marks_considered_keywords/test_marks_as_keywords.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/perf_examples/collect_stats/.gitignore b/testing/example_scripts/perf_examples/collect_stats/.gitignore
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/perf_examples/collect_stats/generate_folders.py b/testing/example_scripts/perf_examples/collect_stats/generate_folders.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/perf_examples/collect_stats/template_test.py b/testing/example_scripts/perf_examples/collect_stats/template_test.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/pytest.ini b/testing/example_scripts/pytest.ini
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/tmpdir/tmp_path_fixture.py b/testing/example_scripts/tmpdir/tmp_path_fixture.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_parametrized_fixture_error_message.py b/testing/example_scripts/unittest/test_parametrized_fixture_error_message.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_setup_skip.py b/testing/example_scripts/unittest/test_setup_skip.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_setup_skip_class.py b/testing/example_scripts/unittest/test_setup_skip_class.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_setup_skip_module.py b/testing/example_scripts/unittest/test_setup_skip_module.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_unittest_asyncio.py b/testing/example_scripts/unittest/test_unittest_asyncio.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_unittest_asynctest.py b/testing/example_scripts/unittest/test_unittest_asynctest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_unittest_plain_async.py b/testing/example_scripts/unittest/test_unittest_plain_async.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/warnings/test_group_warnings_by_message.py b/testing/example_scripts/warnings/test_group_warnings_by_message.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/warnings/test_group_warnings_by_message_summary/test_1.py b/testing/example_scripts/warnings/test_group_warnings_by_message_summary/test_1.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/warnings/test_group_warnings_by_message_summary/test_2.py b/testing/example_scripts/warnings/test_group_warnings_by_message_summary/test_2.py
+old mode 100644
+new mode 100755
+diff --git a/testing/examples/test_issue519.py b/testing/examples/test_issue519.py
+old mode 100644
+new mode 100755
+diff --git a/testing/freeze/.gitignore b/testing/freeze/.gitignore
+old mode 100644
+new mode 100755
+diff --git a/testing/freeze/create_executable.py b/testing/freeze/create_executable.py
+old mode 100644
+new mode 100755
+diff --git a/testing/freeze/runtests_script.py b/testing/freeze/runtests_script.py
+old mode 100644
+new mode 100755
+diff --git a/testing/freeze/tests/test_doctest.txt b/testing/freeze/tests/test_doctest.txt
+old mode 100644
+new mode 100755
+diff --git a/testing/freeze/tests/test_trivial.py b/testing/freeze/tests/test_trivial.py
+old mode 100644
+new mode 100755
+diff --git a/testing/freeze/tox_run.py b/testing/freeze/tox_run.py
+old mode 100644
+new mode 100755
+diff --git a/testing/io/test_saferepr.py b/testing/io/test_saferepr.py
+old mode 100644
+new mode 100755
+diff --git a/testing/io/test_terminalwriter.py b/testing/io/test_terminalwriter.py
+old mode 100644
+new mode 100755
+diff --git a/testing/io/test_wcwidth.py b/testing/io/test_wcwidth.py
+old mode 100644
+new mode 100755
+diff --git a/testing/logging/test_fixture.py b/testing/logging/test_fixture.py
+old mode 100644
+new mode 100755
+diff --git a/testing/logging/test_formatter.py b/testing/logging/test_formatter.py
+old mode 100644
+new mode 100755
+diff --git a/testing/logging/test_reporting.py b/testing/logging/test_reporting.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/.gitignore b/testing/plugins_integration/.gitignore
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/README.rst b/testing/plugins_integration/README.rst
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/bdd_wallet.feature b/testing/plugins_integration/bdd_wallet.feature
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/bdd_wallet.py b/testing/plugins_integration/bdd_wallet.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/django_settings.py b/testing/plugins_integration/django_settings.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/pytest.ini b/testing/plugins_integration/pytest.ini
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/pytest_anyio_integration.py b/testing/plugins_integration/pytest_anyio_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/pytest_asyncio_integration.py b/testing/plugins_integration/pytest_asyncio_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/pytest_mock_integration.py b/testing/plugins_integration/pytest_mock_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/pytest_trio_integration.py b/testing/plugins_integration/pytest_trio_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/pytest_twisted_integration.py b/testing/plugins_integration/pytest_twisted_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/requirements.txt b/testing/plugins_integration/requirements.txt
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/simple_integration.py b/testing/plugins_integration/simple_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/approx.py b/testing/python/approx.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/collect.py b/testing/python/collect.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/fixtures.py b/testing/python/fixtures.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/integration.py b/testing/python/integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/metafunc.py b/testing/python/metafunc.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/raises.py b/testing/python/raises.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/show_fixtures_per_test.py b/testing/python/show_fixtures_per_test.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_argcomplete.py b/testing/test_argcomplete.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_assertion.py b/testing/test_assertion.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_assertrewrite.py b/testing/test_assertrewrite.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_cacheprovider.py b/testing/test_cacheprovider.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_capture.py b/testing/test_capture.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_collection.py b/testing/test_collection.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_compat.py b/testing/test_compat.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_config.py b/testing/test_config.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_conftest.py b/testing/test_conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_debugging.py b/testing/test_debugging.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_doctest.py b/testing/test_doctest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_entry_points.py b/testing/test_entry_points.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_error_diffs.py b/testing/test_error_diffs.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_faulthandler.py b/testing/test_faulthandler.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_findpaths.py b/testing/test_findpaths.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_helpconfig.py b/testing/test_helpconfig.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_junitxml.py b/testing/test_junitxml.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_legacypath.py b/testing/test_legacypath.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_link_resolve.py b/testing/test_link_resolve.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_main.py b/testing/test_main.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_mark.py b/testing/test_mark.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_mark_expression.py b/testing/test_mark_expression.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_meta.py b/testing/test_meta.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_monkeypatch.py b/testing/test_monkeypatch.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_nodes.py b/testing/test_nodes.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_nose.py b/testing/test_nose.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_parseopt.py b/testing/test_parseopt.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_pastebin.py b/testing/test_pastebin.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_pathlib.py b/testing/test_pathlib.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_pluginmanager.py b/testing/test_pluginmanager.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_pytester.py b/testing/test_pytester.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_python_path.py b/testing/test_python_path.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_recwarn.py b/testing/test_recwarn.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_reports.py b/testing/test_reports.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_runner.py b/testing/test_runner.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_runner_xunit.py b/testing/test_runner_xunit.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_scope.py b/testing/test_scope.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_session.py b/testing/test_session.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_setuponly.py b/testing/test_setuponly.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_setupplan.py b/testing/test_setupplan.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_skipping.py b/testing/test_skipping.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_stash.py b/testing/test_stash.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_stepwise.py b/testing/test_stepwise.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_terminal.py b/testing/test_terminal.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_threadexception.py b/testing/test_threadexception.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_tmpdir.py b/testing/test_tmpdir.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_unittest.py b/testing/test_unittest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_unraisableexception.py b/testing/test_unraisableexception.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_warning_types.py b/testing/test_warning_types.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_warnings.py b/testing/test_warnings.py
+old mode 100644
+new mode 100755
+diff --git a/testing/typing_checks.py b/testing/typing_checks.py
+old mode 100644
+new mode 100755
+diff --git a/tox.ini b/tox.ini
+old mode 100644
+new mode 100755
++ git -c core.fileMode=false diff 6995257cf470d2143ad1683824962de4071c0eb7
+diff --git a/.coveragerc b/.coveragerc
+old mode 100644
+new mode 100755
+diff --git a/.gitattributes b/.gitattributes
+old mode 100644
+new mode 100755
+diff --git a/.gitblameignore b/.gitblameignore
+old mode 100644
+new mode 100755
+diff --git a/.github/FUNDING.yml b/.github/FUNDING.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/ISSUE_TEMPLATE/1_bug_report.md b/.github/ISSUE_TEMPLATE/1_bug_report.md
+old mode 100644
+new mode 100755
+diff --git a/.github/ISSUE_TEMPLATE/2_feature_request.md b/.github/ISSUE_TEMPLATE/2_feature_request.md
+old mode 100644
+new mode 100755
+diff --git a/.github/ISSUE_TEMPLATE/config.yml b/.github/ISSUE_TEMPLATE/config.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/PULL_REQUEST_TEMPLATE.md b/.github/PULL_REQUEST_TEMPLATE.md
+old mode 100644
+new mode 100755
+diff --git a/.github/config.yml b/.github/config.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/dependabot.yml b/.github/dependabot.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/labels.toml b/.github/labels.toml
+old mode 100644
+new mode 100755
+diff --git a/.github/workflows/backport.yml b/.github/workflows/backport.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/workflows/deploy.yml b/.github/workflows/deploy.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/workflows/prepare-release-pr.yml b/.github/workflows/prepare-release-pr.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/workflows/stale.yml b/.github/workflows/stale.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/workflows/test.yml b/.github/workflows/test.yml
+old mode 100644
+new mode 100755
+diff --git a/.github/workflows/update-plugin-list.yml b/.github/workflows/update-plugin-list.yml
+old mode 100644
+new mode 100755
+diff --git a/.gitignore b/.gitignore
+old mode 100644
+new mode 100755
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+old mode 100644
+new mode 100755
+diff --git a/.readthedocs.yml b/.readthedocs.yml
+old mode 100644
+new mode 100755
+diff --git a/AUTHORS b/AUTHORS
+old mode 100644
+new mode 100755
+diff --git a/CHANGELOG.rst b/CHANGELOG.rst
+old mode 100644
+new mode 100755
+diff --git a/CITATION b/CITATION
+old mode 100644
+new mode 100755
+diff --git a/CODE_OF_CONDUCT.md b/CODE_OF_CONDUCT.md
+old mode 100644
+new mode 100755
+diff --git a/CONTRIBUTING.rst b/CONTRIBUTING.rst
+old mode 100644
+new mode 100755
+diff --git a/LICENSE b/LICENSE
+old mode 100644
+new mode 100755
+diff --git a/OPENCOLLECTIVE.rst b/OPENCOLLECTIVE.rst
+old mode 100644
+new mode 100755
+diff --git a/README.rst b/README.rst
+old mode 100644
+new mode 100755
+diff --git a/RELEASING.rst b/RELEASING.rst
+old mode 100644
+new mode 100755
+diff --git a/TIDELIFT.rst b/TIDELIFT.rst
+old mode 100644
+new mode 100755
+diff --git a/bench/bench.py b/bench/bench.py
+old mode 100644
+new mode 100755
+diff --git a/bench/bench_argcomplete.py b/bench/bench_argcomplete.py
+old mode 100644
+new mode 100755
+diff --git a/bench/empty.py b/bench/empty.py
+old mode 100644
+new mode 100755
+diff --git a/bench/manyparam.py b/bench/manyparam.py
+old mode 100644
+new mode 100755
+diff --git a/bench/skip.py b/bench/skip.py
+old mode 100644
+new mode 100755
+diff --git a/bench/unit_test.py b/bench/unit_test.py
+old mode 100644
+new mode 100755
+diff --git a/bench/xunit.py b/bench/xunit.py
+old mode 100644
+new mode 100755
+diff --git a/changelog/10337.bugfix.rst b/changelog/10337.bugfix.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/10447.bugfix.rst b/changelog/10447.bugfix.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/10811.bugfix.rst b/changelog/10811.bugfix.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/11011.doc.rst b/changelog/11011.doc.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/11151.breaking.rst b/changelog/11151.breaking.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/3664.deprecation.rst b/changelog/3664.deprecation.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/7363.breaking.rst b/changelog/7363.breaking.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/8976.breaking.rst b/changelog/8976.breaking.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/9036.bugfix.rst b/changelog/9036.bugfix.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/9288.breaking.rst b/changelog/9288.breaking.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/README.rst b/changelog/README.rst
+old mode 100644
+new mode 100755
+diff --git a/changelog/_template.rst b/changelog/_template.rst
+old mode 100644
+new mode 100755
+diff --git a/codecov.yml b/codecov.yml
+old mode 100644
+new mode 100755
+diff --git a/doc/en/Makefile b/doc/en/Makefile
+old mode 100644
+new mode 100755
+diff --git a/doc/en/_templates/globaltoc.html b/doc/en/_templates/globaltoc.html
+old mode 100644
+new mode 100755
+diff --git a/doc/en/_templates/layout.html b/doc/en/_templates/layout.html
+old mode 100644
+new mode 100755
+diff --git a/doc/en/_templates/links.html b/doc/en/_templates/links.html
+old mode 100644
+new mode 100755
+diff --git a/doc/en/_templates/relations.html b/doc/en/_templates/relations.html
+old mode 100644
+new mode 100755
+diff --git a/doc/en/_templates/sidebarintro.html b/doc/en/_templates/sidebarintro.html
+old mode 100644
+new mode 100755
+diff --git a/doc/en/_templates/slim_searchbox.html b/doc/en/_templates/slim_searchbox.html
+old mode 100644
+new mode 100755
+diff --git a/doc/en/adopt.rst b/doc/en/adopt.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/index.rst b/doc/en/announce/index.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.0.0.rst b/doc/en/announce/release-2.0.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.0.1.rst b/doc/en/announce/release-2.0.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.0.2.rst b/doc/en/announce/release-2.0.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.0.3.rst b/doc/en/announce/release-2.0.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.1.0.rst b/doc/en/announce/release-2.1.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.1.1.rst b/doc/en/announce/release-2.1.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.1.2.rst b/doc/en/announce/release-2.1.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.1.3.rst b/doc/en/announce/release-2.1.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.2.0.rst b/doc/en/announce/release-2.2.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.2.1.rst b/doc/en/announce/release-2.2.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.2.2.rst b/doc/en/announce/release-2.2.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.2.4.rst b/doc/en/announce/release-2.2.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.3.0.rst b/doc/en/announce/release-2.3.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.3.1.rst b/doc/en/announce/release-2.3.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.3.2.rst b/doc/en/announce/release-2.3.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.3.3.rst b/doc/en/announce/release-2.3.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.3.4.rst b/doc/en/announce/release-2.3.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.3.5.rst b/doc/en/announce/release-2.3.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.4.0.rst b/doc/en/announce/release-2.4.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.4.1.rst b/doc/en/announce/release-2.4.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.4.2.rst b/doc/en/announce/release-2.4.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.5.0.rst b/doc/en/announce/release-2.5.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.5.1.rst b/doc/en/announce/release-2.5.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.5.2.rst b/doc/en/announce/release-2.5.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.6.0.rst b/doc/en/announce/release-2.6.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.6.1.rst b/doc/en/announce/release-2.6.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.6.2.rst b/doc/en/announce/release-2.6.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.6.3.rst b/doc/en/announce/release-2.6.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.7.0.rst b/doc/en/announce/release-2.7.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.7.1.rst b/doc/en/announce/release-2.7.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.7.2.rst b/doc/en/announce/release-2.7.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.8.2.rst b/doc/en/announce/release-2.8.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.8.3.rst b/doc/en/announce/release-2.8.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.8.4.rst b/doc/en/announce/release-2.8.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.8.5.rst b/doc/en/announce/release-2.8.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.8.6.rst b/doc/en/announce/release-2.8.6.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.8.7.rst b/doc/en/announce/release-2.8.7.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.9.0.rst b/doc/en/announce/release-2.9.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.9.1.rst b/doc/en/announce/release-2.9.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-2.9.2.rst b/doc/en/announce/release-2.9.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.0.rst b/doc/en/announce/release-3.0.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.1.rst b/doc/en/announce/release-3.0.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.2.rst b/doc/en/announce/release-3.0.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.3.rst b/doc/en/announce/release-3.0.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.4.rst b/doc/en/announce/release-3.0.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.5.rst b/doc/en/announce/release-3.0.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.6.rst b/doc/en/announce/release-3.0.6.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.0.7.rst b/doc/en/announce/release-3.0.7.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.1.0.rst b/doc/en/announce/release-3.1.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.1.1.rst b/doc/en/announce/release-3.1.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.1.2.rst b/doc/en/announce/release-3.1.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.1.3.rst b/doc/en/announce/release-3.1.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.10.0.rst b/doc/en/announce/release-3.10.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.10.1.rst b/doc/en/announce/release-3.10.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.2.0.rst b/doc/en/announce/release-3.2.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.2.1.rst b/doc/en/announce/release-3.2.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.2.2.rst b/doc/en/announce/release-3.2.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.2.3.rst b/doc/en/announce/release-3.2.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.2.4.rst b/doc/en/announce/release-3.2.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.2.5.rst b/doc/en/announce/release-3.2.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.3.0.rst b/doc/en/announce/release-3.3.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.3.1.rst b/doc/en/announce/release-3.3.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.3.2.rst b/doc/en/announce/release-3.3.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.4.0.rst b/doc/en/announce/release-3.4.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.4.1.rst b/doc/en/announce/release-3.4.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.4.2.rst b/doc/en/announce/release-3.4.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.5.0.rst b/doc/en/announce/release-3.5.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.5.1.rst b/doc/en/announce/release-3.5.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.6.0.rst b/doc/en/announce/release-3.6.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.6.1.rst b/doc/en/announce/release-3.6.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.6.2.rst b/doc/en/announce/release-3.6.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.6.3.rst b/doc/en/announce/release-3.6.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.6.4.rst b/doc/en/announce/release-3.6.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.7.0.rst b/doc/en/announce/release-3.7.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.7.1.rst b/doc/en/announce/release-3.7.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.7.2.rst b/doc/en/announce/release-3.7.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.7.3.rst b/doc/en/announce/release-3.7.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.7.4.rst b/doc/en/announce/release-3.7.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.8.0.rst b/doc/en/announce/release-3.8.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.8.1.rst b/doc/en/announce/release-3.8.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.8.2.rst b/doc/en/announce/release-3.8.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.9.0.rst b/doc/en/announce/release-3.9.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.9.1.rst b/doc/en/announce/release-3.9.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.9.2.rst b/doc/en/announce/release-3.9.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-3.9.3.rst b/doc/en/announce/release-3.9.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.0.0.rst b/doc/en/announce/release-4.0.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.0.1.rst b/doc/en/announce/release-4.0.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.0.2.rst b/doc/en/announce/release-4.0.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.1.0.rst b/doc/en/announce/release-4.1.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.1.1.rst b/doc/en/announce/release-4.1.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.2.0.rst b/doc/en/announce/release-4.2.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.2.1.rst b/doc/en/announce/release-4.2.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.3.0.rst b/doc/en/announce/release-4.3.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.3.1.rst b/doc/en/announce/release-4.3.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.4.0.rst b/doc/en/announce/release-4.4.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.4.1.rst b/doc/en/announce/release-4.4.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.4.2.rst b/doc/en/announce/release-4.4.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.5.0.rst b/doc/en/announce/release-4.5.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.0.rst b/doc/en/announce/release-4.6.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.1.rst b/doc/en/announce/release-4.6.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.2.rst b/doc/en/announce/release-4.6.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.3.rst b/doc/en/announce/release-4.6.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.4.rst b/doc/en/announce/release-4.6.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.5.rst b/doc/en/announce/release-4.6.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.6.rst b/doc/en/announce/release-4.6.6.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.7.rst b/doc/en/announce/release-4.6.7.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.8.rst b/doc/en/announce/release-4.6.8.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-4.6.9.rst b/doc/en/announce/release-4.6.9.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.0.0.rst b/doc/en/announce/release-5.0.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.0.1.rst b/doc/en/announce/release-5.0.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.1.0.rst b/doc/en/announce/release-5.1.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.1.1.rst b/doc/en/announce/release-5.1.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.1.2.rst b/doc/en/announce/release-5.1.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.1.3.rst b/doc/en/announce/release-5.1.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.2.0.rst b/doc/en/announce/release-5.2.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.2.1.rst b/doc/en/announce/release-5.2.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.2.2.rst b/doc/en/announce/release-5.2.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.2.3.rst b/doc/en/announce/release-5.2.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.2.4.rst b/doc/en/announce/release-5.2.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.3.0.rst b/doc/en/announce/release-5.3.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.3.1.rst b/doc/en/announce/release-5.3.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.3.2.rst b/doc/en/announce/release-5.3.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.3.3.rst b/doc/en/announce/release-5.3.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.3.4.rst b/doc/en/announce/release-5.3.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.3.5.rst b/doc/en/announce/release-5.3.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.4.0.rst b/doc/en/announce/release-5.4.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.4.1.rst b/doc/en/announce/release-5.4.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.4.2.rst b/doc/en/announce/release-5.4.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-5.4.3.rst b/doc/en/announce/release-5.4.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.0.0.rst b/doc/en/announce/release-6.0.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.0.0rc1.rst b/doc/en/announce/release-6.0.0rc1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.0.1.rst b/doc/en/announce/release-6.0.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.0.2.rst b/doc/en/announce/release-6.0.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.1.0.rst b/doc/en/announce/release-6.1.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.1.1.rst b/doc/en/announce/release-6.1.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.1.2.rst b/doc/en/announce/release-6.1.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.2.0.rst b/doc/en/announce/release-6.2.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.2.1.rst b/doc/en/announce/release-6.2.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.2.2.rst b/doc/en/announce/release-6.2.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.2.3.rst b/doc/en/announce/release-6.2.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.2.4.rst b/doc/en/announce/release-6.2.4.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-6.2.5.rst b/doc/en/announce/release-6.2.5.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.0.0.rst b/doc/en/announce/release-7.0.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.0.0rc1.rst b/doc/en/announce/release-7.0.0rc1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.0.1.rst b/doc/en/announce/release-7.0.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.1.0.rst b/doc/en/announce/release-7.1.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.1.1.rst b/doc/en/announce/release-7.1.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.1.2.rst b/doc/en/announce/release-7.1.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.1.3.rst b/doc/en/announce/release-7.1.3.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.2.0.rst b/doc/en/announce/release-7.2.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.2.1.rst b/doc/en/announce/release-7.2.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.2.2.rst b/doc/en/announce/release-7.2.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.3.0.rst b/doc/en/announce/release-7.3.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.3.1.rst b/doc/en/announce/release-7.3.1.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.3.2.rst b/doc/en/announce/release-7.3.2.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/release-7.4.0.rst b/doc/en/announce/release-7.4.0.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/announce/sprint2016.rst b/doc/en/announce/sprint2016.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/backwards-compatibility.rst b/doc/en/backwards-compatibility.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/builtin.rst b/doc/en/builtin.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/changelog.rst b/doc/en/changelog.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/conf.py b/doc/en/conf.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/conftest.py b/doc/en/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/contact.rst b/doc/en/contact.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/contents.rst b/doc/en/contents.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/contributing.rst b/doc/en/contributing.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/deprecations.rst b/doc/en/deprecations.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/development_guide.rst b/doc/en/development_guide.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/assertion/failure_demo.py b/doc/en/example/assertion/failure_demo.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/assertion/global_testmodule_config/conftest.py b/doc/en/example/assertion/global_testmodule_config/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/assertion/global_testmodule_config/test_hello_world.py b/doc/en/example/assertion/global_testmodule_config/test_hello_world.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/assertion/test_failures.py b/doc/en/example/assertion/test_failures.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/assertion/test_setup_flow_example.py b/doc/en/example/assertion/test_setup_flow_example.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/attic.rst b/doc/en/example/attic.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/conftest.py b/doc/en/example/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/fixture_availability.svg b/doc/en/example/fixtures/fixture_availability.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/fixture_availability_plugins.svg b/doc/en/example/fixtures/fixture_availability_plugins.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse.py b/doc/en/example/fixtures/test_fixtures_order_autouse.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse.svg b/doc/en/example/fixtures/test_fixtures_order_autouse.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse_flat.svg b/doc/en/example/fixtures/test_fixtures_order_autouse_flat.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse_multiple_scopes.py b/doc/en/example/fixtures/test_fixtures_order_autouse_multiple_scopes.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse_multiple_scopes.svg b/doc/en/example/fixtures/test_fixtures_order_autouse_multiple_scopes.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse_temp_effects.py b/doc/en/example/fixtures/test_fixtures_order_autouse_temp_effects.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_autouse_temp_effects.svg b/doc/en/example/fixtures/test_fixtures_order_autouse_temp_effects.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_dependencies.py b/doc/en/example/fixtures/test_fixtures_order_dependencies.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_dependencies.svg b/doc/en/example/fixtures/test_fixtures_order_dependencies.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_dependencies_flat.svg b/doc/en/example/fixtures/test_fixtures_order_dependencies_flat.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_dependencies_unclear.svg b/doc/en/example/fixtures/test_fixtures_order_dependencies_unclear.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_scope.py b/doc/en/example/fixtures/test_fixtures_order_scope.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_order_scope.svg b/doc/en/example/fixtures/test_fixtures_order_scope.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_request_different_scope.py b/doc/en/example/fixtures/test_fixtures_request_different_scope.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/fixtures/test_fixtures_request_different_scope.svg b/doc/en/example/fixtures/test_fixtures_request_different_scope.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/index.rst b/doc/en/example/index.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/markers.rst b/doc/en/example/markers.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/multipython.py b/doc/en/example/multipython.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/nonpython.rst b/doc/en/example/nonpython.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/nonpython/__init__.py b/doc/en/example/nonpython/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/nonpython/conftest.py b/doc/en/example/nonpython/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/nonpython/test_simple.yaml b/doc/en/example/nonpython/test_simple.yaml
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/parametrize.rst b/doc/en/example/parametrize.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/pythoncollection.py b/doc/en/example/pythoncollection.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/pythoncollection.rst b/doc/en/example/pythoncollection.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/reportingdemo.rst b/doc/en/example/reportingdemo.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/simple.rst b/doc/en/example/simple.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/special.rst b/doc/en/example/special.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/example/xfail_demo.py b/doc/en/example/xfail_demo.py
+old mode 100644
+new mode 100755
+diff --git a/doc/en/explanation/anatomy.rst b/doc/en/explanation/anatomy.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/explanation/fixtures.rst b/doc/en/explanation/fixtures.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/explanation/flaky.rst b/doc/en/explanation/flaky.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/explanation/goodpractices.rst b/doc/en/explanation/goodpractices.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/explanation/index.rst b/doc/en/explanation/index.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/explanation/pythonpath.rst b/doc/en/explanation/pythonpath.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/funcarg_compare.rst b/doc/en/funcarg_compare.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/funcargs.rst b/doc/en/funcargs.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/getting-started.rst b/doc/en/getting-started.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/historical-notes.rst b/doc/en/historical-notes.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/history.rst b/doc/en/history.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/assert.rst b/doc/en/how-to/assert.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/bash-completion.rst b/doc/en/how-to/bash-completion.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/cache.rst b/doc/en/how-to/cache.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/capture-stdout-stderr.rst b/doc/en/how-to/capture-stdout-stderr.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/capture-warnings.rst b/doc/en/how-to/capture-warnings.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/doctest.rst b/doc/en/how-to/doctest.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/existingtestsuite.rst b/doc/en/how-to/existingtestsuite.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/failures.rst b/doc/en/how-to/failures.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/fixtures.rst b/doc/en/how-to/fixtures.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/index.rst b/doc/en/how-to/index.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/logging.rst b/doc/en/how-to/logging.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/mark.rst b/doc/en/how-to/mark.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/monkeypatch.rst b/doc/en/how-to/monkeypatch.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/nose.rst b/doc/en/how-to/nose.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/output.rst b/doc/en/how-to/output.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/parametrize.rst b/doc/en/how-to/parametrize.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/plugins.rst b/doc/en/how-to/plugins.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/skipping.rst b/doc/en/how-to/skipping.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/tmp_path.rst b/doc/en/how-to/tmp_path.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/unittest.rst b/doc/en/how-to/unittest.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/usage.rst b/doc/en/how-to/usage.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/writing_hook_functions.rst b/doc/en/how-to/writing_hook_functions.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/writing_plugins.rst b/doc/en/how-to/writing_plugins.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/how-to/xunit_setup.rst b/doc/en/how-to/xunit_setup.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/cramer2.png b/doc/en/img/cramer2.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/favicon.png b/doc/en/img/favicon.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/freiburg2.jpg b/doc/en/img/freiburg2.jpg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/gaynor3.png b/doc/en/img/gaynor3.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/keleshev.png b/doc/en/img/keleshev.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/pullrequest.png b/doc/en/img/pullrequest.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/pylib.png b/doc/en/img/pylib.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/pytest1.png b/doc/en/img/pytest1.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/pytest_logo_curves.svg b/doc/en/img/pytest_logo_curves.svg
+old mode 100644
+new mode 100755
+diff --git a/doc/en/img/theuni.png b/doc/en/img/theuni.png
+old mode 100644
+new mode 100755
+diff --git a/doc/en/index.rst b/doc/en/index.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/license.rst b/doc/en/license.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/naming20.rst b/doc/en/naming20.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/proposals/parametrize_with_fixtures.rst b/doc/en/proposals/parametrize_with_fixtures.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/pytest.ini b/doc/en/pytest.ini
+old mode 100644
+new mode 100755
+diff --git a/doc/en/recwarn.rst b/doc/en/recwarn.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/reference/customize.rst b/doc/en/reference/customize.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/reference/exit-codes.rst b/doc/en/reference/exit-codes.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/reference/fixtures.rst b/doc/en/reference/fixtures.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/reference/index.rst b/doc/en/reference/index.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/reference/plugin_list.rst b/doc/en/reference/plugin_list.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/reference/reference.rst b/doc/en/reference/reference.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/requirements.txt b/doc/en/requirements.txt
+old mode 100644
+new mode 100755
+diff --git a/doc/en/sponsor.rst b/doc/en/sponsor.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/talks.rst b/doc/en/talks.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/tidelift.rst b/doc/en/tidelift.rst
+old mode 100644
+new mode 100755
+diff --git a/doc/en/yieldfixture.rst b/doc/en/yieldfixture.rst
+old mode 100644
+new mode 100755
+diff --git a/extra/get_issues.py b/extra/get_issues.py
+old mode 100644
+new mode 100755
+diff --git a/pyproject.toml b/pyproject.toml
+old mode 100644
+new mode 100755
+diff --git a/scripts/prepare-release-pr.py b/scripts/prepare-release-pr.py
+old mode 100644
+new mode 100755
+diff --git a/scripts/publish-gh-release-notes.py b/scripts/publish-gh-release-notes.py
+old mode 100644
+new mode 100755
+diff --git a/scripts/release.major.rst b/scripts/release.major.rst
+old mode 100644
+new mode 100755
+diff --git a/scripts/release.minor.rst b/scripts/release.minor.rst
+old mode 100644
+new mode 100755
+diff --git a/scripts/release.patch.rst b/scripts/release.patch.rst
+old mode 100644
+new mode 100755
+diff --git a/scripts/release.pre.rst b/scripts/release.pre.rst
+old mode 100644
+new mode 100755
+diff --git a/scripts/release.py b/scripts/release.py
+old mode 100644
+new mode 100755
+diff --git a/scripts/towncrier-draft-to-file.py b/scripts/towncrier-draft-to-file.py
+old mode 100644
+new mode 100755
+diff --git a/scripts/update-plugin-list.py b/scripts/update-plugin-list.py
+old mode 100644
+new mode 100755
+diff --git a/setup.cfg b/setup.cfg
+old mode 100644
+new mode 100755
+diff --git a/setup.py b/setup.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/__init__.py b/src/_pytest/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_argcomplete.py b/src/_pytest/_argcomplete.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_code/__init__.py b/src/_pytest/_code/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_code/code.py b/src/_pytest/_code/code.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_code/source.py b/src/_pytest/_code/source.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_io/__init__.py b/src/_pytest/_io/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_io/saferepr.py b/src/_pytest/_io/saferepr.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_io/terminalwriter.py b/src/_pytest/_io/terminalwriter.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_io/wcwidth.py b/src/_pytest/_io/wcwidth.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_py/__init__.py b/src/_pytest/_py/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_py/error.py b/src/_pytest/_py/error.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/_py/path.py b/src/_pytest/_py/path.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/assertion/__init__.py b/src/_pytest/assertion/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/assertion/rewrite.py b/src/_pytest/assertion/rewrite.py
+old mode 100644
+new mode 100755
+index 157903faf..8aa5dbcf9
+--- a/src/_pytest/assertion/rewrite.py
++++ b/src/_pytest/assertion/rewrite.py
+@@ -743,7 +743,9 @@ class AssertionRewriter(ast.NodeVisitor):
+ 
+     @staticmethod
+     def is_rewrite_disabled(docstring: str) -> bool:
+-        return "PYTEST_DONT_REWRITE" in docstring
++        if not isinstance(docstring, str):
++    return False
++return "PYTEST_DONT_REWRITE" in docstring
+ 
+     def variable(self) -> str:
+         """Get a new variable."""
+diff --git a/src/_pytest/assertion/truncate.py b/src/_pytest/assertion/truncate.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/assertion/util.py b/src/_pytest/assertion/util.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/capture.py b/src/_pytest/capture.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/compat.py b/src/_pytest/compat.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/config/__init__.py b/src/_pytest/config/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/config/argparsing.py b/src/_pytest/config/argparsing.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/config/compat.py b/src/_pytest/config/compat.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/config/exceptions.py b/src/_pytest/config/exceptions.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/config/findpaths.py b/src/_pytest/config/findpaths.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/debugging.py b/src/_pytest/debugging.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/deprecated.py b/src/_pytest/deprecated.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/doctest.py b/src/_pytest/doctest.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/faulthandler.py b/src/_pytest/faulthandler.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/fixtures.py b/src/_pytest/fixtures.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/freeze_support.py b/src/_pytest/freeze_support.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/helpconfig.py b/src/_pytest/helpconfig.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/hookspec.py b/src/_pytest/hookspec.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/junitxml.py b/src/_pytest/junitxml.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/legacypath.py b/src/_pytest/legacypath.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/logging.py b/src/_pytest/logging.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/main.py b/src/_pytest/main.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/mark/__init__.py b/src/_pytest/mark/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/mark/expression.py b/src/_pytest/mark/expression.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/mark/structures.py b/src/_pytest/mark/structures.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/monkeypatch.py b/src/_pytest/monkeypatch.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/nodes.py b/src/_pytest/nodes.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/nose.py b/src/_pytest/nose.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/outcomes.py b/src/_pytest/outcomes.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/pastebin.py b/src/_pytest/pastebin.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/pathlib.py b/src/_pytest/pathlib.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/py.typed b/src/_pytest/py.typed
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/pytester.py b/src/_pytest/pytester.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/pytester_assertions.py b/src/_pytest/pytester_assertions.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/python.py b/src/_pytest/python.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/python_api.py b/src/_pytest/python_api.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/python_path.py b/src/_pytest/python_path.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/recwarn.py b/src/_pytest/recwarn.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/reports.py b/src/_pytest/reports.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/runner.py b/src/_pytest/runner.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/scope.py b/src/_pytest/scope.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/setuponly.py b/src/_pytest/setuponly.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/setupplan.py b/src/_pytest/setupplan.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/skipping.py b/src/_pytest/skipping.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/stash.py b/src/_pytest/stash.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/stepwise.py b/src/_pytest/stepwise.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/terminal.py b/src/_pytest/terminal.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/threadexception.py b/src/_pytest/threadexception.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/timing.py b/src/_pytest/timing.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/tmpdir.py b/src/_pytest/tmpdir.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/unittest.py b/src/_pytest/unittest.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/unraisableexception.py b/src/_pytest/unraisableexception.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/warning_types.py b/src/_pytest/warning_types.py
+old mode 100644
+new mode 100755
+diff --git a/src/_pytest/warnings.py b/src/_pytest/warnings.py
+old mode 100644
+new mode 100755
+diff --git a/src/py.py b/src/py.py
+old mode 100644
+new mode 100755
+diff --git a/src/pytest/__init__.py b/src/pytest/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/src/pytest/__main__.py b/src/pytest/__main__.py
+old mode 100644
+new mode 100755
+diff --git a/src/pytest/py.typed b/src/pytest/py.typed
+old mode 100644
+new mode 100755
+diff --git a/testing/_py/test_local.py b/testing/_py/test_local.py
+old mode 100644
+new mode 100755
+diff --git a/testing/acceptance_test.py b/testing/acceptance_test.py
+old mode 100644
+new mode 100755
+diff --git a/testing/code/test_code.py b/testing/code/test_code.py
+old mode 100644
+new mode 100755
+diff --git a/testing/code/test_excinfo.py b/testing/code/test_excinfo.py
+old mode 100644
+new mode 100755
+diff --git a/testing/code/test_source.py b/testing/code/test_source.py
+old mode 100644
+new mode 100755
+diff --git a/testing/conftest.py b/testing/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/deprecated_test.py b/testing/deprecated_test.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/README.rst b/testing/example_scripts/README.rst
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/__init__.py b/testing/example_scripts/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/acceptance/fixture_mock_integration.py b/testing/example_scripts/acceptance/fixture_mock_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/collect_init_tests/pytest.ini b/testing/example_scripts/collect/collect_init_tests/pytest.ini
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/collect_init_tests/tests/__init__.py b/testing/example_scripts/collect/collect_init_tests/tests/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/collect_init_tests/tests/test_foo.py b/testing/example_scripts/collect/collect_init_tests/tests/test_foo.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/package_infinite_recursion/__init__.pyi b/testing/example_scripts/collect/package_infinite_recursion/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/package_infinite_recursion/conftest.py b/testing/example_scripts/collect/package_infinite_recursion/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/package_infinite_recursion/tests/__init__.py b/testing/example_scripts/collect/package_infinite_recursion/tests/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/package_infinite_recursion/tests/test_basic.py b/testing/example_scripts/collect/package_infinite_recursion/tests/test_basic.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/package_init_given_as_arg/pkg/__init__.py b/testing/example_scripts/collect/package_init_given_as_arg/pkg/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/collect/package_init_given_as_arg/pkg/test_foo.py b/testing/example_scripts/collect/package_init_given_as_arg/pkg/test_foo.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/config/collect_pytest_prefix/__init__.pyi b/testing/example_scripts/config/collect_pytest_prefix/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/config/collect_pytest_prefix/conftest.py b/testing/example_scripts/config/collect_pytest_prefix/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/config/collect_pytest_prefix/test_foo.py b/testing/example_scripts/config/collect_pytest_prefix/test_foo.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/conftest_usageerror/__init__.pyi b/testing/example_scripts/conftest_usageerror/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/conftest_usageerror/conftest.py b/testing/example_scripts/conftest_usageerror/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_dataclasses.py b/testing/example_scripts/dataclasses/test_compare_dataclasses.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_dataclasses_field_comparison_off.py b/testing/example_scripts/dataclasses/test_compare_dataclasses_field_comparison_off.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_dataclasses_verbose.py b/testing/example_scripts/dataclasses/test_compare_dataclasses_verbose.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_dataclasses_with_custom_eq.py b/testing/example_scripts/dataclasses/test_compare_dataclasses_with_custom_eq.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_initvar.py b/testing/example_scripts/dataclasses/test_compare_initvar.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_recursive_dataclasses.py b/testing/example_scripts/dataclasses/test_compare_recursive_dataclasses.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/dataclasses/test_compare_two_different_dataclasses.py b/testing/example_scripts/dataclasses/test_compare_two_different_dataclasses.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/doctest/main_py/__main__.py b/testing/example_scripts/doctest/main_py/__main__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/doctest/main_py/test_normal_module.py b/testing/example_scripts/doctest/main_py/test_normal_module.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/custom_item/__init__.pyi b/testing/example_scripts/fixtures/custom_item/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/custom_item/conftest.py b/testing/example_scripts/fixtures/custom_item/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/custom_item/foo/__init__.py b/testing/example_scripts/fixtures/custom_item/foo/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/custom_item/foo/test_foo.py b/testing/example_scripts/fixtures/custom_item/foo/test_foo.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub1/__init__.py b/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub1/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub1/conftest.py b/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub1/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub1/test_in_sub1.py b/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub1/test_in_sub1.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub2/__init__.py b/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub2/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub2/conftest.py b/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub2/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub2/test_in_sub2.py b/testing/example_scripts/fixtures/fill_fixtures/test_conftest_funcargs_only_available_in_subdir/sub2/test_in_sub2.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_detect_recursive_dependency_error.py b/testing/example_scripts/fixtures/fill_fixtures/test_detect_recursive_dependency_error.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/__init__.pyi b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/conftest.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/pkg/__init__.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/pkg/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/pkg/conftest.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/pkg/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/pkg/test_spam.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_conftest/pkg/test_spam.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_module/__init__.pyi b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_module/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_module/conftest.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_module/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_module/test_extend_fixture_conftest_module.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_conftest_module/test_extend_fixture_conftest_module.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_module_class.py b/testing/example_scripts/fixtures/fill_fixtures/test_extend_fixture_module_class.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_basic.py b/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_basic.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_lookup_classlevel.py b/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_lookup_classlevel.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_lookup_modulelevel.py b/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_lookup_modulelevel.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_lookupfails.py b/testing/example_scripts/fixtures/fill_fixtures/test_funcarg_lookupfails.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/test_fixture_named_request.py b/testing/example_scripts/fixtures/test_fixture_named_request.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/fixtures/test_getfixturevalue_dynamic.py b/testing/example_scripts/fixtures/test_getfixturevalue_dynamic.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/issue88_initial_file_multinodes/__init__.pyi b/testing/example_scripts/issue88_initial_file_multinodes/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/issue88_initial_file_multinodes/conftest.py b/testing/example_scripts/issue88_initial_file_multinodes/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/issue88_initial_file_multinodes/test_hello.py b/testing/example_scripts/issue88_initial_file_multinodes/test_hello.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/issue_519.py b/testing/example_scripts/issue_519.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/junit-10.xsd b/testing/example_scripts/junit-10.xsd
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/marks/marks_considered_keywords/__init__.pyi b/testing/example_scripts/marks/marks_considered_keywords/__init__.pyi
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/marks/marks_considered_keywords/conftest.py b/testing/example_scripts/marks/marks_considered_keywords/conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/marks/marks_considered_keywords/test_marks_as_keywords.py b/testing/example_scripts/marks/marks_considered_keywords/test_marks_as_keywords.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/perf_examples/collect_stats/.gitignore b/testing/example_scripts/perf_examples/collect_stats/.gitignore
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/perf_examples/collect_stats/generate_folders.py b/testing/example_scripts/perf_examples/collect_stats/generate_folders.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/perf_examples/collect_stats/template_test.py b/testing/example_scripts/perf_examples/collect_stats/template_test.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/pytest.ini b/testing/example_scripts/pytest.ini
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/tmpdir/tmp_path_fixture.py b/testing/example_scripts/tmpdir/tmp_path_fixture.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_parametrized_fixture_error_message.py b/testing/example_scripts/unittest/test_parametrized_fixture_error_message.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_setup_skip.py b/testing/example_scripts/unittest/test_setup_skip.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_setup_skip_class.py b/testing/example_scripts/unittest/test_setup_skip_class.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_setup_skip_module.py b/testing/example_scripts/unittest/test_setup_skip_module.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_unittest_asyncio.py b/testing/example_scripts/unittest/test_unittest_asyncio.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_unittest_asynctest.py b/testing/example_scripts/unittest/test_unittest_asynctest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/unittest/test_unittest_plain_async.py b/testing/example_scripts/unittest/test_unittest_plain_async.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/warnings/test_group_warnings_by_message.py b/testing/example_scripts/warnings/test_group_warnings_by_message.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/warnings/test_group_warnings_by_message_summary/test_1.py b/testing/example_scripts/warnings/test_group_warnings_by_message_summary/test_1.py
+old mode 100644
+new mode 100755
+diff --git a/testing/example_scripts/warnings/test_group_warnings_by_message_summary/test_2.py b/testing/example_scripts/warnings/test_group_warnings_by_message_summary/test_2.py
+old mode 100644
+new mode 100755
+diff --git a/testing/examples/test_issue519.py b/testing/examples/test_issue519.py
+old mode 100644
+new mode 100755
+diff --git a/testing/freeze/.gitignore b/testing/freeze/.gitignore
+old mode 100644
+new mode 100755
+diff --git a/testing/freeze/create_executable.py b/testing/freeze/create_executable.py
+old mode 100644
+new mode 100755
+diff --git a/testing/freeze/runtests_script.py b/testing/freeze/runtests_script.py
+old mode 100644
+new mode 100755
+diff --git a/testing/freeze/tests/test_doctest.txt b/testing/freeze/tests/test_doctest.txt
+old mode 100644
+new mode 100755
+diff --git a/testing/freeze/tests/test_trivial.py b/testing/freeze/tests/test_trivial.py
+old mode 100644
+new mode 100755
+diff --git a/testing/freeze/tox_run.py b/testing/freeze/tox_run.py
+old mode 100644
+new mode 100755
+diff --git a/testing/io/test_saferepr.py b/testing/io/test_saferepr.py
+old mode 100644
+new mode 100755
+diff --git a/testing/io/test_terminalwriter.py b/testing/io/test_terminalwriter.py
+old mode 100644
+new mode 100755
+diff --git a/testing/io/test_wcwidth.py b/testing/io/test_wcwidth.py
+old mode 100644
+new mode 100755
+diff --git a/testing/logging/test_fixture.py b/testing/logging/test_fixture.py
+old mode 100644
+new mode 100755
+diff --git a/testing/logging/test_formatter.py b/testing/logging/test_formatter.py
+old mode 100644
+new mode 100755
+diff --git a/testing/logging/test_reporting.py b/testing/logging/test_reporting.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/.gitignore b/testing/plugins_integration/.gitignore
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/README.rst b/testing/plugins_integration/README.rst
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/bdd_wallet.feature b/testing/plugins_integration/bdd_wallet.feature
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/bdd_wallet.py b/testing/plugins_integration/bdd_wallet.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/django_settings.py b/testing/plugins_integration/django_settings.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/pytest.ini b/testing/plugins_integration/pytest.ini
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/pytest_anyio_integration.py b/testing/plugins_integration/pytest_anyio_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/pytest_asyncio_integration.py b/testing/plugins_integration/pytest_asyncio_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/pytest_mock_integration.py b/testing/plugins_integration/pytest_mock_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/pytest_trio_integration.py b/testing/plugins_integration/pytest_trio_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/pytest_twisted_integration.py b/testing/plugins_integration/pytest_twisted_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/requirements.txt b/testing/plugins_integration/requirements.txt
+old mode 100644
+new mode 100755
+diff --git a/testing/plugins_integration/simple_integration.py b/testing/plugins_integration/simple_integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/approx.py b/testing/python/approx.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/collect.py b/testing/python/collect.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/fixtures.py b/testing/python/fixtures.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/integration.py b/testing/python/integration.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/metafunc.py b/testing/python/metafunc.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/raises.py b/testing/python/raises.py
+old mode 100644
+new mode 100755
+diff --git a/testing/python/show_fixtures_per_test.py b/testing/python/show_fixtures_per_test.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_argcomplete.py b/testing/test_argcomplete.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_assertion.py b/testing/test_assertion.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_assertrewrite.py b/testing/test_assertrewrite.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_cacheprovider.py b/testing/test_cacheprovider.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_capture.py b/testing/test_capture.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_collection.py b/testing/test_collection.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_compat.py b/testing/test_compat.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_config.py b/testing/test_config.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_conftest.py b/testing/test_conftest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_debugging.py b/testing/test_debugging.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_doctest.py b/testing/test_doctest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_entry_points.py b/testing/test_entry_points.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_error_diffs.py b/testing/test_error_diffs.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_faulthandler.py b/testing/test_faulthandler.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_findpaths.py b/testing/test_findpaths.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_helpconfig.py b/testing/test_helpconfig.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_junitxml.py b/testing/test_junitxml.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_legacypath.py b/testing/test_legacypath.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_link_resolve.py b/testing/test_link_resolve.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_main.py b/testing/test_main.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_mark.py b/testing/test_mark.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_mark_expression.py b/testing/test_mark_expression.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_meta.py b/testing/test_meta.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_monkeypatch.py b/testing/test_monkeypatch.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_nodes.py b/testing/test_nodes.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_nose.py b/testing/test_nose.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_parseopt.py b/testing/test_parseopt.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_pastebin.py b/testing/test_pastebin.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_pathlib.py b/testing/test_pathlib.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_pluginmanager.py b/testing/test_pluginmanager.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_pytester.py b/testing/test_pytester.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_python_path.py b/testing/test_python_path.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_recwarn.py b/testing/test_recwarn.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_reports.py b/testing/test_reports.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_runner.py b/testing/test_runner.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_runner_xunit.py b/testing/test_runner_xunit.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_scope.py b/testing/test_scope.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_session.py b/testing/test_session.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_setuponly.py b/testing/test_setuponly.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_setupplan.py b/testing/test_setupplan.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_skipping.py b/testing/test_skipping.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_stash.py b/testing/test_stash.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_stepwise.py b/testing/test_stepwise.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_terminal.py b/testing/test_terminal.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_threadexception.py b/testing/test_threadexception.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_tmpdir.py b/testing/test_tmpdir.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_unittest.py b/testing/test_unittest.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_unraisableexception.py b/testing/test_unraisableexception.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_warning_types.py b/testing/test_warning_types.py
+old mode 100644
+new mode 100755
+diff --git a/testing/test_warnings.py b/testing/test_warnings.py
+old mode 100644
+new mode 100755
+diff --git a/testing/typing_checks.py b/testing/typing_checks.py
+old mode 100644
+new mode 100755
+diff --git a/tox.ini b/tox.ini
+old mode 100644
+new mode 100755
++ source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z x ']'
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1='(testbed) '
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=3
++++ CONDA_SHLVL=3
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_PREFIX_2=/opt/miniconda3/envs/testbed
++++ CONDA_PREFIX_2=/opt/miniconda3/envs/testbed
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+++ /opt/miniconda3/bin/conda shell.posix activate testbed
++ ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_3='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_3='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=4
+++ CONDA_SHLVL=4
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_3=/opt/miniconda3
+++ CONDA_PREFIX_3=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ python -m pip install -e .
+Obtaining file:///testbed
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: iniconfig in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest==8.0.0.dev54+g793bffd60.d20261120) (2.0.0)
+Requirement already satisfied: packaging in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest==8.0.0.dev54+g793bffd60.d20261120) (23.1)
+Requirement already satisfied: pluggy<2.0,>=0.12 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest==8.0.0.dev54+g793bffd60.d20261120) (1.3.0)
+Requirement already satisfied: exceptiongroup>=1.0.0rc8 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest==8.0.0.dev54+g793bffd60.d20261120) (1.1.3)
+Requirement already satisfied: tomli>=1.0.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest==8.0.0.dev54+g793bffd60.d20261120) (2.0.1)
+Building wheels for collected packages: pytest
+  Building editable for pytest (pyproject.toml): started
+  Building editable for pytest (pyproject.toml): finished with status 'done'
+  Created wheel for pytest: filename=pytest-8.0.0.dev54+g793bffd60.d20261120-0.editable-py3-none-any.whl size=5381 sha256=96e786882d09e1c4da49c77d3b4aa4797a92a72af98bcde28a1995a0e5ff9e69
+  Stored in directory: /tmp/pip-ephem-wheel-cache-a8ksp4th/wheels/7d/66/67/70d1ee2124ccf21d601c352e25cdca10f611f7c8b3f9ffb9e4
+Successfully built pytest
+Installing collected packages: pytest
+  Attempting uninstall: pytest
+    Found existing installation: pytest 8.0.0.dev53+g6995257cf.d20260815
+    Uninstalling pytest-8.0.0.dev53+g6995257cf.d20260815:
+      Successfully uninstalled pytest-8.0.0.dev53+g6995257cf.d20260815
+Successfully installed pytest-8.0.0.dev54+g793bffd60.d20261120
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ git checkout 6995257cf470d2143ad1683824962de4071c0eb7 testing/test_assertrewrite.py
+Updated 1 path from 5e87fec76
++ git apply -v -
+Checking patch testing/test_assertrewrite.py...
+Applied patch testing/test_assertrewrite.py cleanly.
++ : '>>>>> Start Test Output'
++ pytest -rA testing/test_assertrewrite.py
+Traceback (most recent call last):
+  File "/opt/miniconda3/envs/testbed/bin/pytest", line 5, in <module>
+    from pytest import console_main
+  File "/testbed/src/pytest/__init__.py", line 6, in <module>
+    from _pytest.assertion import register_assert_rewrite
+  File "/testbed/src/_pytest/assertion/__init__.py", line 9, in <module>
+    from _pytest.assertion import rewrite
+  File "/testbed/src/_pytest/assertion/rewrite.py", line 747
+    return False
+IndentationError: expected an indented block
++ SWEBENCH_TEST_EXIT_CODE=1
++ : '>>>>> End Test Output'
++ echo '>>>>> Test Exit Code: 1'
+>>>>> Test Exit Code: 1
++ git checkout 6995257cf470d2143ad1683824962de4071c0eb7 testing/test_assertrewrite.py
+Updated 1 path from 5e87fec76

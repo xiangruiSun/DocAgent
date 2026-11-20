@@ -1,0 +1,51 @@
+2026-11-20 00:33:36,614 - INFO - Creating container for pytest-dev__pytest-11143...
+2026-11-20 00:33:36,636 - INFO - Container for pytest-dev__pytest-11143 created: 48693d2bb0df9364d5bcd0f1c92902d44f94c155352f603ec57c2110d95e9f3f
+2026-11-20 00:33:36,720 - INFO - Container for pytest-dev__pytest-11143 started: 48693d2bb0df9364d5bcd0f1c92902d44f94c155352f603ec57c2110d95e9f3f
+2026-11-20 00:33:36,720 - INFO - Intermediate patch for pytest-dev__pytest-11143 written to logs/run_evaluation/pytest-dev__pytest-11143__static_stale__seed20261119__a01/ollama-qwen3-14b-toolloop__static_stale/pytest-dev__pytest-11143/patch.diff, now applying to container...
+2026-11-20 00:33:36,784 - INFO - >>>>> Applied Patch:
+Checking patch src/_pytest/assertion/rewrite.py...
+warning: src/_pytest/assertion/rewrite.py has type 100755, expected 100644
+Applied patch src/_pytest/assertion/rewrite.py cleanly.
+
+2026-11-20 00:33:36,868 - INFO - Git diff before:
+diff --git a/src/_pytest/assertion/rewrite.py b/src/_pytest/assertion/rewrite.py
+index 157903faf..8aa5dbcf9 100755
+--- a/src/_pytest/assertion/rewrite.py
++++ b/src/_pytest/assertion/rewrite.py
+@@ -743,7 +743,9 @@ class AssertionRewriter(ast.NodeVisitor):
+ 
+     @staticmethod
+     def is_rewrite_disabled(docstring: str) -> bool:
+-        return "PYTEST_DONT_REWRITE" in docstring
++        if not isinstance(docstring, str):
++    return False
++return "PYTEST_DONT_REWRITE" in docstring
+ 
+     def variable(self) -> str:
+         """Get a new variable."""
+2026-11-20 00:33:36,868 - INFO - Eval script for pytest-dev__pytest-11143 written to logs/run_evaluation/pytest-dev__pytest-11143__static_stale__seed20261119__a01/ollama-qwen3-14b-toolloop__static_stale/pytest-dev__pytest-11143/eval.sh; copying to container...
+2026-11-20 00:33:39,698 - INFO - Test runtime: 2.80 seconds
+2026-11-20 00:33:39,699 - INFO - Test output for pytest-dev__pytest-11143 written to logs/run_evaluation/pytest-dev__pytest-11143__static_stale__seed20261119__a01/ollama-qwen3-14b-toolloop__static_stale/pytest-dev__pytest-11143/test_output.txt
+2026-11-20 00:33:39,733 - INFO - Git diff after:
+diff --git a/src/_pytest/assertion/rewrite.py b/src/_pytest/assertion/rewrite.py
+index 157903faf..8aa5dbcf9 100755
+--- a/src/_pytest/assertion/rewrite.py
++++ b/src/_pytest/assertion/rewrite.py
+@@ -743,7 +743,9 @@ class AssertionRewriter(ast.NodeVisitor):
+ 
+     @staticmethod
+     def is_rewrite_disabled(docstring: str) -> bool:
+-        return "PYTEST_DONT_REWRITE" in docstring
++        if not isinstance(docstring, str):
++    return False
++return "PYTEST_DONT_REWRITE" in docstring
+ 
+     def variable(self) -> str:
+         """Get a new variable."""
+2026-11-20 00:33:39,733 - INFO - Grading answer for pytest-dev__pytest-11143...
+2026-11-20 00:33:39,745 - INFO - report: {'pytest-dev__pytest-11143': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': False, 'resolved': False, 'infra_failure': False}}
+Result for pytest-dev__pytest-11143: resolved: False
+2026-11-20 00:33:39,745 - INFO - Attempting to stop container sweb.eval.pytest-dev__pytest-11143.pytest-dev__pytest-11143__static_stale__seed20261119__a01...
+2026-11-20 00:33:54,838 - INFO - Container sweb.eval.pytest-dev__pytest-11143.pytest-dev__pytest-11143__static_stale__seed20261119__a01 stopped successfully.
+2026-11-20 00:33:54,838 - INFO - Attempting to remove container sweb.eval.pytest-dev__pytest-11143.pytest-dev__pytest-11143__static_stale__seed20261119__a01...
+2026-11-20 00:33:54,872 - INFO - Container sweb.eval.pytest-dev__pytest-11143.pytest-dev__pytest-11143__static_stale__seed20261119__a01 removed successfully.
